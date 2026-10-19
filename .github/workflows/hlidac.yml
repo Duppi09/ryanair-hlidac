@@ -19,7 +19,7 @@ jobs:
       - name: Zkontrolovat cenu
         env:
           CENOVY_LIMIT: ${{ vars.CENOVY_LIMIT }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC || 'ryanair-prg-bcn-f940dbac' }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python hlidac.py
