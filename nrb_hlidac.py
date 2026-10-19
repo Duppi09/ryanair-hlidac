@@ -64,7 +64,6 @@ def main():
     with urllib.request.urlopen(req, timeout=30) as r:
         html = r.read().decode("utf-8", errors="replace")
     DATA.mkdir(exist_ok=True)
-    (DATA / "nrb_stranka.html").write_text(html)
 
     stav = "\n".join(relevant_lines(html))
     predchozi = SNAPSHOT.read_text() if SNAPSHOT.exists() else None
@@ -73,6 +72,9 @@ def main():
 
     if predchozi is None:
         notify(f"NRB Úvěr Expanze – hlídání spuštěno.\n{stav[:600]}", title="NRB Úvěr Expanze")
+    elif "pozastaven" in predchozi and "pozastaven" not in stav:
+        notify("🚨 NRB Úvěr Expanze: hláška o pozastavení příjmu žádostí zmizela – "
+               f"pravděpodobně se znovu přijímají žádosti!\n{stav[:600]}\n{URL}", title="NRB Úvěr Expanze – OTEVŘENO?")
     elif stav != predchozi:
         nove = [l for l in stav.splitlines() if l not in predchozi.splitlines()]
         notify("NRB Úvěr Expanze – změna na stránce! Zkontroluj, zda se znovu vypsaly výzvy.\n"
