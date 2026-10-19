@@ -10,6 +10,7 @@ Konfigurace přes proměnné prostředí (vše volitelné):
   NTFY_TOPIC       - téma na ntfy.sh pro push notifikace do mobilu (aplikace ntfy)
   TELEGRAM_TOKEN, TELEGRAM_CHAT_ID - notifikace přes Telegram bota
 """
+import base64
 import json
 import os
 import sys
@@ -46,12 +47,12 @@ def cheapest_fare(origin, dest, date):
     return None
 
 
-def notify(msg):
+def notify(msg, title="Ryanair PRG-BCN"):
     print("NOTIFIKACE:", msg)
     topic = os.environ.get("NTFY_TOPIC")
     if topic:
         req = urllib.request.Request(f"https://ntfy.sh/{topic}", data=msg.encode(),
-                                     headers={"Title": "Ryanair PRG-BCN", "Tags": "airplane"})
+                                     headers={"Title": "=?UTF-8?B?" + base64.b64encode(title.encode()).decode() + "?="})
         urllib.request.urlopen(req, timeout=15)
     token, chat = os.environ.get("TELEGRAM_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     if token and chat:

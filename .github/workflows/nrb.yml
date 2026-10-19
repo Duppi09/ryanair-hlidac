@@ -1,0 +1,32 @@
+name: Hlídač NRB Úvěr Expanze
+
+on:
+  schedule:
+    - cron: "7 5-18 * * 1-5"   # každou hodinu v pracovní dny (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: ukladani-dat
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Zkontrolovat stránku
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC || 'ryanair-prg-bcn-f940dbac' }}
+        run: python nrb_hlidac.py
+      - name: Uložit stav
+        run: |
+          git config user.name "hlidac-bot"
+          git config user.email "hlidac-bot@users.noreply.github.com"
+          git add data/ || true
+          git diff --cached --quiet || git commit -m "Aktualizace stavu NRB"
+          git pull --rebase -q
+          git push
