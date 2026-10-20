@@ -2,7 +2,7 @@ name: Hlídač NRB Úvěr Expanze
 
 on:
   schedule:
-    - cron: "7 5-18 * * 1-5"   # každou hodinu v pracovní dny (UTC)
+    - cron: "7 5-20 * * *"   # každou hodinu 6–22 h, i o víkendu (UTC); souhrn po 16:00 SEČ/SELČ
   workflow_dispatch:
 
 permissions:

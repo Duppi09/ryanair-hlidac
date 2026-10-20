@@ -47,12 +47,13 @@ def cheapest_fare(origin, dest, date):
     return None
 
 
-def notify(msg, title="Ryanair PRG-BCN"):
+def notify(msg, title="Ryanair PRG-BCN", urgent=False):
     print("NOTIFIKACE:", msg)
     topic = os.environ.get("NTFY_TOPIC")
     if topic:
         req = urllib.request.Request(f"https://ntfy.sh/{topic}", data=msg.encode(),
-                                     headers={"Title": "=?UTF-8?B?" + base64.b64encode(title.encode()).decode() + "?="})
+                                     headers={"Title": "=?UTF-8?B?" + base64.b64encode(title.encode()).decode() + "?=",
+                                              "Priority": "high" if urgent else "default"})
         urllib.request.urlopen(req, timeout=15)
     token, chat = os.environ.get("TELEGRAM_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     if token and chat:
@@ -96,8 +97,15 @@ def main():
         duvody.append("nové historické minimum")
     if minule is None:
         duvody.append("první měření")
-    if duvody:
-        notify(text + "\n→ " + ", ".join(duvody))
+    if minule is not None and celkem > minule:
+        zmena = f"zdražení o {celkem - minule:.0f} (z {minule:.0f})"
+    elif minule is not None and celkem == minule:
+        zmena = "beze změny"
+    else:
+        zmena = None
+    # Notifikace při každé kontrole (3x denně); při zlevnění s výrazným titulkem
+    titulek = "Ryanair PRG-BCN – ZLEVNĚNÍ!" if duvody and minule is not None else "Ryanair PRG-BCN"
+    notify(text + "\n→ " + ", ".join(duvody or [zmena]), title=titulek, urgent=titulek.endswith("!"))
 
 
 if __name__ == "__main__":

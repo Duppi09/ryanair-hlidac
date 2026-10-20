@@ -12,9 +12,11 @@ import json
 import re
 import sys
 import urllib.request
+from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
+from zoneinfo import ZoneInfo
 
 from hlidac import notify
 
@@ -24,6 +26,8 @@ SITEMAPY = ["/sitemap_index.xml", "/wp-sitemap.xml", "/sitemap.xml"]
 DATA = Path(__file__).parent / "data"
 SNAPSHOT = DATA / "nrb_stav.txt"
 STRUKTURA = DATA / "nrb_struktura.json"
+SOUHRN = DATA / "nrb_posledni_souhrn.txt"
+HODINA_SOUHRNU = 16  # denní souhrn v 16:00 pražského času
 TITLE = "NRB Úvěr Expanze"
 KLICOVA_SLOVA = re.compile(
     r"žádost|výzv|příjem|přijím|alokac|vyčerpán|ukončen|pozastaven|otevřen|uzavřen|spuštěn|termín|podat",
@@ -126,7 +130,7 @@ def main():
     zpravy = []
     if predchozi is not None and "pozastaven" in predchozi and "pozastaven" not in stav:
         notify("🚨 Hláška o pozastavení příjmu žádostí zmizela – pravděpodobně se znovu přijímají žádosti!\n"
-               f"{stav[:600]}\n{URL}", title=TITLE + " – OTEVŘENO?")
+               f"{stav[:600]}\n{URL}", title=TITLE + " – OTEVŘENO?", urgent=True)
     elif predchozi is not None and stav != predchozi:
         nove = [l for l in stav.splitlines() if l not in predchozi.splitlines()]
         zpravy.append("Změněný text o žádostech:\n" + "\n".join(nove)[:600])
@@ -158,7 +162,16 @@ def main():
         notify(f"Hlídání spuštěno.\n{stav[:600]}", title=TITLE)
     elif zpravy:
         notify("Změna u NRB – zkontroluj, zda se znovu vypsaly výzvy.\n\n" + "\n\n".join(zpravy)[:1500]
-               + f"\n\n{URL}", title=TITLE)
+               + f"\n\n{URL}", title=TITLE + " – ZMĚNA!", urgent=True)
+
+    # Denní souhrn (jednou denně po 16:00), i když se nic nezměnilo
+    ted = datetime.now(ZoneInfo("Europe/Prague"))
+    dnes = ted.date().isoformat()
+    if ted.hour >= HODINA_SOUHRNU and (not SOUHRN.exists() or SOUHRN.read_text().strip() != dnes):
+        SOUHRN.write_text(dnes)
+        prijem = "stále pozastaven" if "pozastaven" in stav else "hláška o pozastavení CHYBÍ – zkontroluj!"
+        notify(f"Denní souhrn: příjem žádostí {prijem}.\n"
+               f"Sekcí na stránce: {len(p.headings)}, odkazů: {len(odkazy)}.\n{URL}", title=TITLE + " – souhrn")
 
 
 if __name__ == "__main__":
