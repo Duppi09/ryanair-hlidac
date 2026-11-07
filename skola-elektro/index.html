@@ -1,0 +1,490 @@
+<title>Elektro dril</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: jeden sloupec jako štítek rozvaděče – hlavička se stavem, karta otázky, pod ní přehledy. Barvy z vodičů: hnědá L1, světle modrá N, zelenožlutá PE. */
+:root {
+  --bg: #f3f2ee;
+  --panel: #ffffff;
+  --ink: #1d1f22;
+  --muted: #5d6066;
+  --line: #d9d7d0;
+  --brown: #7a4a26;
+  --blue: #2f6fb0;
+  --pe-g: #2e8b3e;
+  --pe-y: #e3c51b;
+  --ok: #1f7a3a;
+  --ok-bg: #e4f3e8;
+  --bad: #b3261e;
+  --bad-bg: #fbe7e5;
+  --chip: #ecebe6;
+  --f-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --f-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141517; --panel: #1d1f22; --ink: #ecebe6; --muted: #a3a6ad; --line: #34373c;
+  --brown: #c98a55; --blue: #6ea8e6; --pe-g: #4cb35d; --pe-y: #e8cf3a;
+  --ok: #6fd18a; --ok-bg: #173323; --bad: #ff8a80; --bad-bg: #3a1c1a; --chip: #2a2c30; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #141517; --panel: #1d1f22; --ink: #ecebe6; --muted: #a3a6ad; --line: #34373c;
+  --brown: #c98a55; --blue: #6ea8e6; --pe-g: #4cb35d; --pe-y: #e8cf3a;
+  --ok: #6fd18a; --ok-bg: #173323; --bad: #ff8a80; --bad-bg: #3a1c1a; --chip: #2a2c30; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 16px/1.5 var(--f-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 48px }
+.wrap { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px }
+button { font: inherit; color: inherit; cursor: pointer }
+button:focus-visible, input:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 700; margin: 0; text-wrap: balance; letter-spacing: .01em }
+.pe { height: 6px; border-radius: 3px; background: repeating-linear-gradient(-45deg, var(--pe-g) 0 10px, var(--pe-y) 10px 20px) }
+
+header.top { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; flex-wrap: wrap }
+header.top h1 { font-size: 2.1rem; line-height: 1 }
+header.top h1 span { color: var(--brown) }
+.meta { display: flex; gap: 8px; flex-wrap: wrap }
+.tag { font: 500 .78rem/1 var(--f-mono); background: var(--chip); padding: 6px 8px; border-radius: 4px; white-space: nowrap }
+.tag b { color: var(--brown); font-weight: 500 }
+
+nav.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line) }
+nav.tabs button { background: none; border: 0; padding: 8px 12px; font: 600 1rem var(--f-display); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); border-bottom: 3px solid transparent; margin-bottom: -1px }
+nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--brown) }
+
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 14px; min-width: 0 }
+.eyebrow { font: 600 .78rem/1 var(--f-display); letter-spacing: .12em; text-transform: uppercase; color: var(--muted) }
+.big { font: 700 2.6rem/1 var(--f-display) }
+.row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center }
+.grow { flex: 1 1 auto; min-width: 0 }
+
+.btn { border: 0; border-radius: 6px; padding: 12px 18px; font: 600 1.05rem var(--f-display); letter-spacing: .05em; text-transform: uppercase; background: var(--brown); color: #fff }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line) }
+.btn:disabled { opacity: .45; cursor: default }
+
+.dots { display: flex; gap: 6px }
+.dot { width: 100%; height: 8px; border-radius: 2px; background: var(--chip) }
+.dot.ok { background: var(--ok) } .dot.bad { background: var(--bad) } .dot.now { background: var(--blue) }
+
+.q-topic { font: 600 .82rem var(--f-display); letter-spacing: .1em; text-transform: uppercase; color: var(--blue) }
+.q-text { font-size: 1.22rem; font-weight: 600; line-height: 1.35 }
+.opts { display: flex; flex-direction: column; gap: 8px }
+.opt { text-align: left; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; display: flex; gap: 12px; align-items: flex-start; line-height: 1.35 }
+.opt:hover:not(:disabled) { border-color: var(--blue) }
+.opt .k { font: 500 .8rem/1.6 var(--f-mono); color: var(--muted); flex: none }
+.opt.ok { background: var(--ok-bg); border-color: var(--ok) }
+.opt.bad { background: var(--bad-bg); border-color: var(--bad) }
+.opt:disabled { cursor: default }
+.num { display: flex; gap: 8px; align-items: center; flex-wrap: wrap }
+.num input { font: 500 1.2rem var(--f-mono); padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--ink); width: 10ch; min-width: 0 }
+.num .unit { font: 500 1rem var(--f-mono); color: var(--muted) }
+
+.fb { border-radius: 6px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px }
+.fb.ok { background: var(--ok-bg) } .fb.bad { background: var(--bad-bg) }
+.fb strong { font: 700 1.1rem var(--f-display); letter-spacing: .03em }
+.fb.ok strong { color: var(--ok) } .fb.bad strong { color: var(--bad) }
+.src { font-size: .85rem; color: var(--muted) }
+
+.bars { display: flex; flex-direction: column; gap: 10px }
+.bar { display: grid; grid-template-columns: minmax(0, 1fr) 4.2rem; gap: 4px 10px; align-items: center }
+.bar .name { font-size: .95rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.bar .val { font: 500 .8rem var(--f-mono); text-align: right; color: var(--muted); font-variant-numeric: tabular-nums }
+.bar .track { grid-column: 1 / -1; height: 6px; background: var(--chip); border-radius: 3px; overflow: hidden }
+.bar .fill { height: 100% }
+.bar button { all: unset; cursor: pointer; display: contents }
+
+.list { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; list-style: none }
+.list li { border-top: 1px solid var(--line); padding-top: 10px; display: flex; flex-direction: column; gap: 4px }
+.list li:first-child { border-top: 0; padding-top: 0 }
+.ans-ok { color: var(--ok); font-weight: 600 }
+.ans-bad { color: var(--bad); text-decoration: line-through }
+.pill { font: 500 .72rem/1 var(--f-mono); padding: 4px 6px; border-radius: 3px; background: var(--bad-bg); color: var(--bad); white-space: nowrap }
+.note { font-size: .9rem; color: var(--muted) }
+.stats3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px }
+.stats3 > div { display: flex; flex-direction: column; gap: 4px }
+.stats3 .v { font: 700 1.8rem/1 var(--f-display); font-variant-numeric: tabular-nums }
+@media (max-width: 420px) { .big { font-size: 2.1rem } header.top h1 { font-size: 1.8rem } }
+@media (prefers-reduced-motion: no-preference) { .opt, .btn { transition: background .15s, border-color .15s } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>Elektro <span>dril</span></h1>
+    <div class="meta">
+      <span class="tag" id="t-exam">zkoušky: červen 2027</span>
+      <span class="tag" id="t-streak">série: 0 dní</span>
+      <span class="tag" id="t-store" title="Kam se ukládá postup">ukládání…</span>
+    </div>
+  </header>
+  <div class="pe" aria-hidden="true"></div>
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-dnes" aria-selected="true">Dnes</button>
+    <button role="tab" id="tab-chyby" aria-selected="false">Chyby</button>
+    <button role="tab" id="tab-temata" aria-selected="false">Témata</button>
+  </nav>
+  <main id="view"><div class="card"><div class="eyebrow">Načítám otázky…</div></div></main>
+</div>
+
+<script>
+(() => {
+"use strict";
+const N_DAILY = 10;
+const EXAM = new Date(2027, 5, 1);
+const INTERVALS = [1, 2, 4, 8, 16, 32];
+const $ = (s) => document.querySelector(s);
+const el = (tag, attrs = {}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+    else if (v !== false && v != null) e.setAttribute(k, v === true ? "" : v);
+  }
+  for (const k of kids.flat()) if (k != null && k !== false) e.append(k.nodeType ? k : document.createTextNode(String(k)));
+  return e;
+};
+
+// ---------- datum ----------
+const pad = (n) => String(n).padStart(2, "0");
+const dayStr = (d = new Date()) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const parseDay = (s) => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
+const addDays = (s, n) => { const [y, m, d] = s.split("-").map(Number); return dayStr(new Date(y, m - 1, d + n)); };
+const TODAY = dayStr();
+
+// ---------- náhoda se semínkem (stejná sada celý den) ----------
+function rng(seedStr) {
+  let h = 1779033703 ^ seedStr.length;
+  for (let i = 0; i < seedStr.length; i++) { h = Math.imul(h ^ seedStr.charCodeAt(i), 3432918353); h = (h << 13) | (h >>> 19); }
+  return () => { h = Math.imul(h ^ (h >>> 16), 2246822507); h = Math.imul(h ^ (h >>> 13), 3266489909); h ^= h >>> 16; return (h >>> 0) / 4294967296; };
+}
+function shuffle(arr, r) { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+// ---------- úložiště: db (sdílené, čte ho i Claude) s pojistkou v prohlížeči ----------
+const LS_KEY = "elektro-dril-v1";
+const lsGet = () => { try { return JSON.parse(localStorage.getItem(LS_KEY) || "null"); } catch { return null; } };
+const lsSet = (v) => { try { localStorage.setItem(LS_KEY, JSON.stringify(v)); } catch {} };
+
+let db = null, canWrite = false;
+let state = { q: {}, dny: {} };          // statistiky otázek + souhrn dnů
+let today = null;                        // {datum, otazky:[ids], odpovedi:{id:{ok,volba}}, extra:[...]}
+let bank = null, byId = {}, topicName = {};
+let writing = Promise.resolve();
+
+function setStoreTag(text) { $("#t-store").textContent = text; }
+
+async function initStore() {
+  const local = lsGet();
+  if (local) { state = local.state || state; if (local.today && local.today.datum === TODAY) today = local.today; }
+  try { db = window.claude?.use ? await window.claude.use("db") : null; } catch { db = null; }
+  if (!db) { setStoreTag("uloženo v prohlížeči"); return; }
+  try {
+    const user = await window.claude.use("user");
+    canWrite = user ? (user.isOwner ? await user.isOwner() : true) : true;
+  } catch { canWrite = true; }
+  const timer = new Promise((res) => setTimeout(() => res("timeout"), 10000));
+  try {
+    const got = await Promise.race([Promise.all([db.doc("stav/statistiky").get(), db.doc("dny/" + TODAY).get()]), timer]);
+    if (got === "timeout") { setStoreTag("úložiště neodpovídá – ukládám v prohlížeči"); db = null; return; }
+    const [s, d] = got;
+    if (s.exists) { const data = s.data(); state = { q: { ...(data.q || {}) }, dny: { ...(data.dny || {}) } }; }
+    else if (local?.state && canWrite) { /* první spuštění: přenese místní postup */ }
+    if (d.exists) today = JSON.parse(JSON.stringify(d.data()));
+    setStoreTag(canWrite ? "ukládá se do účtu" : "jen prohlížení – ukládám v prohlížeči");
+    if (!canWrite) db = null;
+  } catch (e) { setStoreTag("úložiště nedostupné – ukládám v prohlížeči"); db = null; }
+}
+
+function save() {
+  lsSet({ state, today });
+  if (!db) return;
+  const snapState = JSON.parse(JSON.stringify(state));
+  const snapToday = today ? JSON.parse(JSON.stringify(today)) : null;
+  writing = writing.then(async () => {
+    try {
+      await db.doc("stav/statistiky").set({ ...snapState, upraveno: new Date().toISOString() });
+      if (snapToday) await db.doc("dny/" + snapToday.datum).set(snapToday);
+    } catch (e) {
+      if (e && e.code === "invalid_argument") { db = null; setStoreTag("jen prohlížení – ukládám v prohlížeči"); }
+      else setStoreTag("uložení selhalo – zkusím příště");
+    }
+  });
+}
+
+// ---------- výběr otázek ----------
+function topicErrorRates() {
+  const agg = {};
+  for (const [id, s] of Object.entries(state.q)) {
+    const q = byId[id]; if (!q) continue;
+    const a = agg[q.tema] || (agg[q.tema] = { n: 0, bad: 0 });
+    a.n += s.n || 0; a.bad += s.chyb || 0;
+  }
+  const out = {};
+  for (const [t, a] of Object.entries(agg)) out[t] = a.n ? a.bad / a.n : 0;
+  return out;
+}
+function weightOf(q, terr) {
+  const s = state.q[q.id];
+  const topicF = 1 + 1.5 * (terr[q.tema] || 0);
+  if (!s || !s.n) return 1.4 * topicF;                       // nová otázka
+  const due = !s.dalsi || s.dalsi <= TODAY;
+  let w;
+  if (s.box === 0 && s.chyb > 0) w = due ? 8 : 2.5;          // naposledy špatně
+  else if (due) w = 3 + 4 * (s.chyb / s.n);                  // čas zopakovat
+  else w = 0.25 + 0.5 * (s.chyb / s.n);                      // umí, ale občas přijde
+  return w * topicF;
+}
+function pickSet(n, seed, exclude = new Set(), onlyIds = null) {
+  const r = rng(seed);
+  const terr = topicErrorRates();
+  let pool = bank.otazky.filter((q) => !exclude.has(q.id) && (!onlyIds || onlyIds.has(q.id)));
+  const chosen = [], perTopic = {};
+  const maxPerTopic = onlyIds ? 99 : 3;
+  // nejdřív zaručené opakování chyb (max. 4)
+  const wrongDue = shuffle(pool.filter((q) => { const s = state.q[q.id]; return s && s.box === 0 && s.chyb > 0 && (!s.dalsi || s.dalsi <= TODAY); }), r);
+  for (const q of wrongDue.slice(0, onlyIds ? n : 4)) { chosen.push(q); perTopic[q.tema] = (perTopic[q.tema] || 0) + 1; }
+  pool = pool.filter((q) => !chosen.includes(q));
+  while (chosen.length < n && pool.length) {
+    const cands = pool.filter((q) => (perTopic[q.tema] || 0) < maxPerTopic);
+    const src = cands.length ? cands : pool;
+    const ws = src.map((q) => weightOf(q, terr));
+    let x = r() * ws.reduce((a, b) => a + b, 0), i = 0;
+    while (i < src.length - 1 && (x -= ws[i]) > 0) i++;
+    const q = src[i];
+    chosen.push(q); perTopic[q.tema] = (perTopic[q.tema] || 0) + 1;
+    pool = pool.filter((p) => p !== q);
+  }
+  return shuffle(chosen, r).map((q) => q.id);
+}
+
+function ensureToday() {
+  if (today && today.datum === TODAY && Array.isArray(today.otazky)) {
+    today.otazky = today.otazky.filter((id) => byId[id]);
+    today.odpovedi = today.odpovedi || {};
+    return;
+  }
+  today = { datum: TODAY, otazky: pickSet(N_DAILY, TODAY), odpovedi: {}, kola: 1 };
+  save();
+}
+
+function record(q, ok, volba) {
+  const s = state.q[q.id] || { n: 0, ok: 0, chyb: 0, box: 0 };
+  s.n++; s.posl = TODAY;
+  if (ok) { s.ok++; s.box = Math.min((s.box || 0) + 1, INTERVALS.length - 1); s.dalsi = addDays(TODAY, INTERVALS[s.box]); }
+  else { s.chyb++; s.box = 0; s.dalsi = addDays(TODAY, 1); s.spatne = volba; }
+  state.q[q.id] = s;
+  today.odpovedi[q.id] = { ok, volba };
+  const done = today.otazky.filter((id) => today.odpovedi[id]);
+  state.dny[TODAY] = { hotovo: done.length, spravne: done.filter((id) => today.odpovedi[id].ok).length, z: today.otazky.length };
+  save();
+}
+
+function streak() {
+  let n = 0, d = TODAY;
+  if (!(state.dny[d] && state.dny[d].hotovo >= N_DAILY)) d = addDays(d, -1);
+  while (state.dny[d] && state.dny[d].hotovo >= N_DAILY) { n++; d = addDays(d, -1); }
+  return n;
+}
+
+// ---------- zobrazení ----------
+let tab = "dnes";
+let shuffledOpts = {};
+let lastFeedback = null;
+
+function header() {
+  const days = Math.round((EXAM - parseDay(TODAY)) / 864e5);
+  $("#t-exam").replaceChildren("do zkoušek ", el("b", {}, days > 0 ? days + " dní" : "teď!"));
+  const s = streak();
+  $("#t-streak").replaceChildren("série ", el("b", {}, s + (s === 1 ? " den" : s >= 2 && s <= 4 ? " dny" : " dní")));
+}
+
+function optsFor(q) {
+  if (!shuffledOpts[q.id]) shuffledOpts[q.id] = shuffle(q.moznosti.map((o, i) => ({ ...o, i })), rng(TODAY + q.id));
+  return shuffledOpts[q.id];
+}
+
+function renderQuestion(id, idx, total, onNext) {
+  const q = byId[id];
+  const ans = today.odpovedi[id];
+  const card = el("section", { class: "card", "aria-live": "polite" });
+  const dots = el("div", { class: "dots", "aria-hidden": "true" },
+    today.otazky.map((qid, i) => el("span", { class: "dot " + (today.odpovedi[qid] ? (today.odpovedi[qid].ok ? "ok" : "bad") : i === idx ? "now" : "") })));
+  card.append(
+    el("div", { class: "row" }, el("span", { class: "eyebrow grow" }, `Otázka ${idx + 1} z ${total}`),
+      state.q[id]?.chyb ? el("span", { class: "pill" }, `minule špatně ${state.q[id].chyb}×`) : null),
+    dots,
+    el("div", { class: "q-topic" }, topicName[q.tema] || q.tema),
+    el("div", { class: "q-text" }, q.otazka)
+  );
+  const fb = (ok, extra) => el("div", { class: "fb " + (ok ? "ok" : "bad") },
+    el("strong", {}, ok ? "Správně" : "Špatně"), extra || null,
+    el("div", {}, q.vysvetleni), q.zdroj ? el("div", { class: "src" }, "Podklad: " + q.zdroj) : null);
+
+  if (q.typ === "vyber") {
+    const box = el("div", { class: "opts" });
+    optsFor(q).forEach((o, k) => {
+      const b = el("button", { class: "opt", disabled: !!ans, onclick: () => {
+        record(q, o.ok, o.t); render();
+      } }, el("span", { class: "k" }, "ABCDEF"[k]), el("span", {}, o.t));
+      if (ans) { if (o.ok) b.classList.add("ok"); else if (ans.volba === o.t) b.classList.add("bad"); }
+      box.append(b);
+    });
+    card.append(box);
+    if (ans) card.append(fb(ans.ok));
+  } else {
+    const inp = el("input", { id: "num-" + id, inputmode: "decimal", autocomplete: "off", "aria-label": "Tvoje odpověď", disabled: !!ans, value: ans ? ans.volba : "" });
+    const check = () => {
+      const v = parseFloat(String(inp.value).replace(/\s/g, "").replace(",", "."));
+      if (Number.isNaN(v)) { inp.focus(); return; }
+      const ok = Math.abs(v - q.odpoved) <= (q.tolerance || 0) + 1e-6 * Math.max(1, Math.abs(q.odpoved));
+      record(q, ok, String(inp.value)); render();
+    };
+    inp.addEventListener("keydown", (e) => { if (e.key === "Enter") check(); });
+    card.append(el("div", { class: "num" }, inp, q.jednotka ? el("span", { class: "unit" }, q.jednotka) : null,
+      ans ? null : el("button", { class: "btn", onclick: check }, "Zkontrolovat")));
+    if (ans) card.append(fb(ans.ok, ans.ok ? null : el("div", {}, "Správně je ", el("b", {}, String(q.odpoved).replace(".", ",") + " " + (q.jednotka || "")))));
+    if (!ans) setTimeout(() => inp.focus({ preventScroll: true }), 0);
+  }
+  if (ans) card.append(el("div", { class: "row" }, el("span", { class: "grow" }),
+    el("button", { class: "btn", id: "btn-next", onclick: onNext }, idx + 1 < total ? "Další otázka" : "Výsledek")));
+  return card;
+}
+
+function renderDnes() {
+  ensureToday();
+  const ids = today.otazky;
+  const out = [];
+  if (viewIdx >= ids.length) {
+    out.push(renderSummary());
+  } else {
+    const idx = Math.min(viewIdx, ids.length - 1);
+    out.push(renderQuestion(ids[idx], idx, ids.length, () => { viewIdx = idx + 1; render(); window.scrollTo({ top: 0 }); }));
+  }
+  out.push(renderWeak());
+  return out;
+}
+let viewIdx = 0;
+
+function renderSummary() {
+  const ids = today.otazky;
+  const ok = ids.filter((id) => today.odpovedi[id]?.ok).length;
+  const wrong = ids.filter((id) => today.odpovedi[id] && !today.odpovedi[id].ok);
+  const card = el("section", { class: "card" },
+    el("div", { class: "eyebrow" }, "Dnešní cvičení hotové · " + parseDay(TODAY).toLocaleDateString("cs-CZ")),
+    el("div", { class: "row" }, el("span", { class: "big" }, `${ok} / ${ids.length}`),
+      el("span", { class: "note grow" }, ok === ids.length ? "Bez chyby. Zítra přijdou otázky, které jsi dlouho neviděl." : `${wrong.length} ${wrong.length === 1 ? "chyba" : wrong.length < 5 ? "chyby" : "chyb"} – tyhle otázky přijdou znovu zítra a pak častěji.`)));
+  if (wrong.length) {
+    card.append(el("h3", {}, "Co si zopakovat"));
+    card.append(el("ul", { class: "list" }, wrong.map((id) => {
+      const q = byId[id];
+      const right = q.typ === "vyber" ? q.moznosti.find((o) => o.ok).t : String(q.odpoved).replace(".", ",") + " " + (q.jednotka || "");
+      return el("li", {}, el("b", {}, q.otazka),
+        el("span", {}, el("span", { class: "ans-bad" }, today.odpovedi[id].volba), " → ", el("span", { class: "ans-ok" }, right)),
+        el("span", { class: "note" }, q.vysvetleni));
+    })));
+  }
+  card.append(el("div", { class: "row" },
+    el("button", { class: "btn", onclick: () => extraRound() }, "Dalších 10 navíc"),
+    el("button", { class: "btn ghost", onclick: () => { viewIdx = 0; render(); } }, "Projít dnešní znovu")));
+  return card;
+}
+
+function extraRound(onlyIds = null, label = "navíc") {
+  const used = new Set(today.otazky);
+  const more = pickSet(N_DAILY, TODAY + "-" + (today.kola || 1) + label, onlyIds ? new Set() : used, onlyIds);
+  if (!more.length) return;
+  // opakované otázky z výběru chyb: smazat dnešní odpověď, ať jde odpovědět znovu
+  for (const id of more) delete today.odpovedi[id];
+  today.otazky = today.otazky.filter((id) => !more.includes(id)).concat(more);
+  today.kola = (today.kola || 1) + 1;
+  viewIdx = today.otazky.indexOf(more[0]);
+  save(); tab = "dnes"; render(); window.scrollTo({ top: 0 });
+}
+
+function renderWeak() {
+  const rows = topicRows().filter((t) => t.n > 0 && t.err > 0).sort((a, b) => b.err - a.err).slice(0, 5);
+  const card = el("section", { class: "card" }, el("div", { class: "eyebrow" }, "Nejslabší témata"));
+  if (!rows.length) { card.append(el("div", { class: "note" }, "Zatím žádná data. Po prvním cvičení tu uvidíš, kde chybuješ nejvíc – a tam se budou otázky sypat častěji.")); return card; }
+  card.append(bars(rows));
+  return card;
+}
+
+function topicRows() {
+  return bank.temata.map((t) => {
+    let n = 0, bad = 0, seen = 0, wrongNow = 0;
+    for (const q of bank.otazky) if (q.tema === t.id) { const s = state.q[q.id]; if (s && s.n) { n += s.n; bad += s.chyb; seen++; if (s.box === 0 && s.chyb) wrongNow++; } }
+    return { id: t.id, nazev: t.nazev, pocet: t.pocet, n, bad, seen, wrongNow, err: n ? bad / n : 0 };
+  });
+}
+function bars(rows) {
+  return el("div", { class: "bars" }, rows.map((t) => {
+    const pct = t.n ? Math.round((1 - t.err) * 100) : null;
+    const color = pct == null ? "var(--line)" : pct >= 80 ? "var(--ok)" : pct >= 55 ? "var(--pe-y)" : "var(--bad)";
+    return el("div", { class: "bar" },
+      el("span", { class: "name", title: t.nazev }, t.nazev),
+      el("span", { class: "val" }, pct == null ? `0/${t.pocet}` : `${pct} %`),
+      el("div", { class: "track" }, el("div", { class: "fill", style: `width:${pct == null ? 0 : Math.max(4, pct)}%;background:${color}` })));
+  }));
+}
+
+function renderChyby() {
+  const items = Object.entries(state.q).filter(([id, s]) => byId[id] && s.chyb > 0)
+    .sort((a, b) => (a[1].box - b[1].box) || (b[1].chyb - a[1].chyb));
+  const active = items.filter(([, s]) => s.box === 0);
+  const card = el("section", { class: "card" },
+    el("div", { class: "stats3" },
+      el("div", {}, el("span", { class: "eyebrow" }, "Teď špatně"), el("span", { class: "v" }, active.length)),
+      el("div", {}, el("span", { class: "eyebrow" }, "Někdy chybné"), el("span", { class: "v" }, items.length)),
+      el("div", {}, el("span", { class: "eyebrow" }, "Prošlo otázek"), el("span", { class: "v" }, Object.values(state.q).filter((s) => s.n).length + " / " + bank.otazky.length))));
+  if (!items.length) { card.append(el("div", { class: "note" }, "Zatím žádné chyby. Každá špatná odpověď se sem zapíše a bude chodit častěji, dokud ji nebudeš umět.")); return [card]; }
+  card.append(el("button", { class: "btn", disabled: !active.length, onclick: () => extraRound(new Set(active.map(([id]) => id)), "chyby") }, `Procvičit chyby (${Math.min(active.length, N_DAILY)})`));
+  const list = el("section", { class: "card" }, el("div", { class: "eyebrow" }, "Seznam chyb"),
+    el("ul", { class: "list" }, items.map(([id, s]) => {
+      const q = byId[id];
+      const right = q.typ === "vyber" ? q.moznosti.find((o) => o.ok).t : String(q.odpoved).replace(".", ",") + " " + (q.jednotka || "");
+      return el("li", {},
+        el("div", { class: "row" }, el("span", { class: "q-topic grow" }, topicName[q.tema]),
+          el("span", { class: "pill", style: s.box === 0 ? "" : "background:var(--chip);color:var(--muted)" }, s.box === 0 ? `špatně ${s.chyb}×` : `opraveno · ${s.chyb}× chyba`)),
+        el("b", {}, q.otazka), el("span", { class: "ans-ok" }, right), el("span", { class: "note" }, q.vysvetleni));
+    })));
+  return [card, list];
+}
+
+function renderTemata() {
+  const rows = topicRows();
+  const card = el("section", { class: "card" }, el("div", { class: "eyebrow" }, "Úspěšnost podle témat"),
+    el("div", { class: "note" }, "Témata, kde chybuješ, dostávají v denním výběru větší váhu. Klepni na téma a dostaneš 10 otázek jen z něj."));
+  card.append(el("div", { class: "bars" }, rows.map((t) => {
+    const b = bars([t]).firstChild;
+    const btn = el("button", { class: "opt", style: "display:block;padding:10px 12px", onclick: () => extraRound(new Set(bank.otazky.filter((q) => q.tema === t.id).map((q) => q.id)), "tema-" + t.id) }, b);
+    btn.append(el("span", { class: "note" }, `${t.seen} z ${t.pocet} otázek viděno` + (t.wrongNow ? ` · ${t.wrongNow} teď špatně` : "")));
+    return btn;
+  })));
+  return [card];
+}
+
+function render() {
+  header();
+  for (const t of ["dnes", "chyby", "temata"]) $("#tab-" + t).setAttribute("aria-selected", String(t === tab));
+  const v = tab === "dnes" ? renderDnes() : tab === "chyby" ? renderChyby() : renderTemata();
+  $("#view").replaceChildren(el("div", { class: "wrap", style: "max-width:none" }, v));
+}
+for (const t of ["dnes", "chyby", "temata"]) $("#tab-" + t).addEventListener("click", () => { tab = t; render(); });
+
+// ---------- start ----------
+(async () => {
+  try {
+    const res = await fetch("otazky.json", { cache: "no-cache" });
+    bank = await res.json();
+  } catch (e) {
+    $("#view").replaceChildren(el("div", { class: "card" }, el("b", {}, "Otázky se nepodařilo načíst."), el("span", { class: "note" }, "Zkontroluj připojení a obnov stránku.")));
+    return;
+  }
+  for (const q of bank.otazky) byId[q.id] = q;
+  for (const t of bank.temata) topicName[t.id] = t.nazev;
+  await initStore();
+  ensureToday();
+  const firstOpen = today.otazky.findIndex((id) => !today.odpovedi[id]);
+  viewIdx = firstOpen === -1 ? today.otazky.length : firstOpen;
+  render();
+})();
+})();
+</script>

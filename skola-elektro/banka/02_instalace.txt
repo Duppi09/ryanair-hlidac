@@ -1,0 +1,1097 @@
+# tema: rozvody | Vnitřní elektrické rozvody (ČSN 33 2130)
+
+Q: Kterou normou se řídí vnitřní elektrické rozvody?
++ ČSN 33 2130 ed. 3
+- ČSN 33 2000-7-701
+- ČSN EN 50110-1
+- ČSN 34 7409
+E: Vnitřní elektrické rozvody: ČSN 33 2130 ed. 3.
+Z: 6 Vnitřní rozvody
+
+Q: Jakým průřezem vodiče se standardně provádějí světelné obvody?
++ 1,5 mm²
+- 1 mm²
+- 2,5 mm²
+- 4 mm²
+E: Světelné obvody 1,5 mm², zásuvkové 2,5 mm².
+Z: 6 Vnitřní rozvody
+
+Q: Jakým průřezem se standardně provádějí zásuvkové obvody?
++ 2,5 mm²
+- 1,5 mm²
+- 4 mm²
+- 0,75 mm²
+E: Zásuvkové obvody 2,5 mm² (jištění obvykle 16 A).
+Z: 6 Vnitřní rozvody
+
+Q: Jaká je doporučená hodnota jištění světelného obvodu?
++ 6–10 A
+- 16–20 A
+- 25–32 A
+- 2 A
+E: Doporučeno 6–10 A, nejvýše 25 A.
+Z: 6 Vnitřní rozvody
+
+Q: Kolik zásuvkových vývodů lze nejvýše připojit na jeden jednofázový zásuvkový obvod?
++ 10
+- 5
+- 20
+- Neomezeně
+E: Nejvýše 10 zásuvkových vývodů, příkon max. 3680 VA při 16 A (2300 VA při 10 A). Dvojzásuvka = jeden vývod.
+Z: 6 Vnitřní rozvody
+
+Q: Jaký největší příkon smí mít jednofázový zásuvkový obvod jištěný 16 A?
++ 3680 VA
+- 2300 VA
+- 2000 VA
+- 5000 VA
+E: 230 V × 16 A = 3680 VA.
+Z: 6 Vnitřní rozvody
+
+Q: Počítá se dvojzásuvka jako jeden nebo dva zásuvkové vývody?
++ Jako jeden
+- Jako dva
+- Jako tři
+- Nepočítá se vůbec
+E: Dvojzásuvka i vícenásobná zásuvka = jeden zásuvkový vývod.
+Z: 6 Vnitřní rozvody
+
+Q: Kde je ochranný kolík a nulový vodič u jednofázové zásuvky (pohled zepředu)?
++ Ochranný kolík nahoře, nulový vodič v pravé dutince
+- Ochranný kolík dole, nulový vodič vlevo
+- Ochranný kolík nahoře, fáze vpravo
+- Na umístění nezáleží
+E: Kolík nahoře, N vpravo, L vlevo (při pohledu zepředu).
+Z: 6 Vnitřní rozvody
+
+Q: V jaké výšce se osazují spínače u dveří?
++ 0,9–1,2 m (obvykle 1,05 m), na straně kliky
+- 0,3 m
+- 1,5–1,8 m
+- 2 m
+E: Spínače u dveří na straně kliky ve výšce 0,9–1,2 m (1,05 m).
+Z: 6 Vnitřní rozvody
+
+Q: Jaká je minimální výška zásuvek v obytných místnostech?
++ 20 cm nad podlahou
+- 5 cm
+- 50 cm
+- 1 m
+E: V obytných místnostech min. 20 cm nad podlahou.
+Z: 6 Vnitřní rozvody
+
+Q: Od jakého příkonu musí mít pevně připojený jednofázový spotřebič samostatně jištěný obvod?
++ Nad 2000 VA
+- Nad 500 VA
+- Nad 5000 VA
+- Vždy
+E: Pevně připojené 1f spotřebiče nad 2000 VA mají samostatný obvod.
+Z: 6 Vnitřní rozvody
+
+Q: Kolik zásuvek smí být nejvýše zapojeno na světelný obvod v jedné místnosti?
++ 1
+- 0, nikdy
+- 3
+- 10
+E: Zásuvka na světelném obvodu je dovolena, ale max. 1 v jedné místnosti.
+Z: 6 Vnitřní rozvody
+
+Q: Kolik světelných obvodů smí chránit jeden proudový chránič v bytě?
++ Nejvýše jeden
+- Nejvýše tři
+- Libovolný počet
+- Žádný, světla chránič nemají
+E: Žádný proudový chránič nesmí chránit více než jeden světelný obvod (aby celý byt nezůstal ve tmě).
+Z: 6 Vnitřní rozvody
+
+Q: Které zásuvkové obvody NEMUSÍ mít chránič 30 mA?
++ Zásuvky pro výpočetní techniku nebo lednici a mrazák (nepřístupné laikům)
+- Zásuvky v kuchyni
+- Zásuvky v dětském pokoji
+- Venkovní zásuvky
+E: Výjimky: zásuvky nepřístupné laikům, pro výpočetní techniku, pro chladicí a mrazicí zařízení.
+Z: 6 Vnitřní rozvody
+
+Q: Jaký chránič mají třífázové zásuvkové obvody nad 32 A?
++ 100 mA
+- 30 mA
+- 10 mA
+- 500 mA
+E: Do 32 A chránič 30 mA, nad 32 A chránič 100 mA.
+Z: 6 Vnitřní rozvody
+
+Q: Jaký zvonek se nesmí instalovat v budovách se zavedeným plynem?
++ Jiskřící zvonek
+- Elektronický gong
+- Bezdrátový zvonek
+- Zvonek 12 V
+E: Kvůli nebezpečí výbuchu se nesmí instalovat jiskřící zvonky.
+Z: 6 Vnitřní rozvody
+
+Q: Jak široké jsou vodorovné instalační zóny?
++ 30 cm
+- 10 cm
+- 20 cm
+- 50 cm
+E: Vodorovné zóny 30 cm, svislé 20 cm.
+Z: 6 Vnitřní rozvody
+
+Q: Kde je vodorovná horní instalační zóna?
++ 15–45 cm pod stropem (přednostně 30 cm)
+- 90–120 cm nad podlahou
+- 15–45 cm nad podlahou
+- Přímo u stropu 0–10 cm
+E: Horní 15–45 cm pod stropem, dolní 15–45 cm nad podlahou, střední 90–120 cm nad podlahou (přednostně 100 cm).
+Z: 6 Vnitřní rozvody
+
+Q: Kde je svislá instalační zóna u dveří?
++ 10–30 cm vedle dveřního otvoru
+- Přímo nad dveřmi
+- 50–70 cm od dveří
+- Uprostřed stěny
+E: Svislé zóny (dveřní, okenní, rohová) 10–30 cm od otvoru nebo rohu.
+Z: 6 Vnitřní rozvody
+
+Q: V jaké výšce se dávají spínače a zásuvky nad pracovní plochou kuchyně?
++ 115 cm nad podlahou
+- 50 cm
+- 200 cm
+- 90 cm
+E: Nad pracovními plochami ve vodorovné zóně 115 cm.
+Z: 6 Vnitřní rozvody
+
+Q: Jak se ukládají vedení v bytech?
++ Zásadně skrytě (pod omítku)
+- Zásadně na povrch
+- Volně ve vzduchu
+- Jen v lištách
+E: V bytech skrytě, v nebytových prostorech a při dodatečné montáži lze i na povrchu.
+Z: 6 Vnitřní rozvody
+
+Q: Jakou minimální intenzitu má orientační osvětlení schodiště při poruše jednoho obvodu?
++ 2 lx
+- 20 lx
+- 100 lx
+- 0,5 lx
+E: Při poruše jednoho obvodu svítí orientační osvětlení min. 2 lx druhého obvodu.
+Z: 6 Vnitřní rozvody
+
+Q: Musí být instalace před uvedením do provozu revidována?
++ Ano, každá (výchozí revize)
+- Jen ve veřejných budovách
+- Jen nad 10 kW
+- Ne
+E: Každá instalace musí mít před uvedením do provozu výchozí revizi.
+Z: 6 Vnitřní rozvody
+
+# tema: spinace | Domovní spínače
+
+Q: Který spínač ovládá jedno svítidlo ze dvou míst?
++ Střídavý (schodišťový) přepínač č. 6 – dva kusy
+- Sériový (lustrový) č. 5
+- Jednopólový č. 1
+- Křížový č. 7 samotný
+E: Ze dvou míst: 2× č. 6. Ze tří a více míst: 6 + 7 (+7…) + 6.
+Z: 5 Domovní spínače
+
+Q: Co potřebuješ k ovládání jednoho světla ze tří míst?
++ 2× přepínač č. 6 a 1× křížový přepínač č. 7
+- 3× přepínač č. 6
+- 3× spínač č. 1
+- 2× č. 5 a 1× č. 1
+E: Křížový č. 7 se vkládá mezi dva přepínače č. 6. Pro každé další místo se přidá další č. 7.
+Z: 5 Domovní spínače
+
+Q: Který spínač je „lustrový"?
++ Sériový č. 5 – ovládá dvě skupiny světel z jednoho místa
+- Č. 6
+- Č. 7
+- Č. 4
+E: Č. 5 = dva spínače č. 1 v jednom (např. lustr: 2, 3 nebo 5 žárovek).
+Z: 5 Domovní spínače
+
+Q: Kde se používá dvoupólový vypínač č. 2?
++ Kde se na vodiči N může objevit nebezpečné napětí (mokré a uzavřené prostory)
+- Pro ovládání ze dvou míst
+- Pro zvonek
+- Pro třífázové motory
+E: Č. 2 vypíná L i N.
+Z: 5 Domovní spínače
+
+Q: Co je spínač č. 1/0?
++ Tlačítkový spínač (zvonek, schodišťový automat)
+- Jednopólový vypínač
+- Křížový přepínač
+- Dvojitý střídavý přepínač
+E: Tlačítko 1/0 – jednopólové ovládání zvonku nebo schodišťového automatu.
+Z: 5 Domovní spínače
+
+Q: Z čeho se skládá přepínač č. 5B?
++ Ze dvou přepínačů č. 6 – ovládá dvě skupiny světel ze dvou míst
+- Ze dvou spínačů č. 1
+- Z č. 1 a č. 6
+- Z č. 6 a č. 7
+E: 5B = dvojitý střídavý přepínač (2× č. 6). 5A = č. 1 + č. 6.
+Z: 5 Domovní spínače
+
+Q: Co ovládá skupinový (hotelový) přepínač č. 4?
++ Dva spotřebiče z jednoho místa, sepnut je vždy jeden nebo druhý
+- Jedno světlo ze tří míst
+- Třífázový motor
+- Dvě skupiny světel ze dvou míst
+E: Hotelový přepínač – buď stropní světlo, nebo lampička, nikdy obě. Dnes se téměř nepoužívá.
+Z: 5 Domovní spínače
+
+Q: Kde mají být přívodní svorky ve vypínači při montáži?
++ Nahoře
+- Dole
+- Vlevo
+- Nezáleží na tom
+E: Přívodní svorky (označené P, L, šipkou) nahoře. Svítidlo svítí po stisku horní části (kromě přepínačů).
+Z: 5 Domovní spínače
+
+Q: Jaká poloha znamená „zapnuto" u jednopólového spínače č. 1?
++ Stisknutá horní část kolébky
+- Stisknutá dolní část kolébky
+- Prostřední poloha
+- U spínačů není poloha určena
+E: U spínačů zapnuto = nahoře. U přepínačů (6, 7) poloha určena není.
+Z: 5 Domovní spínače; 6 Vnitřní rozvody
+
+Q: Který vodič se spíná jednopólovým spínačem?
++ Fázový vodič L
+- Nulový vodič N
+- Ochranný vodič PE
+- Libovolný
+E: Spínač vždy přerušuje fázi, aby svítidlo bylo po vypnutí bez napětí.
+Z: 5 Domovní spínače
+
+# tema: kabely | Kabely, vodiče a jejich uložení
+
+Q: Co znamená písmeno C na začátku staršího českého označení CYKY?
++ Měděné jádro
+- Kabel pro pevné uložení
+- PVC izolace
+- Hliníkové jádro
+E: 1. písmeno: C měď, A hliník. Y = PVC izolace, K = kabel pro pevné uložení, Y = PVC plášť.
+Z: 9 Kabely a vodiče
+
+Q: Co znamená K v označení CYKY?
++ Kabel pro pevné uložení
+- Kaučuková izolace
+- Kovové stínění
+- Kabel venkovní
+E: 3. písmeno: K kabel pevný, L lehká šňůra, S střední šňůra, T těžká šňůra, V vodič VN.
+Z: 9 Kabely a vodiče
+
+Q: Co znamená Y ve starším značení kabelů?
++ Měkčený PVC
+- Kaučuk
+- Polyetylén
+- Zesíťovaný polyetylén
+E: Y = PVC, G = kaučuk, E = PE, XE = zesíťovaný PE.
+Z: 9 Kabely a vodiče
+
+Q: Co znamená číslo 1 na začátku označení 1-CYKY?
++ Jmenovité napětí 600/1000 V
+- Jedno jádro
+- Průřez 1 mm²
+- Jedna vrstva izolace
+E: Bez čísla 450/750 V, 1 = 600/1000 V.
+Z: 9 Kabely a vodiče
+
+Q: Co znamená „Lo" v označení CYKYLo?
++ Plochý instalační vodič
+- Lehký kabel
+- Kabel s ocelovým lankem
+- Kabel venkovní
+E: Lo = plochý instalační vodič (stará „plochá dvojlinka“).
+Z: 9 Kabely a vodiče
+
+Q: Jaký průměr má vodič o průřezu 1,5 mm²?
++ Asi 1,38 mm
+- Asi 1,5 mm
+- Asi 0,97 mm
+- Asi 2,25 mm
+E: S = πd²/4 → d = √(4·1,5/π) ≈ 1,38 mm. (2,5 mm² ≈ 1,78 mm, 4 mm² ≈ 2,25 mm.)
+Z: 9 Kabely a vodiče
+
+N: Vypočítej průřez vodiče o průměru 1,78 mm (mm², na 1 desetinné místo).
+= 2.5 | 0.1 | mm²
+E: S = π·d²/4 = 3,14·1,78²/4 ≈ 2,49 mm² → 2,5 mm².
+Z: 9 Kabely a vodiče
+
+Q: Jaký jistič obvykle odpovídá Cu vodiči 2,5 mm²?
++ 16 A
+- 10 A
+- 25 A
+- 32 A
+E: Informativně: 1,5 mm² → 10 A, 2,5 mm² → 16 A, 4 mm² → 20–25 A, 6 mm² → 25–32 A.
+Z: 9 Kabely a vodiče
+
+Q: Jaký jistič obvykle odpovídá Cu vodiči 1,5 mm²?
++ 10 A
+- 16 A
+- 6 A jen
+- 20 A
+E: 1,5 mm² → 10 A.
+Z: 9 Kabely a vodiče
+
+Q: Jaká podmínka platí pro jistič a vodič?
++ In ≤ k · Iz (jmenovitý proud jističe ≤ dovolený proud vodiče se součinitelem)
+- In ≥ Iz
+- In = 2 · Iz
+- Iz ≤ 0,5 · In
+E: In – proud jističe, Iz – dovolený proud vodiče, k – součinitel uložení, seskupení a teploty.
+Z: 9 Kabely a vodiče
+
+Q: Co znamená způsob uložení „A" v tabulkách zatížitelnosti?
++ Izolované vodiče v trubkách v tepelně izolační stěně
+- Kabely ve vzduchu
+- Kabely v zemi
+- Kabely na zdi
+E: A – v trubkách v izolační stěně (nejhorší chlazení), B – trubky nebo lišty na stěně, C – kabel na zdi, D – v zemi, E – ve vzduchu.
+Z: 9 Kabely a vodiče
+
+Q: Který způsob uložení má nejmenší dovolený proud pro stejný průřez?
++ A – v trubce v izolační stěně
+- C – na zdi
+- E – ve vzduchu
+- D – v zemi
+E: V izolační stěně se vodič nejhůř chladí.
+Z: 9 Kabely a vodiče
+
+Q: Jakou barvu má fázový vodič L1 podle E.ON?
++ Hnědá
+- Černá
+- Šedá
+- Světle modrá
+E: L1 hnědá, L2 černá, L3 šedá, N světle modrá, PE a PEN zelenožlutá.
+Z: 7 E.ON
+
+Q: Jakou barvu má nulový vodič N?
++ Světle modrá
+- Zelenožlutá
+- Černá
+- Hnědá
+E: N = světle modrá.
+Z: 7 E.ON
+
+Q: Na jak silnou vrstvu písku se kladou kabely do země?
++ Nejméně 8 cm
+- 2 cm
+- 20 cm
+- 50 cm
+E: Pískové lože min. 8 cm, zásyp pískem stejné tloušťky, nahoře krytí cihlami nebo deskami s přesahem min. 4 cm.
+Z: 9.2 Ukládání kabelů do země
+
+Q: O kolik musí krycí deska (cihla) přesahovat kabel?
++ Nejméně o 4 cm
+- Nejméně o 1 cm
+- Nejméně o 15 cm
+- Nemusí přesahovat
+E: Krytí přesahuje kabel min. o 4 cm.
+Z: 9.2 Ukládání kabelů do země
+
+Q: Jakou barvu má výstražná fólie nad silovým elektrickým kabelem?
++ Červenou
+- Žlutou
+- Oranžovou
+- Modrou
+E: Červená – silové kabely, oranžová – telekomunikace, žlutá – plyn, modrá – železniční kabely, bílá – voda, zelená – teplovod, hnědá – hořlavé kapaliny.
+Z: 9.2 Ukládání kabelů do země
+
+Q: Žlutá výstražná fólie v zemi označuje:
++ Plynové potrubí
+- Silový kabel
+- Vodovod
+- Telekomunikační kabel
+E: Žlutá = plyn.
+Z: 9.2 Ukládání kabelů do země
+
+Q: Oranžová výstražná fólie v zemi označuje:
++ Telekomunikační vedení
+- Silový kabel
+- Teplovod
+- Plyn
+E: Oranžová = telekomunikace.
+Z: 9.2 Ukládání kabelů do země
+
+Q: Kdy smí být kabel do 1 kV v zemi bez mechanické ochrany (cihel)?
++ Kde nemůže být mechanicky poškozen; musí ale mít výstražnou fólii
+- Nikdy
+- Vždy
+- Jen pod chodníkem
+E: Bez mechanické ochrany smí jen tam, kde nehrozí poškození, a s výstražnou fólií.
+Z: 9.2 Ukládání kabelů do země
+
+# tema: datove | Datové kabely
+
+Q: Jaká je maximální délka metalického kanálu Ethernet (kroucený pár)?
++ 100 m
+- 50 m
+- 500 m
+- 1000 m
+E: Kanál max. 100 m: pevný horizontální kabel max. 90 m, patch kabely v rozvaděči max. 5 m.
+Z: 9.1 Datové kabely
+
+Q: Jakou maximální délku smí mít pevný horizontální datový kabel?
++ 90 m
+- 100 m
+- 20 m
+- 150 m
+E: Horizontální kabel max. 90 m.
+Z: 9.1 Datové kabely
+
+Q: Co znamená zkratka UTP?
++ Nestíněná kroucená dvojlinka
+- Stíněná kroucená dvojlinka
+- Optický kabel
+- Koaxiální kabel
+E: UTP nestíněný, FTP společné stínění fólií, STP každý pár stíněn, S/FTP celkové i párové stínění.
+Z: 9.1 Datové kabely
+
+Q: K čemu slouží kroucení vodičů v páru?
++ Omezuje vyzařování i příjem elektromagnetického rušení (přeslech)
+- Zvyšuje mechanickou pevnost
+- Snižuje cenu
+- Umožňuje vyšší napětí
+E: Kroucení potlačuje přeslech a rušení.
+Z: 9.1 Datové kabely
+
+Q: Jaká dvě zapojení datových kabelů se používají?
++ T568A a T568B
+- TN-C a TN-S
+- RJ11 a RJ45
+- SELV a PELV
+E: T568A a T568B – v celé instalaci se musí dodržet jeden typ.
+Z: 9.1 Datové kabely
+
+Q: Jakou šířku pásma má kabel CAT 6A?
++ 500 MHz
+- 100 MHz
+- 250 MHz
+- 2000 MHz
+E: CAT5E 100 MHz, CAT6 250 MHz, CAT6A 500 MHz, CAT7 600 MHz, CAT7A 1000 MHz, CAT8 2000 MHz.
+Z: 9.1 Datové kabely
+
+Q: Jakou izolaci má kabel, který při hoření neuvolňuje jedovaté halogeny?
++ LSZH
+- PVC
+- PE
+- PEG
+E: LSZH = low smoke zero halogen. PVC při hoření uvolňuje jedovaté plyny.
+Z: 9.1 Datové kabely
+
+Q: Jakou impedanci mají koaxiální kabely pro televizní techniku?
++ 75 Ω
+- 50 Ω
+- 100 Ω
+- 300 Ω
+E: 75 Ω – TV a telekomunikace, 50 Ω – vysílače a napáječe antén.
+Z: 9.1 Datové kabely
+
+Q: Jaký průměr jádra má jednovidové (single-mode) optické vlákno?
++ 9 µm
+- 50 µm
+- 62,5 µm
+- 125 µm
+E: Single-mode 9 µm (žluté, laser, dlouhé vzdálenosti). Multi-mode 50 µm nebo 62,5 µm (oranžové, LED, LAN).
+Z: 9.1 Datové kabely
+
+Q: Proč jsou optické kabely vhodné do prostředí s rušením?
++ Jsou imunní vůči elektromagnetickému rušení (EMI)
+- Mají silné kovové stínění
+- Přenášejí vyšší napětí
+- Jsou uzemněné
+E: Optika přenáší světlo, takže EMI na ni nepůsobí.
+Z: 9.1 Datové kabely
+
+Q: Jakou barvu mívá jednovidový optický kabel?
++ Žlutou
+- Oranžovou
+- Červenou
+- Modrou
+E: SMF žlutá, MMF oranžová (OM3/OM4 modrozelená nebo fialová).
+Z: 9.1 Datové kabely
+
+Q: Co je útlum signálu a v jaké jednotce se udává?
++ Zeslabení signálu, v decibelech (dB)
+- Rychlost přenosu, v b/s
+- Šířka pásma, v Hz
+- Odpor, v Ω
+E: Útlum = zeslabení signálu [dB]. Roste s délkou kabelu, řeší se opakovači.
+Z: 9.1 Datové kabely
+
+# tema: eon | Připojovací podmínky distributora (E.ON)
+
+Q: Kde začíná a končí hlavní domovní vedení (HDV)?
++ Od výstupních svorek přípojkové skříně (HDS) po hlavní jistič
+- Od trafostanice po elektroměr
+- Od elektroměru po rozvodnici bytu
+- Od hlavního jističe po zásuvky
+E: HDV začíná ve skříni HDS a končí na hlavním jističi. Je majetkem odběratele, provádí se v soustavě TN-C.
+Z: 7 E.ON
+
+Q: Jaký minimální průřez má hlavní domovní vedení?
++ 4 × 10 mm² Cu nebo 4 × 16 mm² Al
+- 4 × 2,5 mm² Cu
+- 3 × 6 mm² Cu
+- 5 × 25 mm² Cu
+E: Min. 4 × 10 mm² Cu nebo 4 × 16 mm² Al.
+Z: 7 E.ON
+
+Q: Kde se umísťuje elektroměrový rozvaděč u rodinného domu?
++ Mimo objekt na veřejně přístupném neuzamykatelném místě (např. v pilíři na hranici pozemku)
+- V koupelně
+- Ve sklepě za zamčenými dveřmi
+- V garáži uvnitř domu
+E: U RD mimo objekt, trvale přístupně, typicky v pilíři v oplocení.
+Z: 7 E.ON
+
+Q: V jaké výšce má být střed elektroměru?
++ 1000–1700 mm
+- 300–600 mm
+- 1800–2200 mm
+- Kdekoli
+E: Střed elektroměru 1000–1700 mm, spodní hrana ER min. 600 mm nad terénem.
+Z: 7 E.ON
+
+Q: Jakou vypínací charakteristiku má standardně hlavní jistič před elektroměrem?
++ B
+- C
+- D
+- K
+E: Standardně B. Při velkém rozběhovém proudu po souhlasu distributora C, výjimečně D.
+Z: 7 E.ON
+
+Q: Jakým jističem se jistí sazbový spínač (HDO)?
++ 2 A s charakteristikou B
+- 10 A s charakteristikou C
+- 16 A s charakteristikou B
+- Nejistí se
+E: Sazbový spínač a ovládací obvody stykačů: jistič 2 A, char. B.
+Z: 7 E.ON
+
+Q: Co je majetkem distributora (E.ON) v elektroměrovém rozvaděči?
++ Elektroměr a sazbový spínač (HDO)
+- Hlavní jistič
+- Svorkovnice PEN
+- Proudový chránič
+E: Distributor: elektroměr a HDO. Odběratel: hlavní jistič, chránič (TT), jistič HDO, svorkovnice, přepěťové ochrany.
+Z: 7 E.ON
+
+Q: Kde se rozděluje vodič PEN na PE a N?
++ Až v podružném rozvaděči, ne v elektroměrovém
+- V elektroměrovém rozvaděči
+- V přípojkové skříni
+- Ve vypínači
+E: PEN se v ER nerozděluje; rozdělení až v podružném rozvaděči.
+Z: 7 E.ON
+
+Q: Do jakého jmenovitého proudu hlavního jističe se používá přímé měření?
++ Do 80 A
+- Do 25 A
+- Do 250 A
+- Do 1000 A
+E: Přímé měření do 80 A, nad 80 A nepřímé měření přes měřicí transformátory proudu.
+Z: 7 E.ON
+
+Q: Jaký minimální průřez má přívod a vývod elektroměru?
++ 6 mm² Cu plný vodič
+- 1,5 mm² Cu
+- 2,5 mm² Cu lanko
+- 25 mm² Al
+E: Přívod a vývod elektroměru plný Cu min. 6 mm², max. 16 mm².
+Z: 7 E.ON
+
+Q: Co znamená návlečka TUV na ovládacím vodiči?
++ Stykač ohřevu teplé užitkové vody
+- Tarif elektroměru
+- Přímotopné vytápění
+- Nabíjení elektromobilu
+E: TUV – ohřev vody, PV – přímotop, AKU – akumulace, TAR – tarif, EMO – elektromobil.
+Z: 7 E.ON
+
+Q: Které plomby smí elektrikář po ohlášení porušit?
++ Jen montážní plomby, nikdy cejchovní plomby elektroměru a HDO
+- Všechny
+- Jen cejchovní
+- Žádné, nikdy
+E: Porušení se musí předem ohlásit distributorovi a smí se porušit jen montážní plomby.
+Z: 7 E.ON
+
+Q: Jak stará smí být revize ER pro krátkodobý odběr?
++ Max. 6 měsíců
+- Max. 1 rok
+- Max. 1 měsíc
+- Max. 5 let
+E: Revize ER pro krátkodobý odběr nesmí být starší 6 měsíců.
+Z: 7 E.ON
+
+# tema: hromosvod | Ochrana před bleskem
+
+Q: Kterou normou se řídí ochrana před bleskem?
++ ČSN EN 62305
+- ČSN 33 2130
+- ČSN EN 61140
+- ČSN 33 1600
+E: Ochrana před bleskem: ČSN EN 62305.
+Z: 12 Hromosvod
+
+Q: Jaké jsou tři hlavní části hromosvodu?
++ Jímací soustava, soustava svodů, uzemnění
+- Jímač, pojistka, chránič
+- Anténa, kabel, zásuvka
+- Svodič přepětí, jistič, rozvaděč
+E: Jímací soustava, svody, uzemnění.
+Z: 12 Hromosvod
+
+Q: Co znamená zkratka SPD?
++ Přepěťové ochranné zařízení (svodič přepětí)
+- Systém ochrany před bleskem
+- Zóna ochrany před bleskem
+- Hladina ochrany
+E: LPZ – zóna, LPL – hladina, LPS – systém ochrany před bleskem, SPD – přepěťové ochranné zařízení.
+Z: 12 Hromosvod
+
+Q: Která jímací soustava se používá jen na ploché střechy?
++ Mřížová
+- Hřebenová
+- Tyčová
+- Oddálená
+E: Mřížová – ploché střechy, hřebenová – šikmé střechy, tyčová – sedlové a valbové.
+Z: 12 Hromosvod
+
+Q: Jaký průměr má strojený jímač z pozinkované oceli?
++ 16 mm
+- 8 mm
+- 4 mm
+- 30 mm
+E: Strojený jímač Ø 16 mm. Pomocný jímač z drátu Ø 8 nebo 10 mm.
+Z: 12 Hromosvod
+
+Q: Lze jako náhodný jímač použít okapy?
++ Ne
+- Ano, vždy
+- Ano, jsou-li měděné
+- Jen na rodinných domech
+E: Okapy nelze použít jako náhodný jímač.
+Z: 12 Hromosvod
+
+Q: Která metoda návrhu jímací soustavy je základní a nejpřesnější?
++ Metoda valící se koule
+- Metoda ochranného úhlu
+- Metoda mřížové soustavy
+- Metoda náhodného jímače
+E: Valící se koule – nejpřesnější, pro všechny tvary. Ochranný úhel – jednoduché objekty. Mříž – rovinné plochy.
+Z: 12 Hromosvod
+
+Q: Kolik svodů musí mít minimálně každý neizolovaný hromosvod?
++ Dva
+- Jeden
+- Čtyři
+- Šest
+E: Minimálně 2 svody, ideálně jeden na každý nechráněný roh.
+Z: 12 Hromosvod
+
+Q: Smí se svod uložit v okapové rouře?
++ Ne (na okapové rouře ano)
+- Ano, je to doporučené
+- Ano, jen u plastových rour
+- Jen v zimě
+E: Svody nesmí být v okapech ani okapových rourách.
+Z: 12 Hromosvod
+
+Q: Do jaké výšky se chrání povrchový svod úhelníkem?
++ 1,8 m od země
+- 0,5 m
+- 3 m
+- Nechrání se
+E: Povrchový svod se do 1,8 m chrání ochranným úhelníkem.
+Z: 12 Hromosvod
+
+Q: Jaký by neměl být překročen zemní odpor hromosvodu?
++ 10 Ω
+- 2 Ω
+- 100 Ω
+- 1000 Ω
+E: Přechodový zemní odpor by neměl přesáhnout 10 Ω.
+Z: 12 Hromosvod
+
+Q: V jaké výšce je zkušební svorka u vnějšího svodu?
++ 1,8–2,0 m
+- 0,3 m
+- 0,6–1,8 m
+- 3 m
+E: Vnější svody 1,8–2,0 m. Skryté svody 0,6–1,8 m ve skříňce.
+Z: 12 Hromosvod
+
+Q: Smí se zkušební svorka natírat?
++ Ne
+- Ano, barvou proti korozi
+- Ano, jen bílou
+- Musí se natřít
+E: Zkušební svorky se neopatřují žádným nátěrem.
+Z: 12 Hromosvod
+
+Q: Jaká minimální vzdálenost svodu od lehce hořlavého povrchu je předepsána?
++ 10 cm (nebo průřez min. 100 mm²)
+- 1 cm
+- 50 cm
+- 1 m
+E: U lehce hořlavých materiálů min. 10 cm, nebo průřez svodu min. 100 mm².
+Z: 12 Hromosvod
+
+Q: Čím se zajišťuje vnitřní ochrana před bleskem?
++ Přepěťovými ochranami (svodiči přepětí)
+- Hromosvodem na střeše
+- Proudovým chráničem
+- Pojistkami
+E: Vnější ochrana = hromosvod, vnitřní = svodiče přepětí (SPD), pospojování.
+Z: 12 Hromosvod
+
+Q: Co je kabel HVI?
++ Vodič s vysokonapěťovou izolací pro izolovaný hromosvod
+- Datový kabel
+- Kabel pro vysokou teplotu
+- Zemnicí pásek
+E: HVI vodič izolací nahradí vzdálenost až 90 cm ve vzduchu.
+Z: 12 Hromosvod
+
+Q: Který typ svodiče přepětí se smí použít před elektroměrem?
++ T1 s jiskřištěm (příp. jiskřiště + varistor v sérii) s předřazenými pojistkami
+- Varistorový T3
+- T2 varistorový
+- Jakýkoli
+E: Před elektroměrem jen T1 s jiskřištěm, ne čistě varistorové.
+Z: 7 E.ON
+
+# tema: revize | Revize a kontroly spotřebičů
+
+Q: Kterou normou se řídí revize spotřebičů během používání?
++ ČSN 33 1600 ed. 2
+- ČSN 33 2130
+- ČSN 33 2000-7-701
+- ČSN EN 50110-1
+E: Revize a kontroly el. spotřebičů během používání: ČSN 33 1600 ed. 2.
+Z: 13 Revize nářadí
+
+Q: Co obsahuje KONTROLA spotřebiče (oproti revizi)?
++ Prohlídku a zkoušku chodu
+- Prohlídku, měření, zkoušku chodu a doklad
+- Jen měření izolačního odporu
+- Jen kontrolu označení
+E: Kontrola = prohlídka + zkouška chodu. Revize = prohlídka + měření + zkouška chodu + označení + doklad.
+Z: 13 Revize nářadí
+
+Q: Co se měří při revizi spotřebiče?
++ Odpor ochranného vodiče, izolační odpor a unikající proud
+- Jen napětí sítě
+- Impedanci smyčky v rozvaděči
+- Zemní odpor hromosvodu
+E: Odpor PE, izolační odpor, unikající proud.
+Z: 13 Revize nářadí
+
+Q: Jaký smí být nejvýše odpor ochranného vodiče u přívodu do 3 m?
++ 0,2 Ω
+- 1 Ω
+- 2 MΩ
+- 0,5 Ω
+E: 0,2 Ω do 3 m, +0,1 Ω na každé další započaté 3 m, max. 1 Ω.
+Z: 13 Revize nářadí
+
+N: Jaký je dovolený odpor ochranného vodiče přívodu dlouhého 10 m (Ω)?
+= 0.5 | 0.01 | Ω
+E: 0,2 Ω za první 3 m + 3 × 0,1 Ω za další započaté úseky (3–6, 6–9, 9–10 m) = 0,5 Ω.
+Z: 13 Revize nářadí
+
+Q: Jakým napětím se měří izolační odpor spotřebičů?
++ 500 V DC
+- 230 V AC
+- 1000 V AC
+- 12 V DC
+E: Zkušební napětí 500 V po dobu 5 až 10 s.
+Z: 13 Revize nářadí
+
+Q: Jaký minimální izolační odpor musí mít spotřebič třídy I držený v ruce?
++ 2 MΩ
+- 0,3 MΩ
+- 7 MΩ
+- 1 kΩ
+E: Třída I: v ruce 2 MΩ, ostatní 1 MΩ, tepelné nad 3,5 kW 0,3 MΩ. Třída II: v ruce 7 MΩ, svítidla 4 MΩ, ostatní 2 MΩ. Třída III: 0,25 MΩ.
+Z: 13 Revize nářadí
+
+Q: Jaký minimální izolační odpor má spotřebič třídy II držený v ruce?
++ 7 MΩ
+- 2 MΩ
+- 1 MΩ
+- 0,25 MΩ
+E: Třída II v ruce a prodlužovací přívody: 7 MΩ.
+Z: 13 Revize nářadí
+
+Q: Jaký je max. unikající proud ochranným vodičem u běžného spotřebiče?
++ 3,5 mA
+- 30 mA
+- 0,5 mA
+- 10 mA
+E: Max. 3,5 mA. Dotykový proud max. 0,5 mA. Náhradní unikající proud: třída I 3,5 mA, třída II 0,5 mA.
+Z: 13 Revize nářadí
+
+Q: Které spotřebiče jsou třídy ochrany II?
++ Spotřebiče s dvojitou izolací a plastovým krytem bez PE (mobilní nabíječka, vrtačka s dvojitou izolací)
+- Spotřebiče s krytem připojeným na PE (pračka, lednice)
+- Spotřebiče napájené z baterie nebo SELV
+- Spotřebiče bez ochrany
+E: Třída 0 – nesmí se v ČR používat; I – kryt na PE; II – dvojitá izolace; III – SELV/PELV nebo baterie.
+Z: 13 Revize nářadí
+
+Q: Jaký spotřebič je třídy ochrany I?
++ Spotřebič, jehož kovový kryt je připojen na ochranný vodič PE
+- Spotřebič s dvojitou izolací
+- Spotřebič na baterie
+- Spotřebič bez jakékoli ochrany
+E: Třída I – neživé části spojeny s PE (pračka, lednice, mikrovlnka).
+Z: 13 Revize nářadí
+
+Q: Smí se v ČR používat spotřebiče třídy ochrany 0?
++ Ne
+- Ano
+- Jen v suchých prostorech
+- Jen do 1 kW
+E: Třída 0 se v ČR používat nesmí.
+Z: 13 Revize nářadí
+
+Q: Do které skupiny patří spotřebiče na stavbě (venkovní prostor)?
++ B
+- A
+- C
+- E
+E: A – pronájem, B – venkovní (stavby), C – průmysl a řemesla uvnitř, D – veřejné prostory, E – administrativa.
+Z: 13 Revize nářadí
+
+Q: Jak často se revidují ruční spotřebiče třídy I na stavbě (skupina B)?
++ 1× za 3 měsíce
+- 1× za rok
+- 1× za 2 roky
+- 1× za 6 měsíců
+E: Skupina B: držené v ruce třída I 1× za 3 měsíce, třída II a III 1× za 6 měsíců, ostatní 1× za 6 měsíců.
+Z: 13 Revize nářadí
+
+Q: Jak často se revidují ruční spotřebiče třídy I v administrativě (skupina E)?
++ 1× za 12 měsíců
+- 1× za 3 měsíce
+- 1× za 6 měsíců
+- 1× za 5 let
+E: Skupina E: ruční 1× za 12 měsíců, ostatní 1× za 24 měsíců.
+Z: 13 Revize nářadí
+
+Q: Na které zařízení se ČSN 33 1600 NEVZTAHUJE?
++ Svářečky a zdravotnické přístroje
+- Rychlovarná konvice
+- Prodlužovací přívod
+- Ruční vrtačka
+E: Netýká se spotřebičů v pevném rozvodu, zdravotnických přístrojů, zařízení do prostorů s nebezpečím výbuchu, strojů, svářeček a hornictví.
+Z: 13 Revize nářadí
+
+# tema: svetlo | Světelné zdroje a zářivky
+
+Q: Jaké vlnové délky má viditelné světlo?
++ Asi 380–780 nm
+- 10–100 nm
+- 1–10 µm
+- 1–10 mm
+E: Světlo = elektromagnetické záření o vlnových délkách asi 380–780 nm.
+Z: 04 Světelné zdroje
+
+Q: Jaká je přibližná světelná účinnost klasické žárovky?
++ Asi 8 %, zbytek je teplo
+- Asi 50 %
+- Asi 90 %
+- Asi 25 %
+E: Žárovka – teplotní zdroj, většina energie se mění na teplo. Životnost asi 1000 h.
+Z: 04 Světelné zdroje
+
+Q: Proč se do baňky žárovky plní inertní plyn (argon, krypton)?
++ Omezuje odpařování wolframového vlákna
+- Zvyšuje barevnou teplotu na 6500 K
+- Chladí patici
+- Zapaluje výboj
+E: Plyn omezuje odpařování wolframu.
+Z: 04 Světelné zdroje
+
+Q: Jaký index podání barev Ra má klasická žárovka?
++ 100 (spojité spektrum)
+- 0
+- 20
+- 50
+E: Žárovka má spojité spektrum, Ra = 100. Nízkotlaká sodíková výbojka má Ra ≈ 0 (jen žlutá).
+Z: 04 Světelné zdroje
+
+Q: Co obsahuje náplň halogenové žárovky navíc oproti běžné?
++ Halogeny (jód, brom) – halogenový regenerační cyklus
+- Rtuťové páry
+- Sodík
+- Neon
+E: Wolfram se s halogenem slučuje a vrací na vlákno. Baňka je z křemenného skla, nedotýkat se holou rukou.
+Z: 04 Světelné zdroje
+
+Q: Proč se halogenové žárovky nemá dotýkat holou rukou?
++ Mastnota z kůže poškodí křemenné sklo baňky (praskne)
+- Hrozí úraz el. proudem
+- Je radioaktivní
+- Zhasne
+E: Otisk prstu na horké křemenné baňce způsobí její poškození. Případně očistit lihem.
+Z: 04 Světelné zdroje
+
+Q: Čím je zářivka plněna?
++ Rtuťovými parami a argonem (nízký tlak)
+- Sodíkem
+- Xenonem pod vysokým tlakem
+- Vakuem
+E: Zářivka = nízkotlaká trubice s parami rtuti a argonem. Luminofor mění UV záření na viditelné světlo.
+Z: 8 Zářivky; 04 Světelné zdroje
+
+Q: K čemu slouží luminofor v zářivce?
++ Mění UV záření výboje na viditelné světlo a určuje barvu světla
+- Zapaluje výboj
+- Omezuje proud
+- Kompenzuje účiník
+E: Luminofor mění UV na světlo; jeho složení určuje teplotu chromatičnosti (2700 K teplá, 4000 K neutrální, 6500 K studená).
+Z: 8 Zářivky
+
+Q: Jaká barevná teplota odpovídá neutrální bílé?
++ 4000 K
+- 2700 K
+- 6500 K
+- 1000 K
+E: 2700 K teplá bílá, 4000 K neutrální (kanceláře, dílny), 6500 K studená.
+Z: 8 Zářivky
+
+Q: Z jakých částí se skládá klasické zářivkové svítidlo?
++ Trubice, startér, tlumivka, (kompenzační) kondenzátor
+- Trubice, transformátor, dioda
+- Žárovka, rezistor, spínač
+- Trubice, chránič, pojistka
+E: Trubice, startér, tlumivka, kondenzátor.
+Z: 8 Zářivky
+
+Q: Co je startér zářivky?
++ Doutnavka s bimetalovou elektrodou
+- Malý transformátor
+- Kondenzátor
+- Tlumivka
+E: Startér = doutnavka s jednou pevnou a jednou bimetalovou elektrodou. Sepne, nahřeje elektrody, rozepne.
+Z: 8 Zářivky
+
+Q: Jak vznikne napěťový impuls k zapálení zářivky?
++ Při rozepnutí startéru se na tlumivce indukuje impuls asi 1000 V
+- Kondenzátor se nabije a vybije
+- Ze sítě přijde přepětí
+- Luminofor vytvoří napětí
+E: Rozepnutím obvodu se na tlumivce indukuje impuls ~1000 V, který zapálí výboj.
+Z: 8 Zářivky
+
+Q: K čemu slouží tlumivka po zapálení zářivky?
++ Omezuje proud trubicí (jako jalový předřadný odpor)
+- Zvyšuje napětí na trubici
+- Nahřívá elektrody
+- Kompenzuje účiník
+E: Po zapálení tlumivka omezuje proud, jinak by trubice „utekla“ (výboj má záporný odpor).
+Z: 8 Zářivky
+
+Q: K čemu slouží kondenzátor zapojený paralelně v zářivkovém svítidle?
++ Kompenzuje účiník (tlumivka je induktivní zátěž)
+- Zapaluje trubici
+- Omezuje proud
+- Ruší stroboskopický jev v 1f síti
+E: Kompenzační kondenzátor zlepšuje účiník. Posouvací (sériový) kondenzátor ve dvojsvítidle omezuje stroboskopický jev.
+Z: 8 Zářivky
+
+Q: Co je stroboskopický jev u zářivek a jak se omezuje?
++ Blikání 100× za sekundu může způsobit, že se točící stroje zdají stát; omezí se zapojením na různé fáze nebo posouvacím kondenzátorem
+- Zářivka svítí zeleně; omezí se luminoforem
+- Zářivka se zahřívá; omezí se ventilátorem
+- Zářivka bzučí; omezí se tlumivkou
+E: Stroboskopický jev je nebezpečný u rotujících strojů. Řešení: 3 fáze, posouvací kondenzátor, elektronický předřadník.
+Z: 8 Zářivky; 04 Světelné zdroje
+
+Q: Jakou výhodu má elektronický předřadník?
++ Okamžité rozsvícení bez blikání, žádný stroboskopický jev, účiník blízko 1
+- Je těžší a levnější
+- Potřebuje startér
+- Funguje bez napájení
+E: Elektronický předřadník: bez startéru, bez stroboskopického jevu, stmívání, účiník ≈ 1, odpojení vadné trubice.
+Z: 8 Zářivky
+
+Q: Co se musí udělat při náhradě zářivky LED trubicí ve svítidle s klasickou tlumivkou?
++ Vyjmout (přemostit) tlumivku a startér podle typu LED trubice
+- Nic, jen vyměnit trubici
+- Přidat druhý kondenzátor
+- Zapojit trubici na 400 V
+E: U magnetické tlumivky vyjmout tlumivku a startér, u elektronického předřadníku vyjmout předřadník.
+Z: 8 Zářivky
+
+Q: Jakou životnost má lineární zářivka podle školních podkladů?
++ Asi 16 000 h
+- Asi 1000 h
+- Asi 100 h
+- Asi 500 000 h
+E: Zářivka asi 16 000 h. Škodí jí časté zapínání a vypínání.
+Z: 8 Zářivky
+
+Q: Která výbojka má nejvyšší měrný výkon, ale světlo jen žluté (Ra ≈ 0)?
++ Nízkotlaká sodíková
+- Rtuťová
+- Halogenidová
+- Xenonová
+E: Nízkotlaká sodíková ~150 lm/W, monochromatické žluté světlo – osvětlení přístavů, silnic v mlze.
+Z: 04 Světelné zdroje
+
+Q: Kde se typicky používá vysokotlaká sodíková výbojka?
++ Veřejné osvětlení ulic
+- Byty
+- Operační sály
+- Fotografická studia
+E: Vysokotlaká sodíková – veřejné osvětlení, oranžovožluté světlo, náběh asi 10 min.
+Z: 04 Světelné zdroje
+
+Q: Proč výbojky po zapnutí svítí plným výkonem až po několika minutách?
++ Náplň se musí ohřát a odpařit (náběh)
+- Startér je pomalý
+- Kondenzátor se nabíjí
+- Luminofor se musí nasvítit
+E: Výbojky mají dobu náběhu (rtuťová asi 5 min, sodíková 10–20 min). Indukční a LED svítí hned.
+Z: 04 Světelné zdroje
+
+Q: Kterou elektrodu doutnavky na stejnosměrné napětí vidíme svítit?
++ Katodu (−) – lze tím zjistit polaritu
+- Anodu (+)
+- Obě
+- Žádnou
+E: Na DC svítí jen katoda, na AC obě elektrody. Doutnavka slouží k indikaci (zkoušečky, vypínače).
+Z: 04 Světelné zdroje
+
+Q: Jak vzniká světlo v LED?
++ Rekombinací elektronů a děr v přechodu PN v propustném směru
+- Rozžhavením vlákna
+- Výbojem v plynu
+- Indukcí vysokofrekvenčního pole
+E: LED: průchod proudu přechodem PN v propustném směru, monochromatické světlo, životnost až 100 000 h.
+Z: 04 Světelné zdroje; 24 Diody
+
+Q: Ve kterých jednotkách se měří světelný tok?
++ Lumen (lm)
+- Lux (lx)
+- Kandela (cd)
+- Kelvin (K)
+E: Světelný tok – lm; osvětlenost – lx (lm/m²); svítivost – cd; měrný výkon – lm/W.
+Z: EZ6 Světlo a teplo
+
+Q: Ve kterých jednotkách se měří osvětlenost (osvětlení)?
++ Lux (lx)
+- Lumen (lm)
+- Kandela (cd)
+- Watt (W)
+E: Osvětlenost E = Φ/S [lx].
+Z: EZ6 Světlo a teplo
