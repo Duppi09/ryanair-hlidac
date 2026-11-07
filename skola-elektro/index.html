@@ -287,7 +287,7 @@ function pickSet(n, seed, exclude = new Set(), onlyIds = null) {
 
 function activeTopics() {
   const v = state.okruhy?.vyber;
-  return new Set(Array.isArray(v) && v.length ? v : bank.temata.map((t) => t.id));
+  return new Set(Array.isArray(v) ? v : bank.temata.map((t) => t.id));
 }
 function setSelection(vyber, fokus) {
   const all = bank.temata.map((t) => t.id);
@@ -295,7 +295,7 @@ function setSelection(vyber, fokus) {
   state.okruhy = { vyber: sel.length === all.length ? null : sel, fokus: fokus && sel.includes(fokus) ? fokus : null };
   // nezodpovězené dnešní otázky vyměnit podle nového výběru
   const answered = today.otazky.filter((id) => today.odpovedi[id]);
-  if (answered.length < today.otazky.length) {
+  if (sel.length && answered.length < today.otazky.length) {
     const need = Math.max(0, N_DAILY - answered.length);
     today.kola = (today.kola || 1) + 1;
     today.otazky = answered.concat(pickSet(need, TODAY + "-v" + today.kola, new Set(answered)));
@@ -453,7 +453,7 @@ function renderWeak() {
   const act = activeTopics(), f = state.okruhy?.fokus;
   const card = el("section", { class: "card" },
     el("div", { class: "row" }, el("span", { class: "note grow" },
-      act.size === bank.temata.length ? "Zkouší se ze všech témat" : `Zkouší se z ${act.size} z ${bank.temata.length} témat`,
+      act.size === bank.temata.length ? "Zkouší se ze všech témat" : !act.size ? "Není vybrané žádné téma – vyber okruhy, jinak se zkouší ze všech" : `Zkouší se z ${act.size} z ${bank.temata.length} témat`,
       f ? el("span", {}, " · teď probíráš: ", el("b", {}, topicName[f])) : null),
       el("button", { class: "btn ghost", style: "padding:6px 10px;font-size:.9rem", onclick: () => { tab = "temata"; render(); } }, "Vybrat okruhy")),
     el("div", { class: "eyebrow" }, "Nejslabší témata"));
@@ -510,14 +510,14 @@ function renderTemata() {
   const toggle = (ids, on) => {
     const next = new Set(act);
     for (const id of ids) on ? next.add(id) : next.delete(id);
-    if (!next.size) { render(); return; }
     setSelection([...next], fokus);
   };
+  const allOn = act.size === bank.temata.length;
   const head = el("section", { class: "card" },
     el("div", { class: "eyebrow" }, "Okruhy pro denní cvičení"),
     el("div", { class: "note" }, "Zaškrtni, z čeho má aplikace zkoušet. Hvězdičkou označ téma, které teď probíráte ve škole – dostaneš z něj každý den aspoň 3 otázky. Nezodpovězené dnešní otázky se hned vymění podle výběru."),
     el("div", { class: "row" },
-      el("button", { class: "btn ghost", onclick: () => setSelection(bank.temata.map((t) => t.id), fokus) }, "Vybrat vše"),
+      el("button", { class: "btn ghost", onclick: () => setSelection(allOn ? [] : bank.temata.map((t) => t.id), allOn ? null : fokus) }, allOn ? "Odznačit vše" : "Vybrat vše"),
       fokus ? el("button", { class: "btn ghost", onclick: () => setSelection([...act], null) }, "Zrušit hvězdičku") : null));
   const groups = GROUPS.map(([name, ids]) => {
     ids = ids.filter((id) => rows[id]);
