@@ -1,783 +1,767 @@
 # tema: zaklady | Základní pojmy a zákony
 
-Q: Jaká je jednotka elektrického náboje?
-+ Coulomb (C)
-- Ampér (A)
-- Volt (V)
-- Farad (F)
-E: Q [C] = I · t (1 C = 1 A · 1 s).
+N: Topné těleso má odpor 46 Ω a je na 230 V. Jaký odebírá proud (A)?
+= 5 | 0 | A
+E: I = U/R = 230/46 = 5 A.
 Z: Elektrotechnika 1
+U: 1
 
-Q: Jak zní Ohmův zákon?
-+ I = U / R
-- I = U · R
-- U = I / R
-- R = U · I
-E: Proud je přímo úměrný napětí a nepřímo úměrný odporu.
-Z: Elektrotechnika 1
-
-N: Rezistorem 100 Ω prochází proud 0,5 A. Jaké je na něm napětí (V)?
-= 50 | 0 | V
-E: U = R · I = 100 · 0,5 = 50 V.
-Z: Elektrotechnika 1
-
-N: Na spotřebič je přivedeno 230 V a protéká jím 2 A. Jaký je jeho odpor (Ω)?
-= 115 | 0 | Ω
-E: R = U / I = 230 / 2 = 115 Ω.
-Z: Elektrotechnika 1
-
-N: Jaký proud odebírá varná konvice 2300 W na 230 V (A)?
-= 10 | 0 | A
-E: I = P / U = 2300 / 230 = 10 A.
+N: Topné těleso 46 Ω na 230 V. Jaký má výkon (W)?
+= 1150 | 0 | W
+E: P = U²/R = 52 900/46 = 1150 W (nebo U·I = 230·5).
 Z: Elektrotechnika 2
+U: 2
 
-N: Jaký výkon má topné těleso s odporem 23 Ω na napětí 230 V (W)?
-= 2300 | 0 | W
-E: P = U² / R = 230² / 23 = 52 900 / 23 = 2300 W.
+N: Bojler 2 kW na 230 V – jaký je odpor topného tělesa (Ω, 1 desetinné místo)?
+= 26.5 | 0.1 | Ω
+E: R = U²/P = 52 900/2000 = 26,45 ≈ 26,5 Ω.
 Z: Elektrotechnika 2
+U: 2
 
-Q: Jak zní 1. Kirchhoffův zákon?
-+ Součet proudů vstupujících do uzlu se rovná součtu proudů vystupujících
-- Součet napětí ve smyčce je nulový
-- Proud je úměrný napětí
-- Výkon je součin napětí a proudu
-E: 1. KZ – uzly (proudy). 2. KZ – smyčky (orientovaný součet napětí ve smyčce je nulový).
+N: Žárovka 230 V / 100 W se připojí na 115 V. Jaký bude její výkon (W), pokud by se odpor vlákna neměnil?
+= 25 | 0 | W
+E: P ~ U². Poloviční napětí → čtvrtinový výkon: 100/4 = 25 W. (Ve skutečnosti studené vlákno má menší odpor, výkon bude o něco větší.)
+Z: Elektrotechnika 2
+U: 3
+
+Q: Dva spotřebiče 230 V/1000 W a 230 V/500 W zapojíš do série na 230 V. Který bude mít větší výkon?
++ Ten 500 W – má větší odpor, a tedy větší I²R
+- Ten 1000 W – má větší jmenovitý výkon
+- Oba stejný – teče jimi stejný proud
+- Žádný – v sérii spotřebiče nefungují
+E: R1000 = 52,9 Ω, R500 = 105,8 Ω. V sérii je na větším odporu větší napětí i výkon.
+Z: Elektrotechnika 2
+U: 3
+
+Q: Jak se změní odpor vodiče, když zdvojnásobíš délku a zároveň zdvojnásobíš průřez?
++ Nezmění se
+- Zdvojnásobí se
+- Zmenší se na polovinu
+- Zčtyřnásobí se
+E: R = ρ·l/S – obojí se vykrátí.
 Z: Elektrotechnika 1
+U: 2
 
-Q: Jak zní 2. Kirchhoffův zákon?
-+ Orientovaný součet všech napětí ve smyčce je nulový
-- Součet proudů v uzlu je nulový
-- Odpor roste s teplotou
-- Náboj se zachovává
-E: 2. KZ – smyčka: součet napětí zdrojů = součet úbytků napětí.
-Z: Základní pojmy v elektrotechnice
-
-Q: Jak se mění odpor kovového vodiče s rostoucí teplotou?
-+ Roste
-- Klesá
-- Nemění se
-- Nejdřív klesá, pak roste
-E: Kovy mají kladný teplotní součinitel odporu. Polovodiče a uhlík naopak odpor s teplotou snižují.
-Z: Elektrotechnika 1; Elektrická měření
-
-Q: Na čem závisí odpor vodiče?
-+ Na měrném odporu materiálu, délce a průřezu: R = ρ · l / S
-- Jen na napětí
-- Jen na barvě izolace
-- Na proudu, který jím teče
-E: R = ρ·l/S – delší vodič má větší odpor, větší průřez menší odpor.
-Z: Elektrotechnika 1
-
-N: Jaký odpor má měděný vodič délky 100 m a průřezu 1,5 mm² (ρ = 0,0178 Ω·mm²/m)? Výsledek v Ω na 2 desetinná místa.
+N: Měděný vodič 1,5 mm², délka 100 m (ρ = 0,0178 Ω·mm²/m). Jaký má odpor (Ω, 2 desetinná místa)?
 = 1.19 | 0.02 | Ω
-E: R = ρ·l/S = 0,0178·100/1,5 ≈ 1,19 Ω.
+E: R = 0,0178·100/1,5 ≈ 1,19 Ω.
 Z: Elektrotechnika 2
+U: 2
 
-Q: Který kov je po stříbru nejlepším vodičem a nejvíce se používá na vodiče?
-+ Měď
-- Hliník
-- Železo
-- Wolfram
-E: Stříbro > měď > zlato > hliník. Měď je nejběžnější vodivý materiál.
-Z: Technologie 2
+N: Měděné vinutí má při 20 °C odpor 10 Ω. Jaký bude odpor při 70 °C (α = 0,004 1/K)? Ω
+= 12 | 0.05 | Ω
+E: R = R20·(1 + α·Δϑ) = 10·(1 + 0,004·50) = 12 Ω. Takhle se měří oteplení vinutí motorů.
+Z: Elektrická měření
+U: 3
 
-Q: Jak se nazývají 1000× menší a 1000× větší díly jednotky (mili, kilo)?
-+ m = 10⁻³, k = 10³
-- m = 10⁻⁶, k = 10⁶
-- m = 10⁻², k = 10²
-- m = 10³, k = 10⁻³
-E: p 10⁻¹², n 10⁻⁹, µ 10⁻⁶, m 10⁻³, k 10³, M 10⁶, G 10⁹.
+Q: Proč má studená žárovka při zapnutí mnohem větší proud než za provozu?
++ Studené wolframové vlákno má asi 10× menší odpor
+- Baňka se při zapnutí chová jako kondenzátor
+- V patici se nabíjí odrušovací kondenzátor
+- Při zapnutí je v síti krátkodobé přepětí
+E: Proto žárovky nejčastěji prasknou při zapnutí.
+Z: Elektrotechnika 1; 04 Světelné zdroje
+U: 3
+
+Q: 1. a 2. Kirchhoffův zákon:
++ 1. KZ proudy v uzlu, 2. KZ napětí ve smyčce
+- 1. KZ napětí ve smyčce, 2. KZ proudy v uzlu
+- 1. KZ je Ohmův zákon, 2. KZ je P = U·I
+- 1. KZ platí jen pro DC, 2. KZ jen pro AC
+E: 1. KZ – uzly, 2. KZ – smyčky.
 Z: Elektrotechnika 1
+U: 1
 
-N: Kolik je 4,7 kΩ v ohmech?
-= 4700 | 0 | Ω
-E: 4,7 · 1000 = 4700 Ω.
+N: Do uzlu vtékají proudy 3 A a 5 A, vytéká proud 2 A a neznámý proud I. Jak velký je I (A)?
+= 6 | 0 | A
+E: 3 + 5 = 2 + I → I = 6 A.
 Z: Elektrotechnika 1
+U: 2
 
-Q: Jaká je frekvence a perioda sítě v ČR?
-+ 50 Hz, perioda 20 ms
-- 60 Hz, perioda 16,7 ms
-- 50 Hz, perioda 50 ms
-- 100 Hz, perioda 10 ms
-E: f = 50 Hz, T = 1/f = 0,02 s = 20 ms.
+N: Rezistory 20 Ω a 30 Ω v sérii na 10 V. Jaké je napětí na rezistoru 30 Ω (V)?
+= 6 | 0 | V
+E: I = 10/50 = 0,2 A; U30 = 0,2·30 = 6 V (dělič napětí).
 Z: Elektrotechnika 1
+U: 2
 
-Q: Jaký je vztah mezi efektivní a maximální hodnotou sinusového napětí?
-+ U = Um / √2 (asi 0,707 · Um)
-- U = Um · √2
-- U = Um / 2
-- U = Um
-E: Pro 230 V je amplituda asi 325 V.
+N: Rezistor 10 Ω je v sérii s paralelní kombinací 30 Ω a 60 Ω. Celkový odpor (Ω)?
+= 30 | 0 | Ω
+E: 30 ∥ 60 = 1800/90 = 20 Ω; 10 + 20 = 30 Ω.
 Z: Elektrotechnika 1
+U: 3
 
-N: Jaká je maximální (vrcholová) hodnota napětí sítě 230 V? (V, celé číslo)
-= 325 | 2 | V
-E: Um = U · √2 = 230 · 1,414 ≈ 325 V.
-Z: Elektrotechnika 1
-
-Q: Jaký je vztah sdruženého a fázového napětí v soustavě 3 × 400/230 V?
-+ Us = √3 · Uf (400 ≈ 1,73 · 230)
-- Us = 2 · Uf
-- Us = Uf
-- Us = Uf / √3
-E: Sdružené (mezi fázemi) 400 V, fázové (fáze–N) 230 V.
-Z: Elektrotechnika 1
-
-Q: Jak se počítá činný výkon trojfázového spotřebiče?
-+ P = √3 · U · I · cos φ
-- P = 3 · U · I
-- P = U · I
-- P = √3 · U / I
-E: U je sdružené napětí, I proud vodičem, cos φ účiník.
-Z: Elektrotechnika 1
-
-N: Trojfázový motor 400 V odebírá 10 A při cos φ = 0,8. Jaký je jeho příkon (W, celé číslo)?
-= 5543 | 15 | W
-E: P = √3 · 400 · 10 · 0,8 ≈ 5543 W.
-Z: Elektrotechnika 1
-
-Q: V jaké jednotce se udává jalový výkon?
-+ var
-- W
-- VA
-- kWh
-E: Činný P [W], jalový Q [var], zdánlivý S [VA].
-Z: Elektrotechnika 2
-
-Q: Co je účiník?
-+ cos φ = P / S – podíl činného a zdánlivého výkonu
-- Poměr napětí a proudu
-- Podíl jalového a činného výkonu
-- Účinnost stroje
-E: Ideální účiník je 1 (odporová zátěž).
-Z: Elektrotechnika 2
-
-Q: Jak se mění indukční reaktance XL s frekvencí?
-+ Roste: XL = 2πfL
-- Klesá: XL = 1/(2πfL)
-- Nemění se
-- Je nulová při vysokých frekvencích
-E: XL = 2πfL – cívka víc „brzdí“ vyšší frekvence. Kondenzátor naopak: XC = 1/(2πfC).
-Z: Elektrotechnika 2
-
-Q: Jak se mění kapacitní reaktance XC s frekvencí?
-+ Klesá: XC = 1/(2πfC)
-- Roste: XC = 2πfC
-- Nemění se
-- Je nekonečná při střídavém proudu
-E: Při DC (f = 0) je XC nekonečná – kondenzátor DC nepropouští.
-Z: Elektrotechnika 2
-
-Q: Co říká Lenzovo pravidlo?
-+ Indukovaný proud působí proti změně, která ho vyvolala
-- Proud teče od + k −
-- Indukované napětí je vždy nulové
-- Magnetické pole nemá směr
-E: Indukované napětí působí proti změně magnetického toku.
-Z: Elektrotechnika 2
-
-Q: Kdy vzniká elektromagnetická indukce?
-+ Při změně magnetického toku procházejícího vodičem (cívkou)
-- Při konstantním magnetickém poli bez pohybu
-- Jen při stejnosměrném proudu
-- Jen v izolantech
-E: Indukované napětí vzniká jen při změně toku (pohyb vodiče nebo změna proudu).
-Z: Elektrotechnika 1
-
-Q: Jak se určuje směr magnetického pole kolem vodiče s proudem?
-+ Pravidlem pravé ruky (palec ve směru proudu, prsty ukazují siločáry)
-- Pravidlem levé ruky
-- Podle barvy vodiče
-- Siločáry jsou vždy rovnoběžné s vodičem
-E: Ampérovo pravidlo pravé ruky.
-Z: Elektrotechnika 1
-
-Q: Co je hysterezní smyčka?
-+ Závislost magnetické indukce na intenzitě pole při přemagnetovávání feromagnetika
-- Graf proudu diodou
-- Závislost odporu na teplotě
-- Průběh nabíjení kondenzátoru
-E: Plocha smyčky odpovídá ztrátám přemagnetováním. Magneticky měkké materiály mají úzkou smyčku (jádra transformátorů).
-Z: Elektrotechnika 2
-
-Q: Proč se jádra transformátorů skládají z izolovaných plechů?
-+ Aby se omezily vířivé proudy
-- Aby byla lehčí
-- Aby se zvýšila hystereze
-- Kvůli lepšímu chlazení vinutí
-E: Vířivé proudy ohřívají jádro; izolované plechy je omezují.
-Z: Elektrotechnika 2; EZ3 Transformátory
-
-Q: Co je skinefekt?
-+ Vytlačování střídavého proudu k povrchu vodiče při vyšších frekvencích
-- Ohřev kůže při úrazu
-- Ztráta izolace
-- Vznik oblouku
-E: Při vysokých frekvencích teče proud hlavně po povrchu, efektivní průřez se zmenšuje.
-Z: Elektrotechnika 2
-
-Q: Co je elektrolýza?
-+ Chemický rozklad elektrolytu průchodem stejnosměrného proudu
-- Výroba elektřiny ze světla
-- Ohřev vody proudem
-- Přeměna AC na DC
-E: Využití: galvanické pokovování, výroba hliníku, čištění kovů.
-Z: Elektrotechnika 1
-
-Q: Jaké napětí má jeden článek olověného akumulátoru?
-+ Asi 2 V
-- 1,2 V
-- 1,5 V
-- 3,7 V
-E: Olověný článek 2 V (autobaterie 6 článků = 12 V). NiCd/NiMH 1,2 V, alkalický 1,5 V, Li-ion asi 3,6–3,7 V.
-Z: Elektrotechnika 1
-
-Q: Co platí při sériovém zapojení zdrojů (článků)?
-+ Napětí se sčítají, kapacita zůstává stejná
-- Proudy se sčítají, napětí zůstává
-- Napětí se odečítají
-- Nic se nemění
-E: Série zvyšuje napětí, paralelní zapojení zvyšuje kapacitu (proud).
-Z: Elektrotechnika 1
-
-Q: Jak se nazývá síla mezi dvěma bodovými náboji?
-+ Coulombova síla
-- Lorentzova síla
-- Ampérova síla
-- Lenzova síla
-E: F = k · Q₁Q₂ / r² – Coulombův zákon.
-Z: Elektrotechnika 1
-
-N: Jakou práci (kWh) spotřebuje spotřebič 2 kW za 3 hodiny?
-= 6 | 0 | kWh
-E: W = P · t = 2 kW · 3 h = 6 kWh.
-Z: Elektrotechnika 2
-
-N: Tři rezistory 10 Ω, 20 Ω a 30 Ω jsou zapojeny v sérii. Jaký je celkový odpor (Ω)?
-= 60 | 0 | Ω
-E: V sérii se odpory sčítají: 10 + 20 + 30 = 60 Ω.
-Z: 21 Rezistory
-
-N: Dva rezistory 100 Ω jsou zapojeny paralelně. Jaký je celkový odpor (Ω)?
-= 50 | 0 | Ω
-E: Dva stejné paralelně → R/2 = 50 Ω.
-Z: 21 Rezistory
-
-N: Rezistory 60 Ω a 30 Ω paralelně. Celkový odpor (Ω)?
+N: Tři rezistory 60 Ω paralelně. Celkový odpor (Ω)?
 = 20 | 0 | Ω
-E: R = R1·R2/(R1+R2) = 1800/90 = 20 Ω.
+E: n stejných paralelně: R/n = 60/3 = 20 Ω.
 Z: 21 Rezistory
+U: 2
 
-Q: Jaké je výsledné R při paralelním řazení v porovnání s nejmenším rezistorem?
-+ Menší než nejmenší rezistor
-- Větší než největší rezistor
-- Rovno průměru
-- Rovno nejmenšímu
-E: Paralelně je výsledek vždy menší než nejmenší odpor; sériově větší než největší.
+N: Na rezistor 100 Ω/0,25 W chceš připojit napětí. Jaké nejvyšší napětí (V) snese?
+= 5 | 0 | V
+E: U = √(P·R) = √(0,25·100) = 5 V.
 Z: 21 Rezistory
+U: 3
 
-Q: Jaké jsou rozvodné soustavy podle uzemnění (označení)?
-+ TN (TN-C, TN-S, TN-C-S), TT, IT
-- AC, DC, 3f
-- NN, VN, VVN
-- A, B, C, D
-E: 1. písmeno – vztah zdroje k zemi (T uzemněný, I izolovaný), 2. písmeno – vztah neživých částí (N spojeno s uzlem, T samostatně uzemněno).
-Z: Elektrotechnika 1; Technologie 2
+Q: Jak se změní celkový odpor, když k rezistoru 1 kΩ paralelně připojíš rezistor 1 MΩ?
++ Klesne nepatrně, asi na 999 Ω
+- Stoupne na 1,001 MΩ
+- Klesne na polovinu, 500 Ω
+- Nezmění se vůbec, zůstane 1 kΩ
+E: Paralelní výsledek je vždy menší než nejmenší rezistor; velký odpor vedle malého skoro nevadí.
+Z: 21 Rezistory
+U: 3
 
-Q: Co znamená zápis 3 PEN AC 50 Hz 400 V/230 V TN-C?
-+ Tři fáze a vodič PEN, střídavá 50 Hz, sdružené 400 V, fázové 230 V, síť TN-C
-- Tři vodiče PEN
-- Stejnosměrná síť 400 V
-- Síť IT s třemi zemniči
-E: Takové označení se píše např. na rozvaděče.
-Z: Technologie 2
-
-Q: Jak se dělí napětí: do jaké hodnoty sahá nízké napětí (NN) AC?
-+ Do 1000 V
-- Do 50 V
-- Do 230 V
-- Do 52 kV
-E: MN (ELV) do 50 V AC, NN do 1000 V, VN do 52 kV, VVN do 300 kV, ZVN nad 300 kV.
+N: Elektrický sporák 3 × 400 V spotřebuje za 2 hodiny 9 kWh. Jaký je jeho průměrný příkon (kW)?
+= 4.5 | 0 | kW
+E: P = W/t = 9 kWh / 2 h = 4,5 kW.
 Z: Elektrotechnika 2
+U: 2
+
+N: Bojler 2 kW ohřívá 6 hodin denně. Kolik zaplatíš za 30 dní při ceně 4 Kč/kWh (Kč)?
+= 1440 | 0 | Kč
+E: W = 2·6·30 = 360 kWh; 360·4 = 1440 Kč.
+Z: Elektrotechnika 2
+U: 2
+
+Q: Efektivní hodnota střídavého proudu znamená:
++ DC proud se stejným tepelným účinkem
+- Průměrná hodnota za jednu půlperiodu
+- Maximální (vrcholová) hodnota sinusovky
+- Hodnota proudu při zapnutí spotřebiče
+E: Pro sinusovku U = Um/√2. Multimetr ukazuje efektivní hodnotu.
+Z: Elektrotechnika 1
+U: 2
+
+N: Jaká je maximální hodnota napětí 230 V v síti (V, celé číslo)?
+= 325 | 2 | V
+E: Um = 230·√2 ≈ 325 V. Proto kondenzátor za usměrňovačem musí snést víc než 230 V.
+Z: Elektrotechnika 1
+U: 2
+
+N: Jaká je perioda střídavého napětí 50 Hz (ms)?
+= 20 | 0 | ms
+E: T = 1/f = 1/50 = 0,02 s = 20 ms.
+Z: Elektrotechnika 1
+U: 1
+
+Q: Trojfázová soustava 3 × 400/230 V – co platí?
++ 400 V mezi fázemi, 230 V fáze–N, posun 120°
+- 400 V fáze–N, 230 V mezi fázemi, posun 120°
+- 400 V mezi fázemi, 230 V fáze–N, posun 90°
+- 400 V = 230 V + 170 V, posun fází 180°
+E: Us = √3·Uf ≈ 1,73·230 ≈ 400 V.
+Z: Elektrotechnika 1
+U: 2
+
+Q: Souměrná trojfázová zátěž zapojená do hvězdy – kolik proudu teče vodičem N?
++ Prakticky nula
+- Trojnásobek fázového proudu
+- Stejně jako jednou fází
+- √3krát fázový proud
+E: Při nesouměrné zátěži nulákem teče rozdílový proud.
+Z: Elektrotechnika 1
+U: 2
+
+Q: V síti TN-C-S se v rozvodnici uvolní vodič N společný pro tři jednofázové obvody na různých fázích. Co hrozí?
++ Posun nuly – na některých spotřebičích až 400 V
+- Nic se nestane, vodič N není potřeba
+- Všechny spotřebiče jen zhasnou
+- Vypne chránič a vše je v bezpečí
+E: Spotřebiče na různých fázích se ocitnou v sérii mezi sdruženým napětím.
+Z: Elektrotechnika 1; Technologie 2
+U: 3
+
+N: Trojfázový motor 400 V, 8 A, cos φ = 0,85. Jaký je jeho příkon (W, celé číslo)?
+= 4711 | 10 | W
+E: P = √3·U·I·cos φ = 1,732·400·8·0,85 ≈ 4711 W.
+Z: Elektrotechnika 1
+U: 3
+
+N: Trojfázový spotřebič má příkon 11 kW při 400 V a cos φ = 1. Jaký proud teče jedním vodičem (A, 1 desetinné místo)?
+= 15.9 | 0.1 | A
+E: I = P/(√3·U) = 11 000/(1,732·400) ≈ 15,9 A.
+Z: Elektrotechnika 1
+U: 3
+
+N: Tři stejná topná tělesa po 2 kW zapojená do hvězdy na 3 × 400 V. Jaký proud teče jedním vodičem (A, 1 desetinné místo)?
+= 8.7 | 0.1 | A
+E: Každé těleso je na 230 V: I = 2000/230 ≈ 8,7 A.
+Z: Elektrotechnika 1
+U: 3
+
+Q: Tři stejná tělesa 230 V přepojíš z hvězdy do trojúhelníku na síti 3 × 400 V. Co se stane?
++ Budou na 400 V, výkon asi 3× a shoří
+- Budou na 133 V, výkon klesne na třetinu
+- Nic se nezmění, výkon zůstane stejný
+- Budou na 253 V, výkon stoupne o 10 %
+E: P ~ U²: (400/230)² ≈ 3.
+Z: Elektrotechnika 1
+U: 3
+
+Q: Indukční reaktance XL a kapacitní XC při rostoucí frekvenci:
++ XL roste, XC klesá
+- XL klesá, XC roste
+- Obě rostou
+- Obě se nemění
+E: Cívka „brzdí“ vysoké frekvence, kondenzátor nízké; pro DC je XC nekonečná.
+Z: Elektrotechnika 2
+U: 2
+
+N: Jaká je indukční reaktance cívky 0,5 H při 50 Hz (Ω, celé číslo)?
+= 157 | 1 | Ω
+E: XL = 2πfL = 2·3,14·50·0,5 ≈ 157 Ω.
+Z: Elektrotechnika 2
+U: 3
+
+N: Jaká je kapacitní reaktance kondenzátoru 10 µF při 50 Hz (Ω, celé číslo)?
+= 318 | 2 | Ω
+E: XC = 1/(2πfC) = 1/(314·10⁻⁵) ≈ 318 Ω.
+Z: Elektrotechnika 2
+U: 3
+
+N: Sériový obvod R = 30 Ω a XL = 40 Ω. Jaká je impedance Z (Ω)?
+= 50 | 0 | Ω
+E: Z = √(R² + XL²) = √(900 + 1600) = 50 Ω.
+Z: Elektrotechnika 2
+U: 3
+
+Q: Rezonance sériového obvodu RLC nastane, když:
++ XL = XC, impedance je nejmenší
+- XL = 0, impedance je největší
+- R = XL + XC, proud je nejmenší
+- XC = 0, proud je nulový
+E: Rezonanční frekvence f0 = 1/(2π√(LC)).
+Z: Elektrotechnika 2
+U: 3
+
+Q: Lenzovo pravidlo říká:
++ Indukovaný proud působí proti změně, která ho vyvolala
+- Indukovaný proud má vždy stejný směr jako budicí
+- Magnetické pole cívky nezávisí na velikosti proudu
+- Indukce vzniká jen v pohybujícím se permanentním magnetu
+E: Využití: vířivé brzdy, indukční vařiče, ztráty v jádrech.
+Z: Elektrotechnika 2
+U: 2
+
+Q: Proč při rozepnutí obvodu s cívkou (relé, stykač) vzniká napěťová špička a jak se omezuje?
++ Indukce při poklesu proudu; omezí ji nulová dioda
+- Vybije se kondenzátor v cívce; omezí ji pojistka
+- Kvůli odporu vinutí; omezí ji silnější vodič
+- Žádná špička nevzniká, cívka proud jen zpozdí
+E: Nulová (zhášecí) dioda paralelně k cívce na DC je nejběžnější řešení.
+Z: Elektrotechnika 2
+U: 3
+
+Q: Proč se jádra transformátorů a motorů skládají z tenkých izolovaných plechů?
++ Omezí se vířivé proudy a ohřev jádra
+- Jádro z plechů je levnější než odlitek
+- Zvětší se hystereze a tím i indukčnost
+- Sníží se odpor měděného vinutí
+E: Ztráty hysterezí omezuje vhodný materiál (křemíková ocel, úzká smyčka).
+Z: Elektrotechnika 2; EZ3 Transformátory
+U: 2
+
+Q: Skinefekt znamená:
++ Vf proud teče hlavně po povrchu vodiče
+- Při vysokém napětí se poškodí izolace
+- Proud teče hlavně středem vodiče
+- Ohřev kůže při úrazu elektřinou
+E: Proto se pro vf používají lanka z izolovaných drátků nebo duté vodiče.
+Z: Elektrotechnika 2
+U: 2
+
+Q: Akumulátory a články – napětí jednoho článku:
++ Olověný 2 V, NiMH 1,2 V, alkalický 1,5 V
+- Olověný 1,2 V, NiMH 2 V, alkalický 3,7 V
+- Olověný 1,5 V, NiMH 1,5 V, alkalický 1,5 V
+- Olověný 12 V, NiMH 3,7 V, alkalický 1,2 V
+E: Autobaterie 12 V = 6 olověných článků v sérii.
+Z: Elektrotechnika 1
+U: 2
+
+Q: Dva akumulátory 12 V / 60 Ah zapojíš paralelně. Co dostaneš?
++ 12 V / 120 Ah
+- 24 V / 60 Ah
+- 24 V / 120 Ah
+- 12 V / 60 Ah
+E: Paralelně se sčítá kapacita, v sérii napětí.
+Z: Elektrotechnika 1
+U: 2
+
+Q: Zařazení napětí:
++ Malé do 50 V, nízké do 1 kV, vysoké do 52 kV
+- Malé do 12 V, nízké do 400 V, vysoké do 22 kV
+- Malé do 230 V, nízké do 1 kV, vysoké nad 1 kV
+- Malé do 50 V, nízké do 400 V, vysoké do 110 kV
+E: Nad 300 kV zvláště vysoké (ZVN).
+Z: Elektrotechnika 2
+U: 2
+
+Q: Označení sítě 3/PEN AC 400 V/230 V 50 Hz TN-C znamená:
++ 3 fáze + PEN, 400/230 V, uzel uzemněn, kostry na PEN
+- 3 vodiče PEN bez fází, 400/230 V, izolovaný uzel
+- Stejnosměrná síť 400 V s izolovaným uzlem a PE
+- Síť IT se třemi zemniči a samostatným vodičem PE
+E: T – uzemněný uzel, N – kostry spojené s uzlem, C – PE a N jsou jeden vodič PEN.
+Z: Technologie 2
+U: 3
 
 # tema: soucastky | Rezistory, kondenzátory, cívky, diody
 
-Q: Co znamená alfanumerické značení rezistoru 3K3?
-+ 3,3 kΩ
-- 33 kΩ
-- 3,3 Ω
-- 330 Ω
-E: Písmeno nahrazuje desetinnou čárku: R = Ω, K = kΩ, M = MΩ.
+Q: Rezistor má pruhy oranžová – oranžová – červená – zlatá. Hodnota?
++ 3,3 kΩ ± 5 %
+- 33 kΩ ± 5 %
+- 332 Ω ± 2 %
+- 330 Ω ± 10 %
+E: 3, 3, ×100 → 3300 Ω, zlatá ±5 %.
 Z: 21 Rezistory
+U: 2
 
-Q: Co znamená značení M56?
-+ 560 kΩ
-- 56 MΩ
-- 5,6 MΩ
-- 56 Ω
-E: M56 = 0,56 MΩ = 560 kΩ.
+Q: Rezistor má pruhy modrá – šedá – oranžová – hnědá. Hodnota?
++ 68 kΩ ± 1 %
+- 6,8 kΩ ± 1 %
+- 680 kΩ ± 10 %
+- 683 Ω ± 1 %
+E: modrá 6, šedá 8, oranžová ×1000 → 68 kΩ, hnědá ±1 %.
 Z: 21 Rezistory
+U: 2
 
-Q: Co znamená značení R22?
-+ 0,22 Ω
-- 22 Ω
-- 220 Ω
-- 22 kΩ
-E: R22 = 0,22 Ω.
+Q: Rezistor má pruhy hnědá – zelená – modrá – modrá. Hodnota?
++ 15 MΩ ± 0,25 %
+- 1,5 MΩ ± 0,25 %
+- 156 Ω ± 0,5 %
+- 15 kΩ ± 0,25 %
+E: 1, 5, ×10⁶ → 15 MΩ, modrá tolerance ±0,25 %.
 Z: 21 Rezistory
+U: 3
 
-Q: Rezistor má proužky žlutá – fialová – červená – zlatá. Jaká je hodnota?
-+ 4,7 kΩ ± 5 %
-- 47 Ω ± 5 %
-- 470 Ω ± 10 %
-- 47 kΩ ± 2 %
-E: žlutá 4, fialová 7, červená ×100 → 4700 Ω, zlatá ±5 %.
+Q: Rezistor má pruhy červená – fialová – zlatá – zlatá. Hodnota?
++ 2,7 Ω ± 5 %
+- 27 Ω ± 5 %
+- 270 Ω ± 5 %
+- 0,27 Ω ± 5 %
+E: Zlatý násobitel ×0,1: 27·0,1 = 2,7 Ω.
 Z: 21 Rezistory
+U: 3
 
-Q: Rezistor má proužky hnědá – černá – oranžová – zlatá. Jaká je hodnota?
-+ 10 kΩ ± 5 %
-- 1 kΩ ± 5 %
-- 100 Ω ± 5 %
+Q: Odkud se čte barevný kód rezistoru?
++ Od konce, ke kterému jsou pruhy blíž
+- Vždy od zlatého nebo stříbrného pruhu
+- Od nejširšího pruhu na rezistoru
+- Je jedno, odkud se kód čte
+E: Tolerance (zlatá, stříbrná) bývá na opačném konci.
+Z: 21 Rezistory
+U: 2
+
+Q: Alfanumerické značení: co znamenají 1R2, K18 a M15?
++ 1,2 Ω, 180 Ω, 150 kΩ
+- 12 Ω, 18 kΩ, 15 MΩ
+- 1,2 kΩ, 0,18 Ω, 1,5 MΩ
+- 120 Ω, 1,8 kΩ, 15 kΩ
+E: Písmeno nahrazuje desetinnou čárku a násobitel: K18 = 0,18 kΩ.
+Z: 21 Rezistory
+U: 3
+
+Q: SMD rezistor s označením 103:
++ 10 kΩ
 - 103 Ω
-E: hnědá 1, černá 0, oranžová ×1000 → 10 000 Ω.
+- 1 kΩ
+- 100 kΩ
+E: 10 × 10³ = 10 000 Ω.
 Z: 21 Rezistory
+U: 2
 
-Q: Rezistor má proužky červená – červená – hnědá – zlatá. Jaká je hodnota?
-+ 220 Ω ± 5 %
-- 22 Ω ± 5 %
-- 2,2 kΩ ± 5 %
-- 221 Ω ± 1 %
-E: červená 2, červená 2, hnědá ×10 → 220 Ω.
+N: Rezistor 4,7 kΩ ± 10 %. Jaká je nejmenší přípustná hodnota (Ω)?
+= 4230 | 0 | Ω
+E: 4700 − 470 = 4230 Ω (horní mez 5170 Ω).
 Z: 21 Rezistory
+U: 3
 
-Q: Jakou toleranci znamená stříbrný proužek?
-+ ± 10 %
-- ± 5 %
-- ± 1 %
-- ± 20 %
-E: Zlatá ±5 %, stříbrná ±10 %, bez proužku ±20 %, hnědá ±1 %, červená ±2 %.
+Q: Změřil jsi rezistor označený 2k2 ± 5 % a ukazuje 2350 Ω. Vyhovuje?
++ Ne – rozsah je 2090 až 2310 Ω
+- Ano – rozsah je 2000 až 2400 Ω
+- Ano – tolerance 5 % je 2200 ± 220 Ω
+- Nelze určit
+E: 5 % z 2200 = 110 Ω.
 Z: 21 Rezistory
+U: 3
 
-Q: Co znamená SMD rezistor s označením 472?
-+ 4,7 kΩ
-- 472 Ω
-- 47 Ω
-- 47 kΩ
-E: 47 × 10² = 4700 Ω.
+Q: NTC, PTC, fotorezistor, varistor – který se použije jako přepěťová ochrana?
++ Varistor
+- NTC termistor
+- Fotorezistor
+- PTC termistor
+E: NTC – čidla teploty, omezení zapínacích proudů; PTC – ochrana proti nadproudu; fotorezistor – soumrakové spínače.
 Z: 21 Rezistory
+U: 2
 
-Q: Které hodnoty patří do řady E12?
-+ 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82
-- 10, 20, 30, 40, 50, 60, 70, 80, 90
-- 1, 2, 5, 10, 20, 50
-- 10, 11, 12, 13, 15, 16, 18, 20
-E: Řada E12 má 12 hodnot v dekádě.
+Q: Potenciometr s průběhem G (logaritmický) se použije:
++ Na hlasitost – ucho vnímá logaritmicky
+- Na přesné nastavení napětí v měřidle
+- Jako ochrana zesilovače proti přepětí
+- Jako čidlo teploty v termostatu
+E: N lineární, G logaritmický, E exponenciální.
 Z: 21 Rezistory
+U: 3
 
-Q: Jak se chová termistor NTC?
-+ S rostoucí teplotou jeho odpor klesá
-- S rostoucí teplotou jeho odpor roste
-- Reaguje na světlo
-- Reaguje na napětí
-E: NTC – záporný teplotní koeficient. PTC – odpor prudce roste.
-Z: 21 Rezistory
-
-Q: Na co reaguje varistor?
-+ Na napětí – s rostoucím napětím jeho odpor klesá
-- Na světlo
-- Na teplotu
-- Na magnetické pole
-E: Varistor – přepěťové ochrany.
-Z: 21 Rezistory
-
-Q: Co je trimr?
-+ Proměnný rezistor nastavovaný nástrojem (servisní nastavení)
-- Potenciometr s hřídelkou na hlasitost
-- Rezistor s pevnou hodnotou
-- Rezistor citlivý na světlo
-E: Potenciometr – častá změna (hřídel), trimr – jednorázové nastavení nástrojem.
-Z: 21 Rezistory
-
-Q: Jaká je jednotka kapacity?
-+ Farad (F)
-- Henry (H)
-- Ohm (Ω)
-- Coulomb (C)
-E: C [F]. Indukčnost L [H].
+Q: Kapacita deskového kondenzátoru se ZVĚTŠÍ, když:
++ Zvětšíš plochu desek
+- Zvětšíš vzdálenost desek
+- Zvýšíš přivedené napětí
+- Zmenšíš plochu desek
+E: C = ε·S/d. Napětí kapacitu nemění (kromě varikapu).
 Z: 22 Kondenzátory
+U: 2
 
-Q: Jak se mění kapacita kondenzátoru se vzdáleností elektrod?
-+ Klesá s rostoucí vzdáleností
-- Roste s rostoucí vzdáleností
-- Nemění se
-- Roste se čtvercem vzdálenosti
-E: C roste s permitivitou a plochou elektrod, klesá se vzdáleností: C = ε·S/d.
+Q: Kondenzátory 100 µF/16 V a 100 µF/25 V paralelně – co dostaneš?
++ 200 µF na max. 16 V
+- 50 µF na max. 41 V
+- 200 µF na max. 41 V
+- 100 µF na max. 25 V
+E: Paralelně se kapacity sčítají, napětí omezuje nejslabší kondenzátor.
 Z: 22 Kondenzátory
+U: 3
 
-Q: O kolik je posunut proud oproti napětí na ideálním kondenzátoru?
-+ Proud předbíhá napětí o 90°
-- Napětí předbíhá proud o 90°
-- Jsou ve fázi
-- Posun 180°
-E: Kondenzátor: proud předbíhá. Cívka: napětí předbíhá proud o 90°.
+N: Kondenzátory 4 µF a 12 µF v sérii. Celková kapacita (µF)?
+= 3 | 0 | µF
+E: C = C1·C2/(C1+C2) = 48/16 = 3 µF.
+Z: 22 Kondenzátory
+U: 3
+
+Q: Co znamenají kódy 223 a 2n2 na kondenzátoru?
++ 223 = 22 nF, 2n2 = 2,2 nF
+- 223 = 223 pF, 2n2 = 22 nF
+- 223 = 2,2 µF, 2n2 = 2,2 pF
+- 223 = 22 µF, 2n2 = 220 pF
+E: 22 × 10³ pF = 22 000 pF = 22 nF.
+Z: 22 Kondenzátory
+U: 3
+
+Q: Proč se elektrolytický kondenzátor nesmí přepólovat?
++ Rozloží se oxidová vrstva, může explodovat
+- Jen se mu sníží kapacita na polovinu
+- Začne propouštět DC, jinak se nic nestane
+- Změní se na cívku a začne bzučet
+E: Elektrolyty jsou polarizované (+, −, pruh, kratší nožička = −).
+Z: 22 Kondenzátory
+U: 2
+
+N: Kondenzátor 100 µF se nabíjí přes rezistor 10 kΩ. Za jak dlouho bude prakticky nabitý (5τ, s)?
+= 5 | 0 | s
+E: τ = R·C = 10⁴·10⁻⁴ = 1 s; 5τ = 5 s.
+Z: 22 Kondenzátory
+U: 3
+
+Q: Po jedné časové konstantě τ = RC je kondenzátor nabitý na:
++ Asi 63 %
+- Asi 50 %
+- Asi 100 %
+- Asi 37 %
+E: Po 5τ asi 99 %. Vybíjení: po τ zbývá asi 37 %.
+Z: 22 Kondenzátory
+U: 3
+
+Q: Proč může být nebezpečné sahat na velký kondenzátor po vypnutí zařízení (např. ve zdroji)?
++ Drží náboj i po odpojení a může způsobit úraz – musí se vybít
+- Je horký
+- Obsahuje rtuť
+- Kondenzátor se po vypnutí okamžitě vybije, nebezpečí není
+E: Před prací se kondenzátory vybíjejí přes rezistor.
+Z: 22 Kondenzátory
+U: 2
+
+Q: Fázový posun na cívce a kondenzátoru:
++ Na cívce napětí předbíhá proud o 90°, na kondenzátoru proud předbíhá napětí o 90°
+- Na cívce proud předbíhá napětí, na kondenzátoru napětí předbíhá proud
+- Na obou jsou ve fázi
+- Na obou je posun 180°
+E: Pomůcka „CIVIL“: u C proud (I) před napětím (V), u L napětí před proudem.
 Z: 22 Kondenzátory; 23 Cívky
+U: 2
 
-Q: Propouští kondenzátor stejnosměrný proud (v ustáleném stavu)?
-+ Ne
-- Ano
-- Jen elektrolytický
-- Jen při vysokém napětí
-E: Kondenzátor DC neprochází (oddělovací kondenzátor), střídavý proud prochází.
-Z: 22 Kondenzátory
-
-Q: Co platí při paralelním řazení kondenzátorů?
-+ Kapacity se sčítají; napětí je omezeno nejnižším jmenovitým napětím
-- Kapacita se zmenšuje
-- Napětí se sčítají
-- 1/C = 1/C1 + 1/C2
-E: Paralelně C = C1 + C2 + … Sériově 1/C = 1/C1 + 1/C2 (kapacita klesá, napětí se sčítají).
-Z: 22 Kondenzátory
-
-N: Dva kondenzátory 10 µF a 10 µF jsou zapojeny do série. Jaká je celková kapacita (µF)?
-= 5 | 0 | µF
-E: Dva stejné v sérii → C/2 = 5 µF.
-Z: 22 Kondenzátory
-
-Q: Na co je třeba dbát u elektrolytického kondenzátoru?
-+ Na polaritu (+/−) – je polarizovaný
-- Na barvu pouzdra
-- Na směr magnetického pole
-- Na nic, je nepolarizovaný
-E: Elektrolytický kondenzátor je polarizovaný; při přepólování se zničí (může i explodovat).
-Z: 22 Kondenzátory
-
-Q: Co znamená kód 104 na keramickém kondenzátoru?
-+ 100 nF (100 000 pF)
-- 104 pF
-- 10 µF
-- 1 nF
-E: 10 × 10⁴ pF = 100 000 pF = 100 nF.
-Z: 22 Kondenzátory
-
-Q: Co znamená kód 472 na kondenzátoru?
-+ 4,7 nF
-- 472 pF
-- 47 nF
-- 4,7 µF
-E: 47 × 10² pF = 4700 pF = 4,7 nF.
-Z: 22 Kondenzátory
-
-Q: Jak se nabíjí kondenzátor přes rezistor?
-+ Napětí roste nejdřív rychle, pak stále pomaleji
-- Napětí roste rovnoměrně
-- Napětí skočí okamžitě na plnou hodnotu
-- Napětí kmitá
-E: Nabíjení i vybíjení probíhá exponenciálně; časová konstanta τ = R·C.
-Z: 22 Kondenzátory
-
-N: Jaká je časová konstanta τ obvodu R = 1 MΩ, C = 10 µF (s)?
-= 10 | 0 | s
-E: τ = R·C = 10⁶ · 10·10⁻⁶ = 10 s.
-Z: 22 Kondenzátory
-
-Q: Jaká je jednotka indukčnosti?
-+ Henry (H)
-- Farad (F)
-- Tesla (T)
-- Weber (Wb)
-E: L [H].
+Q: Indukčnost cívky závisí na:
++ Na počtu závitů a materiálu jádra
+- Jen na průřezu použitého drátu
+- Na napětí, na které je připojena
+- Na barvě a druhu izolace drátu
+E: Feromagnetické jádro indukčnost mnohonásobně zvětší.
 Z: 23 Cívky
+U: 2
 
-Q: Jak se chová cívka ve stejnosměrném obvodu (ustálený stav)?
-+ Projevuje se jen svým odporem vinutí
-- Nepropouští proud
-- Má nekonečnou reaktanci
-- Vyrábí napětí
-E: Při DC vzniká stálé magnetické pole, uplatní se jen ohmický odpor vinutí.
+N: Dvě cívky 20 mH a 30 mH bez vzájemné vazby paralelně. Celková indukčnost (mH)?
+= 12 | 0 | mH
+E: Jako rezistory: L = 20·30/50 = 12 mH.
 Z: 23 Cívky
+U: 3
 
-Q: Co se stane s indukčností při sériovém řazení cívek (bez vzájemné vazby)?
-+ Zvětší se (L = L1 + L2)
-- Zmenší se
-- Nezmění se
-- Bude nulová
-E: Sériově se indukčnosti sčítají, paralelně se zmenšují.
-Z: 23 Cívky
-
-Q: K čemu slouží tlumivka?
-+ Působí proti prudkým změnám proudu v obvodu
-- Usměrňuje proud
-- Ukládá náboj
-- Mění světlo na elektřinu
-E: Tlumivka omezuje změny proudu (zářivky, filtry, rozběh).
-Z: 23 Cívky
-
-Q: Jak se nazývá cívka stočená do kruhu?
-+ Toroid
-- Solenoid
-- Varikap
-- Trimr
-E: Solenoid – dlouhá přímá cívka, toroid – stočená do kruhu.
-Z: 23 Cívky
-
-Q: Jaký je typický materiál jader cívek pro vyšší frekvence?
-+ Ferit
-- Měď
-- Hliník
-- Olovo
-E: Ferit má malé ztráty vířivými proudy, vhodný pro vyšší frekvence. Železo pro 50 Hz.
-Z: 23 Cívky
-
-Q: Jaký polovodič vznikne přidáním pětimocného prvku (fosfor, arzen) do křemíku?
-+ Typ N (elektronová vodivost)
-- Typ P (děrová vodivost)
-- Izolant
-- Supravodič
-E: Pětimocná příměs → volný elektron → typ N. Trojmocná (indium, bor) → díra → typ P.
+Q: Typ N a typ P polovodiče:
++ N pětimocná příměs (elektrony), P trojmocná (díry)
+- N trojmocná příměs (díry), P pětimocná (elektrony)
+- N čistý křemík, P čisté germanium bez příměsí
+- N kladné ionty v mřížce, P volné záporné elektrony
+E: Přechod PN usměrňuje.
 Z: 24 Diody
+U: 2
 
-Q: Kdy je přechod PN v propustném směru?
-+ Kladný pól zdroje na P (anoda), záporný na N (katoda)
-- Kladný pól na N, záporný na P
-- Vždy
-- Nikdy
-E: Propustný směr: + na anodu (P). Závěrný směr: hradlová vrstva se rozšíří, proud neprochází.
+Q: Přechod PN v závěrném směru – co se děje?
++ Hradlová vrstva se rozšíří a proud téměř neteče
+- Hradlová vrstva zanikne a proud volně teče
+- Dioda začne svítit jako LED v propustném směru
+- Dioda se nabije a funguje jako malý akumulátor
+E: Při překročení závěrného napětí dojde k průrazu (u běžné diody zničení).
 Z: 24 Diody
+U: 2
 
-Q: Jaké je přibližné prahové napětí křemíkové diody v propustném směru?
-+ Asi 0,6–0,7 V
-- Asi 0,2 V
-- Asi 5 V
-- Asi 12 V
-E: Křemík asi 0,6–0,7 V, germanium asi 0,2–0,3 V. U 1N4007 udává katalog Uf 1,1 V při 1 A.
+Q: Zenerova dioda se zapojuje:
++ Závěrně, s předřadným rezistorem
+- Propustně, bez předřadného rezistoru
+- Závěrně, přímo na zdroj bez rezistoru
+- Propustně, do série se zátěží
+E: Bez rezistoru by proud po průrazu neomezeně rostl.
 Z: 24 Diody
+U: 2
 
-Q: K čemu se používá Zenerova dioda?
-+ Ke stabilizaci a omezení napětí – pracuje v závěrném směru
-- K vyzařování světla
-- K usměrnění velkých proudů
-- K ladění kmitavých obvodů
-E: Zenerova dioda využívá nedestruktivní průraz v závěrném směru; potřebuje předřadný rezistor.
+N: Stabilizátor se Zenerovou diodou: vstup 20 V, UZ = 12 V, proud rezistorem má být 40 mA. Jaký rezistor (Ω)?
+= 200 | 0 | Ω
+E: R = (20 − 12)/0,04 = 200 Ω.
 Z: 24 Diody
+U: 3
 
-Q: Co je varikap?
-+ Kapacitní dioda – napětím řízený kondenzátor (v závěrném směru)
-- Dioda vyzařující světlo
-- Výkonová usměrňovací dioda
-- Proměnný rezistor
-E: Varikap – ladění kmitavých obvodů.
+N: Stabilizátor z předchozí úlohy (20 V → 12 V, 40 mA). Jaký výkon se ztrácí na rezistoru (W, 2 desetinná místa)?
+= 0.32 | 0.005 | W
+E: P = UR·I = 8·0,04 = 0,32 W → rezistor 0,5 W.
 Z: 24 Diody
+U: 3
 
-Q: Čím je zajímavá Schottkyho dioda?
-+ Využívá přechod kov–polovodič, je velmi rychlá a má malý úbytek napětí
-- Svítí infračerveně
-- Pracuje jen při vysokém napětí
-- Je to druh tyristoru
-E: Schottky – rychlé spínací obvody, malý úbytek napětí.
+N: Bílá LED: 3,2 V, 20 mA, napájení 5 V. Jaký předřadný rezistor (Ω)?
+= 90 | 0 | Ω
+E: R = (5 − 3,2)/0,02 = 90 Ω → z řady E12 volíš 100 Ω.
 Z: 24 Diody
+U: 2
 
-Q: V jakém směru se zapojuje fotodioda?
-+ V závěrném směru
-- V propustném směru
-- Libovolně
-- Jen na střídavé napětí
-E: Fotodioda v závěrném směru mění proud podle osvětlení; lze ji použít i jako zdroj napětí (fotovoltaika).
+N: Tři zelené LED (2,5 V) v sérii na 12 V, proud 20 mA. Jaký předřadný rezistor (Ω)?
+= 225 | 0 | Ω
+E: UR = 12 − 3·2,5 = 4,5 V; R = 4,5/0,02 = 225 Ω.
 Z: 24 Diody
+U: 3
 
-N: LED (2 V, 20 mA) chceme napájet z 12 V. Jaký předřadný rezistor potřebujeme (Ω)?
-= 500 | 0 | Ω
-E: UR = 12 − 2 = 10 V; R = 10 V / 0,02 A = 500 Ω (prakticky nejbližší vyšší z řady, např. 560 Ω).
+Q: Proč se LED zapojené paralelně nemají napájet přes jeden společný rezistor?
++ Jedna LED by kvůli rozptylu Uf brala většinu proudu
+- Paralelně zapojené LED nemohou vůbec svítit
+- Společný rezistor by se vždy přehřál a shořel
+- Paralelně se napětí LED sčítají a rezistor nestačí
+E: Každá LED (nebo každá sériová větev) má mít vlastní rezistor.
 Z: 24 Diody
+U: 3
 
-N: Dvě červené LED (1,8 V každá) v sérii na 12 V, proud 20 mA. Jaký předřadný rezistor (Ω)?
-= 420 | 0 | Ω
-E: UR = 12 − 2·1,8 = 8,4 V; R = 8,4 / 0,02 = 420 Ω.
+Q: Které diody se zapojují v ZÁVĚRNÉM směru?
++ Zenerova, varikap, fotodioda
+- LED, usměrňovací, Schottky
+- Schottkyho, LED, tunelová
+- Všechny druhy diod
+E: LED a usměrňovací diody pracují v propustném směru.
 Z: 24 Diody
+U: 2
 
-Q: Co je katalogový údaj URRM u diody?
-+ Maximální přípustné závěrné napětí
-- Proud v propustném směru
-- Prahové napětí
-- Výkonová ztráta
-E: Uf – propustné napětí, If – propustný proud, IFSM – nárazový proud, URRM – max. závěrné napětí.
+Q: Dioda 1N4007 má URRM = 1000 V a If = 1 A. Smíš ji použít v usměrňovači 230 V pro zátěž 2 A?
++ Ne – vydrží napětí, ale ne proud 2 A
+- Ano – 1000 V je víc než dost
+- Ne – nevydrží napětí sítě 230 V
+- Ano – proud v propustném směru nevadí
+E: Musí vyhovět napětí i proud (s rezervou).
 Z: 24 Diody
+U: 3
 
-Q: Které zapojení usměrňovače dává dvoucestné usměrnění se čtyřmi diodami?
-+ Graetzův (můstkový) usměrňovač
-- Jednocestný usměrňovač
-- Zdvojovač napětí
-- Darlingtonovo zapojení
-E: Graetzův můstek – 4 diody, využívá obě půlvlny.
+Q: Graetzův můstek – kolik diod vede současně v jedné půlperiodě?
++ Dvě
+- Jedna
+- Čtyři
+- Žádná, vedou střídavě po jedné
+E: Proto je úbytek napětí na můstku asi 2 × 0,7 V.
 Z: Elektrotechnika 2
+U: 3
 
-Q: Ze kterých vrstev (oblastí) se skládá bipolární tranzistor?
-+ Emitor, báze, kolektor (NPN nebo PNP)
-- Anoda, katoda, hradlo
-- Gate, drain, source
-- Primár, sekundár
-E: Bipolární tranzistor: E, B, C. Malým proudem báze se řídí velký proud kolektoru.
+Q: Jednocestný vs. dvoucestný usměrňovač:
++ Dvoucestný využije obě půlvlny, zvlnění 100 Hz
+- Jednocestný je účinnější a má menší zvlnění
+- Oba dávají hladké DC i bez filtračního kondenzátoru
+- Dvoucestný potřebuje jen jednu diodu, jednocestný čtyři
+E: Jednocestný: jedna dioda, zvlnění 50 Hz.
 Z: Elektrotechnika 2
+U: 3
 
-Q: Které vývody má tyristor?
-+ Anoda, katoda, řídicí elektroda (gate)
-- Emitor, báze, kolektor
-- Dvě anody
-- Plus, mínus, zem
-E: Tyristor se sepne impulsem do řídicí elektrody a vede, dokud proud neklesne pod přídržný proud.
+Q: Tyristor – jak se sepne a jak vypne?
++ Sepne impulsem do gate, vypne při poklesu proudu
+- Sepne i vypne krátkým impulsem do gate
+- Sepne při ohřátí, vypne se po ochlazení
+- Vede jen po dobu trvání impulsu do gate
+E: Použití: řízené usměrňovače, softstartéry, stmívače (triak).
 Z: Elektrotechnika 2
+U: 3
+
+Q: Bipolární tranzistor NPN jako spínač – kdy sepne?
++ Když do báze teče dostatečný proud
+- Když je báze zápornější než emitor
+- Když se zvýší napětí na kolektoru
+- Když se emitor odpojí od záporného pólu
+E: Malý proud báze řídí velký proud kolektoru (proudový zesilovací činitel β).
+Z: Elektrotechnika 2
+U: 3
 
 # tema: mereni | Elektrická měření
 
-Q: Jak se zapojuje ampérmetr?
-+ Do série se spotřebičem
-- Paralelně ke spotřebiči
-- Mezi fázi a zem
-- Libovolně
-E: Ampérmetr do série (má malý vnitřní odpor), voltmetr paralelně (velký vnitřní odpor).
+Q: Zapojení měřidel:
++ Ampérmetr do série, voltmetr paralelně
+- Ampérmetr paralelně, voltmetr do série
+- Ampérmetr i voltmetr do série
+- Ampérmetr i voltmetr paralelně
+E: Ampérmetr zapojený paralelně ke zdroji = zkrat.
 Z: EZ1 Měřicí přístroje
+U: 1
 
-Q: Jaký vnitřní odpor má mít ideální voltmetr?
-+ Co největší (nekonečný)
-- Co nejmenší (nulový)
-- Stejný jako měřený spotřebič
-- Na tom nezáleží
-E: Voltmetr nesmí obvod zatěžovat → velký odpor. Ampérmetr nesmí způsobit úbytek → malý odpor.
+Q: Učeň zapojil ampérmetr paralelně k zásuvce 230 V. Co se stane?
++ Zkrat – přepálí se pojistka měřidla nebo se zničí
+- Ukáže napětí 230 V, protože je paralelně
+- Ukáže nulu, protože obvod není uzavřený
+- Ukáže proud spotřebiče zapojeného v zásuvce
+E: Proto mají multimetry na proudových rozsazích pojistky.
 Z: EZ1 Měřicí přístroje
+U: 2
 
-Q: Čím se zvětšuje měřicí rozsah ampérmetru?
-+ Bočníkem (paralelní rezistor)
-- Předřadníkem (sériový rezistor)
-- Kondenzátorem
-- Zenerovou diodou
-E: Ampérmetr – bočník paralelně. Voltmetr – předřadník do série. Pro velké AC proudy měřicí transformátor proudu.
+N: Ampérmetr s rozsahem 1 A má vnitřní odpor 0,1 Ω. Jaký bočník potřebuješ pro rozsah 10 A (Ω, 3 desetinná místa)?
+= 0.011 | 0.0005 | Ω
+E: Bočníkem má téct 9 A, přístrojem 1 A: Rb = Ra/(n − 1) = 0,1/9 ≈ 0,011 Ω.
 Z: EZ1 Měřicí přístroje
+U: 3
 
-Q: Čím se zvětšuje rozsah voltmetru?
-+ Předřadníkem (sériový rezistor)
-- Bočníkem
-- Paralelní cívkou
-- Diodou
-E: Předřadný rezistor v sérii s voltmetrem.
+N: Voltmetr s rozsahem 10 V má vnitřní odpor 10 kΩ. Jaký předřadník potřebuješ pro rozsah 100 V (kΩ)?
+= 90 | 0 | kΩ
+E: Rp = Rv·(n − 1) = 10·(10 − 1) = 90 kΩ.
 Z: EZ1 Měřicí přístroje
+U: 3
 
-Q: Co udává třída přesnosti analogového přístroje (např. 1,5)?
-+ Největší chybu v % z měřicího rozsahu
-- Chybu v % z naměřené hodnoty
-- Počet dílků stupnice
-- Vnitřní odpor
-E: Třída 1,5 = chyba max. ±1,5 % z rozsahu. Proto se má měřit v horní třetině stupnice.
-Z: EZ1 Měřicí přístroje
-
-N: Voltmetr třídy přesnosti 1,5 s rozsahem 300 V. Jaká je největší absolutní chyba (V)?
-= 4.5 | 0 | V
-E: 1,5 % z 300 V = 4,5 V.
+N: Voltmetr třídy 1,5 s rozsahem 300 V ukazuje 60 V. Jaká je největší RELATIVNÍ chyba měření (%)?
+= 7.5 | 0.05 | %
+E: Absolutní chyba = 1,5 % z 300 V = 4,5 V; relativně 4,5/60 = 7,5 %. Proto měř v horní třetině stupnice.
 Z: EZ1 Měřicí přístroje; Elektrická měření
+U: 3
 
-Q: Proč se má měřit pokud možno v horní třetině stupnice?
-+ Relativní chyba je pak nejmenší
-- Ručka je lépe vidět
-- Přístroj se méně opotřebí
-- Šetří se baterie
-E: Absolutní chyba je daná rozsahem, takže při malé výchylce je relativní chyba velká.
-Z: EZ1 Měřicí přístroje
-
-Q: Která měřicí soustava měří jen stejnosměrné veličiny (bez usměrňovače)?
-+ Magnetoelektrická (s otočnou cívkou)
-- Elektromagnetická (s otočným železem)
-- Elektrodynamická
-- Indukční
-E: Magnetoelektrická – jen DC, lineární stupnice. Elektromagnetická – AC i DC, nelineární stupnice. Elektrodynamická – wattmetry. Indukční – elektroměry.
-Z: EZ1 Měřicí přístroje; Elektrická měření
-
-Q: Na jakém principu pracovaly klasické (Ferrarisovy) elektroměry s kotoučem?
-+ Indukční soustava
-- Magnetoelektrická soustava
-- Elektrostatická soustava
-- Tepelná soustava
-E: Indukční měřicí soustava – otáčející se hliníkový kotouč.
-Z: Elektrická měření
-
-Q: Čím se měří činný výkon?
-+ Wattmetrem (elektrodynamická soustava – proudová a napěťová cívka)
-- Ampérmetrem
-- Ohmmetrem
-- Megmetrem
-E: Wattmetr má proudovou cívku v sérii a napěťovou paralelně.
-Z: Elektrická měření
-
-Q: Čím se měří izolační odpor?
-+ Megaohmmetrem (měřič izolačního odporu, např. 500 V DC)
-- Běžným ohmmetrem multimetru
-- Ampérmetrem
-- Klešťovým ampérmetrem
-E: Izolační odpor se měří vysokým DC napětím (250, 500, 1000 V).
-Z: Elektrická měření; 13 Revize
-
-Q: Výhoda klešťového ampérmetru je:
-+ Měří proud bez přerušení obvodu
-- Měří izolační odpor
-- Je přesnější než ampérmetr v sérii
-- Měří jen stejnosměrný proud
-E: Kleště obepnou jeden vodič (ne celý kabel – součet proudů by byl nulový).
-Z: EZ1 Měřicí přístroje
-
-Q: Proč se nesmí klešťovým ampérmetrem obepnout celý kabel (L i N)?
-+ Proudy se v kleštích vyruší a přístroj ukáže skoro nulu
-- Poškodí se kabel
-- Přístroj vybuchne
-- Ukáže dvojnásobek
-E: Stejně velké opačné proudy L a N se magneticky vyruší.
-Z: EZ1 Měřicí přístroje
-
-Q: Smí se sekundár měřicího transformátoru proudu nechat rozpojený?
-+ Ne – vzniklo by nebezpečné vysoké napětí; musí být zkratovaný nebo zatížený
-- Ano, nic se nestane
-- Ano, je to normální stav
-- Jen při malém proudu
-E: Transformátor proudu pracuje nakrátko; rozpojení sekundáru je nebezpečné.
-Z: EZ1 Měřicí přístroje; EZ2 Elektrické přístroje
-
-Q: Jak se správně měří odpor ohmmetrem?
-+ Na součástce bez napětí (odpojené od obvodu)
-- Na součástce pod napětím
-- Ohmmetr se zapojuje do série s obvodem pod napětím
-- Na obvodu s nabitým kondenzátorem
-E: Ohmmetr má vlastní zdroj; cizí napětí měření zkreslí a může přístroj poškodit.
-Z: EZ1 Měřicí přístroje
-
-Q: Co znamená údaj CAT III na multimetru?
-+ Kategorie přepětí – použití v pevné instalaci budov (rozvaděče)
-- Počet měřicích rozsahů
-- Třída přesnosti
-- Typ baterie
-E: CAT II – spotřebiče v zásuvkách, CAT III – pevná instalace, CAT IV – přípojky a začátek instalace.
-Z: EZ1 Měřicí přístroje
-
-Q: Čím se měří impedance poruchové smyčky?
-+ Měřičem impedance smyčky (revizní přístroj)
-- Megmetrem
-- Voltmetrem
-- Osciloskopem
-E: Ověřuje se tím, že jistič vypne poruchu včas (Zs × Ia ≤ U0).
-Z: Technologie 2
-
-Q: Co měří osciloskop?
-+ Časový průběh napětí
-- Jen efektivní hodnotu proudu
-- Izolační odpor
-- Spotřebu energie
-E: Osciloskop zobrazuje průběh napětí v čase (tvar, amplituda, frekvence).
-Z: Elektrická měření
-
-Q: Jak se vypočítá konstanta měřicího přístroje?
-+ K = měřicí rozsah / počet dílků stupnice
-- K = počet dílků / rozsah
-- K = rozsah · třída přesnosti
-- K = napětí / proud
-E: Naměřená hodnota = K · počet dílků výchylky.
-Z: Elektrická měření
-
-N: Ampérmetr má rozsah 6 A a stupnici se 120 dílky. Ručka ukazuje 80 dílků. Kolik ampér teče (A)?
+N: Ampérmetr: rozsah 6 A, stupnice 120 dílků, výchylka 80 dílků. Jaký proud teče (A)?
 = 4 | 0 | A
-E: K = 6/120 = 0,05 A/dílek; I = 0,05 · 80 = 4 A.
+E: K = 6/120 = 0,05 A/dílek; I = 80·0,05 = 4 A.
 Z: Elektrická měření
+U: 2
+
+Q: Měřicí soustavy analogových přístrojů:
++ Magnetoelektrická jen DC, elektromagnetická AC i DC
+- Magnetoelektrická jen AC, elektromagnetická jen DC
+- Elektrodynamická jen odpor, indukční jen napětí
+- Všechny soustavy měří jen stejnosměrné veličiny
+E: Magnetoelektrický přístroj na AC potřebuje usměrňovač.
+Z: EZ1 Měřicí přístroje; Elektrická měření
+U: 2
+
+Q: Měříš izolační odpor nového kabelu. Co je správně?
++ Bez napětí, spotřebiče odpojené, měřič izolace 500 V DC
+- Pod napětím, multimetrem na rozsahu 200 Ω
+- Bez napětí, měřič izolace 500 V, spotřebiče zapojené
+- Za provozu klešťovým ampérmetrem na celý kabel
+E: Připojené spotřebiče (elektronika) by se mohly poškodit a měření by bylo zkreslené.
+Z: Elektrická měření; 13 Revize
+U: 3
+
+Q: Proč se proud nesmí měřit kleštěmi obepnutím celého kabelu CYKY 3×2,5?
++ Proudy L a N se vyruší, kleště ukážou asi nulu
+- Kleště by se velkým proudem poškodily
+- Kabel by se kleštěmi indukčně přehřál
+- Kleště by ukázaly dvojnásobný proud
+E: Toho se naopak využívá u měření unikajícího proudu (rozdíl L a N).
+Z: EZ1 Měřicí přístroje
+U: 2
+
+Q: Kleště obepnou L a N přívodu spotřebiče a ukážou 4 mA. Co to znamená?
++ Unikající proud do PE je asi 4 mA
+- Spotřebič má příkon asi 4 W
+- Kleště jsou vadné, mají ukázat nulu
+- Proud spotřebiče je přesně 4 mA
+E: Pro třídu I je limit unikajícího proudu 3,5 mA → spotřebič nevyhovuje.
+Z: EZ1 Měřicí přístroje; 13 Revize
+U: 3
+
+Q: Proč se nesmí rozpojit sekundár transformátoru proudu za provozu?
++ Na sekundáru vznikne nebezpečně vysoké napětí
+- Přestane téct proud v primárním vodiči
+- Transformátor se přepne na napěťový režim
+- Nic se nestane, jen ampérmetr ukáže nulu
+E: TP pracuje nakrátko; při výměně ampérmetru se sekundár zkratuje.
+Z: EZ1 Měřicí přístroje; EZ2 Elektrické přístroje
+U: 3
+
+N: Transformátor proudu 200/5 A, ampérmetr na sekundáru ukazuje 3 A. Jaký proud teče primárem (A)?
+= 120 | 0 | A
+E: Převod 200/5 = 40; 3·40 = 120 A.
+Z: EZ1 Měřicí přístroje
+U: 3
+
+Q: Kategorie přepětí multimetru – který přístroj použiješ v hlavním rozvaděči domu?
++ CAT III nebo CAT IV
+- CAT I
+- CAT II
+- Na kategorii nezáleží, rozhoduje jen rozsah 600 V
+E: CAT II spotřebiče v zásuvce, CAT III pevná instalace, CAT IV přípojky a začátek instalace.
+Z: EZ1 Měřicí přístroje
+U: 3
+
+Q: Měříš malý odpor (zlomky ohmu), např. kontakt nebo vinutí. Jaká metoda je přesnější?
++ Čtyřvodičová metoda (Kelvin) nebo Thomsonův můstek
+- Běžný ohmmetr se dvěma měřicími hroty
+- Měřič izolačního odporu se zkušebním napětím 500 V
+- Klešťový ampérmetr a výpočet z Ohmova zákona
+E: U malých odporů je odpor měřicích šňůr srovnatelný s měřeným odporem.
+Z: Elektrická měření
+U: 3
+
+Q: Proč ohmmetrem nesmíš měřit součástku zapojenou v obvodu pod napětím?
++ Cizí napětí zkreslí měření a může ohmmetr zničit
+- Ohmmetr by vždy ukázal nekonečný odpor
+- Měřená součástka by se tím přepólovala
+- Jde to, měření je jen pomalejší než obvykle
+E: Součástka se měří bez napětí, ideálně vypájená z obvodu.
+Z: EZ1 Měřicí přístroje
+U: 2
+
+Q: Měření impedance poruchové smyčky slouží k tomu, aby se ověřilo:
++ Že jistič při poruše vypne včas
+- Izolační odpor mezi vodiči
+- Zemní odpor hromosvodu
+- Správný sled fází zásuvky
+E: Měří se revizním přístrojem v zásuvkách a na koncích obvodů.
+Z: Technologie 2; 14 Principy ochrany
+U: 3
+
+Q: Proč se při revizi kontroluje sled fází zásuvek 400 V?
++ Aby se motory točily správným směrem
+- Aby se snížila spotřeba elektřiny
+- Aby správně fungoval proudový chránič
+- Aby elektroměr správně měřil spotřebu
+E: Prohozením dvou fází se motor otočí opačně.
+Z: Technologie 2; EZ4 Točivé stroje
+U: 2
+
+Q: Digitální multimetr ukazuje na rozsahu 200 V hodnotu „1.“ (nebo OL). Co to znamená?
++ Překročení rozsahu – přepnout výš
+- Napětí je přesně 1 V
+- Přístroj má vybitou baterii
+- Měřené napětí je nulové
+E: Neznámou hodnotu měř nejdřív na nejvyšším rozsahu.
+Z: EZ1 Měřicí přístroje
+U: 2
+
+Q: Osciloskopem měříš sinusovku, mezi vrcholy je 8 dílků při 50 V/dílek. Jaké je efektivní napětí?
++ Asi 141 V
+- Asi 400 V
+- Asi 200 V
+- Asi 283 V
+E: Napětí mezi vrcholy 400 V → amplituda 200 V → efektivní 200/√2 ≈ 141 V.
+Z: Elektrická měření
+U: 3

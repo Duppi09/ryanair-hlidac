@@ -43,6 +43,7 @@ def parse(path):
                 problems.append("málo možností")
         elif "odpoved" not in cur:
             problems.append("chybí řádek '= hodnota | tolerance | jednotka'")
+        cur.setdefault("uroven", 2)
         if not cur.get("vysvetleni"):
             problems.append("chybí vysvětlení (E:)")
         if problems:
@@ -65,7 +66,7 @@ def parse(path):
                 continue
             if s.startswith("#"):
                 continue
-            tag, _, rest = s.partition(":") if s[:2] in ("Q:", "N:", "E:", "Z:") else (s[0], "", s[1:])
+            tag, _, rest = s.partition(":") if s[:2] in ("Q:", "N:", "E:", "Z:", "U:") else (s[0], "", s[1:])
             rest = rest.strip()
             if s.startswith("Q:") or s.startswith("N:"):
                 flush()
@@ -90,6 +91,10 @@ def parse(path):
                 cur["vysvetleni"] = rest
             elif s.startswith("Z:") and cur:
                 cur["zdroj"] = rest
+            elif s.startswith("U:") and cur:
+                if rest not in ("1", "2", "3"):
+                    sys.exit(f"{path}: úroveň musí být 1, 2 nebo 3: {line}")
+                cur["uroven"] = int(rest)
             else:
                 sys.exit(f"{path}: nerozumím řádku: {line}")
     flush()
@@ -121,6 +126,8 @@ def main():
     print(f"{len(all_q)} otázek v {len(topics)} tématech")
     for t in topics:
         print(f"  {t['id']:14} {t['pocet']:3}  {t['nazev']}")
+    lv = {u: sum(1 for q in all_q if q["uroven"] == u) for u in (1, 2, 3)}
+    print(f"Úrovně: 1 = {lv[1]}, 2 = {lv[2]}, 3 = {lv[3]}; výpočtů: {sum(1 for q in all_q if q['typ'] == 'cislo')}")
     assert known
 
 

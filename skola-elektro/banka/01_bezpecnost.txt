@@ -1,794 +1,770 @@
-# Formát: "# tema: id | Název", "Q:" otázka s výběrem (+ správně, - špatně), "N:" číselná otázka ("= hodnota | tolerance | jednotka"), "E:" vysvětlení, "Z:" zdroj
+# Formát: "# tema: id | Název", "Q:" otázka s výběrem (+ správně, - špatně), "N:" číselná otázka ("= hodnota | tolerance | jednotka"),
+# "E:" vysvětlení, "Z:" zdroj, "U:" úroveň 1 = základ, 2 = úroveň zkoušky, 3 = těžká (situace, více kroků)
 
 # tema: uraz | Úraz el. proudem a první pomoc
 
-Q: Jaký proud (50 Hz) je přibližně práh vnímání?
-+ 0,5 mA
-- 5 mA
-- 10 mA
-- 0,05 mA
-E: Práh vnímání střídavého proudu 50 Hz je asi 0,5 mA. Kolem 10 mA je mez uvolnění.
+Q: Střídavý proud 50 Hz tělem po dobu asi 5 s. Která dvojice „proud – účinek" je správně?
++ 10 mA – křeč, člověk se sám nepustí
+- 10 mA – ochrnutí dýchacích svalů
+- 35 mA – mez uvolnění, křeč svalů
+- 3 mA – téměř jistá zástava srdce
+E: 0,5 mA práh vnímání, 1–3 mA brnění, ~10 mA mez uvolnění (křeč), 15–20 mA ochrnutí dýchacích svalů, ~35 mA možná zástava srdce, nad 80 mA téměř jistá zástava.
 Z: 1 Úraz elektrickým proudem
+U: 2
 
-Q: Co je „mez uvolnění" a při jakém proudu přibližně nastává?
-+ Křeč, kdy se člověk sám nepustí vodiče – kolem 10 mA
-- Ochrnutí dýchacích svalů – kolem 50 mA
-- Pocit brnění – kolem 1 mA
-- Zástava srdce – kolem 80 mA
-E: Kolem 10 mA vzniká křeč svalů, která znemožní vlastní vyproštění.
+Q: Seřaď účinky od nejmenšího proudu: A) ochrnutí dýchacích svalů, B) mez uvolnění, C) práh vnímání, D) možná srdeční zástava.
++ C – B – A – D
+- C – A – B – D
+- B – C – A – D
+- C – B – D – A
+E: Práh vnímání 0,5 mA → mez uvolnění ~10 mA → dýchací svaly 15–20 mA → srdce ~35 mA.
 Z: 1 Úraz elektrickým proudem
+U: 2
 
-Q: Při jakém proudu hrozí ochrnutí dýchacích svalů?
-+ Kolem 15 až 20 mA
-- Kolem 1 až 3 mA
-- Kolem 0,5 mA
-- Až nad 200 mA
-E: 15–20 mA → ochrnutí dýchacích svalů, ~35 mA → možná zástava srdce, nad 80 mA téměř jistá zástava.
+Q: Kolega drží v ruce kabel pod napětím a nemůže ho pustit. Jak postupuješ jako první?
++ Vypnu přívod, nebo ho odtáhnu nevodivým předmětem
+- Chytím ho za ruku a rychle strhnu z kabelu
+- Volám 155 a do příjezdu záchranky čekám
+- Polévám kabel vodou, aby se přerušil oblouk
+E: Nejdřív vyprostit tak, abych se sám nestal obětí: vypnout, nebo odtáhnout suchým nevodivým předmětem za oděv. Pak volat pomoc a zahájit resuscitaci.
 Z: 1 Úraz elektrickým proudem
+U: 2
 
-Q: Od jakého proudu je srdeční zástava téměř jistá?
-+ Nad 80 mA
-- Nad 10 mA
-- Nad 30 mA
-- Nad 500 mA
-E: Kolem 35 mA může dojít k zástavě, nad 80 mA je téměř jistá.
+Q: Jaké je pořadí kroků první pomoci podle školního postupu?
++ Vyproštění – přivolání lékaře – zjištění stavu – resuscitace – ošetření zranění – ohlášení úrazu
+- Přivolání lékaře – vyproštění – resuscitace – zjištění stavu – ohlášení úrazu – ošetření
+- Vyproštění – zjištění stavu – ošetření popálenin – přivolání lékaře – resuscitace – ohlášení
+- Zjištění stavu – vyproštění – resuscitace – ohlášení úrazu – přivolání lékaře – ošetření
+E: Ošetření popálenin a zlomenin až po zajištění životních funkcí; ohlášení úrazu je poslední.
 Z: 1 Úraz elektrickým proudem
+U: 2
 
-Q: Co je prvním krokem první pomoci při úrazu el. proudem?
-+ Vyprostit postiženého z dosahu proudu (bezpečně – vypnout)
-- Zahájit masáž srdce
-- Ohlásit úraz zaměstnavateli
-- Ošetřit popáleniny
-E: Pořadí: 1. vyproštění, 2. přivolání lékaře, 3. zjištění stavu, 4. resuscitace, 5. ošetření zranění, 6. ohlášení úrazu. Nikdy se postiženého nedotýkej, dokud je pod napětím!
+Q: Resuscitace dospělého jedním zachráncem – co platí?
++ 30 stlačení a 2 vdechy, 100–120 stlačení za minutu, hloubka asi 5–6 cm
+- 15 stlačení a 2 vdechy, 60–80 za minutu, hloubka asi 3 cm
+- 30 stlačení a 2 vdechy, 60–80 za minutu, hloubka asi 8 cm
+- 5 stlačení a 1 vdech, 100–120 za minutu, hloubka asi 5 cm
+E: 30:2, 100–120/min, 5–6 cm. Poměr 5:1 a 15:2 jsou staré nebo dětské postupy.
 Z: 1 Úraz elektrickým proudem
+U: 1
 
-Q: Jaký je poměr stlačení hrudníku a vdechů při resuscitaci dospělého?
-+ 30 stlačení : 2 vdechy
-- 15 stlačení : 2 vdechy
-- 5 stlačení : 1 vdech
-- 30 stlačení : 5 vdechů
-E: 30:2, stlačení 100–120× za minutu do hloubky asi 5 cm.
+Q: Proč je po úrazu proudem nutné vyšetření lékařem, i když se postižený cítí dobře?
++ Hrozí pozdní poruchy srdečního rytmu a vnitřní popáleniny, které nejsou vidět
+- Kvůli pojišťovně, zdravotně to nutné není
+- Jen kvůli kontrole popálenin na kůži
+- Lékař musí potvrdit, že pracovník smí dál pracovat pod napětím
+E: Proud může poškodit srdce i tkáně uvnitř těla (popáleniny podél dráhy proudu); arytmie se mohou objevit i za hodiny.
 Z: 1 Úraz elektrickým proudem
+U: 2
 
-Q: Jakou frekvencí se provádí stlačování hrudníku?
-+ 100 až 120× za minutu
-- 60 až 80× za minutu
-- 30× za minutu
-- 150 až 180× za minutu
-E: Masáž srdce 100–120× za minutu, hloubka asi 5 cm.
-Z: 1 Úraz elektrickým proudem
-
-Q: Do jaké hloubky se stlačuje hrudník dospělého?
-+ Asi 5 cm
-- Asi 1 cm
-- Asi 10 cm
-- Asi 2 cm
-E: Hloubka stlačení dospělého je asi 5–6 cm.
-Z: 1 Úraz elektrickým proudem
-
-Q: Které je správné pořadí „pěti pravidel bezpečnosti"?
-+ Vypni – Zajisti – Odzkoušej – Uzemni a zkratuj – Odděl živé a neživé
-- Zajisti – Vypni – Uzemni – Odzkoušej – Odděl
-- Odzkoušej – Vypni – Zajisti – Odděl – Uzemni
-- Vypni – Odzkoušej – Zajisti – Odděl – Uzemni a zkratuj
-E: 1. Vypni! 2. Zajisti (proti opětovnému zapnutí)! 3. Odzkoušej (že není napětí)! 4. Uzemni a zkratuj! 5. Odděl (zakryj) živé části v blízkosti!
+Q: Které z pěti pravidel se provádí jako TŘETÍ a čím?
++ Odzkoušet beznapěťový stav – dvoupólovou zkoušečkou ověřenou před a po měření
+- Uzemnit a zkratovat – zkratovací soupravou
+- Zajistit proti zapnutí – visacím zámkem a tabulkou
+- Odzkoušet beznapěťový stav – jednopólovou zkoušečkou (šroubovákem)
+E: Vypni – Zajisti – Odzkoušej – Uzemni a zkratuj – Odděl. Jednopólová zkoušečka není spolehlivý důkaz beznapěťového stavu.
 Z: 1 Úraz elektrickým proudem; 3 Obsluha a práce
+U: 2
 
-Q: Co znamená krok „Zajisti!" v pěti pravidlech?
-+ Zabezpečit vypnuté zařízení proti opětovnému zapnutí (zámek, cedulka, vyjmutí pojistek)
-- Zkontrolovat zkoušečkou, že není napětí
-- Spojit vodiče se zemí
-- Zavolat vedoucího práce
-E: Zajištění = zabránění nechtěnému zapnutí: uzamčení, výstražná tabulka „Nezapínat“, vyjmutí pojistek.
+Q: Proč se při práci na vypnutém vedení VN vodiče uzemňují a zkratují?
++ Aby při chybném zapnutí či indukci nevzniklo nebezpečné napětí
+- Aby se po vypnutí vybily kondenzátory v elektroměru
+- Aby šlo po skončení práce změřit izolační odpor vedení
+- Aby se snížil přechodový odpor zemniče u stožáru VN
+E: Zkratovaná a uzemněná soustava udrží pracoviště na potenciálu země i při chybném zapnutí, indukci od souběžného vedení nebo zbytkovém náboji.
 Z: 1 Úraz elektrickým proudem
+U: 3
 
-Q: Které oblečení/vybavení NENÍ přípustné při práci pod napětím?
-+ Kovový prsten nebo hodinky
-- Suchý a upnutý oděv
-- Rukávy upnuté v zápěstí
-- Izolované nářadí
-E: Při práci pod napětím nesmí mít pracovník na těle kovové předměty (prsteny, řetízky, hodinky, piercing…).
-Z: 1 Úraz elektrickým proudem
+Q: Pracovník má §4 a dostal úkol vyměnit vadnou zásuvku v kanceláři. Co je správně?
++ Nesmí – je to oprava (práce na zařízení), patří osobě znalé
+- Smí, pokud zásuvku předem vypne jističem a ověří zkoušečkou
+- Smí, protože zásuvka je jednoduché zařízení nízkého napětí
+- Smí, ale jen pod dozorem pracovníka s kvalifikací §3
+E: Výměna zásuvky je oprava (práce na el. zařízení), patří osobě znalé. Osoba §3 je laik, dozor dělat nemůže.
+Z: 1 Úraz elektrickým proudem; 2 Vyhláška 50
+U: 3
 
-Q: Smí pracovník seznámený (§3) nebo poučený (§4) pracovat pod napětím?
-+ Ne
-- Ano, pokud má izolované nářadí
-- Ano, ale jen do 230 V
-- Poučený ano, seznámený ne
-E: Pracovníci seznámení a poučení nesmí pracovat na el. zařízení pod napětím.
-Z: 1 Úraz elektrickým proudem
-
-Q: Který z těchto případů je úraz NEPŘÍMÝM dotykem?
-+ Dotyk kovového krytu pračky, na který se při poruše izolace dostalo napětí
-- Dotyk holého fázového vodiče
-- Dotyk dvou fází současně
-- Dotyk kontaktu v zásuvce prstem
-E: Nepřímý dotyk = dotyk neživé části, která je pod napětím jen kvůli poruše.
+Q: Úraz NEPŘÍMÝM dotykem nastane, když se člověk dotkne:
++ kovového krytu pračky s proraženou izolací
+- holé svorky L v rozebrané zásuvce
+- současně fáze L1 a L2 v rozvaděči
+- svorky N, když vodičem N teče proud
+E: Nepřímý dotyk = neživá část, která je pod napětím jen kvůli poruše. Dotyk svorky L nebo N (i když je N „nulák“) je dotyk živé části.
 Z: 1 Úraz elektrickým proudem; 14 Principy ochrany
+U: 2
+
+Q: Který faktor nejvíce zvyšuje nebezpečí průchodu proudu tělem?
++ Dráha přes srdce (ruka–ruka, ruka–noha) a delší doba působení
+- Vyšší frekvence než 50 Hz (např. 10 kHz)
+- Suchá pokožka a gumová obuv
+- Stejnosměrný proud místo střídavého při stejné velikosti
+E: Nejnebezpečnější je dráha přes srdce. 50 Hz je nebezpečnější než vysoké frekvence i než stejně velký stejnosměrný proud.
+Z: 1 Úraz elektrickým proudem
+U: 2
 
 # tema: vyhl50 | Odborná způsobilost (Vyhl. 50/1978)
 
-Q: Co platí pro kvalifikaci podle vyhlášky 50?
-+ Kvalifikace = vzdělání + praxe
-- Kvalifikace = jen vzdělání
-- Kvalifikace = jen délka praxe
-- Kvalifikace = věk + zdravotní stav
-E: Vyhláška 50: KVALIFIKACE = VZDĚLÁNÍ + PRAXE.
+Q: Strojní údržbář bez elektro vzdělání má pracovat u rozvaděče v blízkosti živých částí. Jakou kvalifikaci potřebuje minimálně?
++ §4 – pracovník poučený
+- §3 – pracovník seznámený
+- §5 – pracovník znalý
+- §6 – pracovník pro samostatnou činnost
+E: §4 potřebují neelektrikáři, kteří se přibližují k živým částem (údržbáři, jeřábníci, svářeči). §5 a výš vyžaduje elektrotechnické vzdělání.
 Z: 2 Vyhláška 50
+U: 2
 
-Q: Který paragraf vyhlášky 50 označuje pracovníky SEZNÁMENÉ (laickou obsluhu)?
-+ §3
-- §4
-- §5
-- §6
-E: §3 seznámení (laici), §4 poučení, §5 znalí, §6 samostatná činnost, §7 řízení činnosti, §8 řízení dodavatelským způsobem, §9 revize.
+Q: Vyučený elektrikář nastoupil do práce před 6 měsíci (zařízení NN). Jakou kvalifikaci má?
++ §5 – znalý, protože nemá praxi delší než 1 rok
+- §6 – samostatná činnost, stačí výuční list
+- §4 – poučený, dokud nemá praxi
+- §7 – řízení činnosti
+E: §6 vyžaduje u NN praxi nad 1 rok (u VN 2 roky). Bez praxe je absolvent znalý (§5).
 Z: 2 Vyhláška 50
+U: 2
 
-Q: Kdo jsou pracovníci podle §4?
-+ Pracovníci poučení – bez el. kvalifikace, prokazatelně poučení osobou znalou
-- Pracovníci znalí s elektro vzděláním
-- Revizní technici
-- Pracovníci pro řízení činnosti
-E: §4 – poučení: bez elektrotechnického vzdělání, ale poučení o nebezpečí a první pomoci. Smí pracovat bez napětí v blízkosti živých částí (u NN asi 30 cm).
+Q: Jak dlouhou praxi potřebuje pracovník §6 u zařízení VN?
++ Minimálně 2 roky
+- Více než 1 rok
+- Minimálně 3 roky
+- Minimálně 6 měsíců
+E: §6: NN nad 1 rok, VN minimálně 2 roky.
 Z: 2 Vyhláška 50
+U: 2
 
-Q: Kdo musí mít obvykle kvalifikaci §4 (poučený)?
-+ Strojní údržbáři, jeřábníci, svářeči – lidé, kteří se mohou přiblížit k živým částem
-- Kancelářští pracovníci s počítačem
-- Revizní technici
-- Projektanti elektroinstalací
-E: §4 potřebují ti, kdo se mohou přiblížit k živým částem: údržbáři, jeřábníci, svářeči, neelektrikáři v elektrických prostorech.
+Q: Co smí podle vyhlášky dělat pracovník SEZNÁMENÝ (§3)?
++ Vyměnit závitovou pojistku v krytém rozvaděči
+- Vyměnit vypínač, pokud je obvod vypnutý
+- Pracovat v rozvaděči v blízkosti živých částí
+- Měřit napětí v zásuvce běžným multimetrem
+E: §3 = laická obsluha jednoduchých zařízení NN a MN. Výměna vypínače je práce, ne obsluha; práce v blízkosti živých částí vyžaduje §4.
 Z: 2 Vyhláška 50
+U: 2
 
-Q: Co smí dělat pracovník seznámený (§3)?
-+ Zapojit spotřebič vidlicí do zásuvky nebo vyměnit žárovku ve vypnutém stavu
-- Opravit zásuvku
-- Pracovat v rozvaděči pod napětím
-- Provádět revize
-E: Seznámený smí obsluhovat jednoduchá zařízení NN a MN: zasunout vidlici, použít prodlužovačku, vyměnit žárovku nebo závitovou pojistku v krytém rozvaděči.
+Q: Jak velkou vzdálenost od živých částí NN si má podle podkladů držet pracovník §4?
++ Asi 30 cm
+- Asi 1 m
+- Asi 10 cm
+- Asi 2,5 m
+E: §4 smí pracovat bez napětí v blízkosti živých částí, u NN asi 30 cm.
 Z: 2 Vyhláška 50
+U: 2
 
-Q: Jak dlouhou praxi potřebuje pracovník pro samostatnou činnost (§6) u zařízení NN?
-+ Více než 1 rok
-- Alespoň 3 měsíce
-- Alespoň 5 let
-- Žádnou, stačí výuční list
-E: §6: praxe nad 1 rok u NN, u VN minimálně 2 roky. §5 (znalý) je pracovník bez potřebné praxe (obvykle méně než 1 rok).
-Z: 2 Vyhláška 50
-
-Q: Jak často se přezkušují pracovníci §5 až §8?
-+ 1× za 3 roky
-- 1× za rok
-- 1× za 5 let
-- Jen jednou při nástupu
-E: Přezkoušení 1× za 3 roky.
-Z: 2 Vyhláška 50
-
-Q: Jaký paragraf mají revizní technici?
-+ §9
-- §6
-- §7
-- §11
-E: §9 – pracovníci pro provádění revizí, skupiny E1 až E4.
-Z: 2 Vyhláška 50
-
-Q: Co reviduje revizní technik skupiny E2?
-+ Zařízení a instalace do 1000 V včetně hromosvodů
+Q: Revizní technik má osvědčení E3. Co smí revidovat?
++ Jen hromosvody
+- Instalace do 1000 V včetně hromosvodů
+- Ruční nářadí a spotřebiče
 - Zařízení nad 1000 V
-- Pouze hromosvody
-- Pouze ruční nářadí a spotřebiče
-E: E1 – nad 1000 V, E2 – do 1000 V vč. hromosvodů, E3 – hromosvody, E4 – stroje, nářadí, spotřebiče, přístroje.
+E: E1 nad 1000 V, E2 do 1000 V vč. hromosvodů, E3 jen hromosvody, E4 stroje, nářadí, spotřebiče.
 Z: 2 Vyhláška 50
+U: 2
 
-Q: Revizní technik E4 reviduje:
-+ Stroje, el. ruční nářadí, spotřebiče a přístroje
-- Hromosvody
-- Instalace nad 1000 V
-- Elektrické přípojky VN
-E: E4 = stroje, ruční nářadí, spotřebiče, přístroje.
+Q: Malá firma má dva elektrikáře. Co musí splňovat?
++ Alespoň jeden z nich musí mít §6
+- Oba musí mít kvalifikaci revizního technika §9
+- Stačí, když oba mají kvalifikaci znalého §5
+- Jeden z nich musí mít kvalifikaci §8 pro řízení
+E: V organizaci se dvěma pracovníky musí mít alespoň jeden §6.
 Z: 2 Vyhláška 50
+U: 2
 
-Q: V organizaci se dvěma elektrikáři musí mít alespoň jeden z nich:
-+ §6
-- §9
-- §8
-- §4
-E: V organizaci se dvěma pracovníky musí mít jeden alespoň §6.
+Q: Přezkoušení pracovníků §5–§8 se provádí:
++ 1× za 3 roky; u §7 a §8 se termín hlásí orgánu dozoru 4 týdny předem
+- 1× za rok; u §7 a §8 se termín hlásí orgánu dozoru 1 týden předem
+- 1× za 5 let; termín se nehlásí
+- 1× za 3 roky; u všech paragrafů se termín hlásí 2 týdny předem
+E: Přezkoušení 1× za 3 roky, u §7 a §8 informovat orgán dozoru 4 týdny předem.
 Z: 2 Vyhláška 50
+U: 2
 
-Q: Kdo musí být seznámen s termínem přezkoušení pracovníků §7 a §8 a kdy?
-+ Orgán dozoru, 4 týdny předem
-- Zaměstnavatel, 1 den předem
-- Distributor elektřiny, 1 týden předem
-- Nikdo
-E: O termínu přezkoušení §7 a §8 musí být orgán dozoru informován 4 týdny předem.
+Q: Elektrikář §6 byl 4 roky v zahraničí mimo obor. Co musí udělat před návratem k práci?
++ Složit znovu zkoušku v plném rozsahu
+- Nic, jeho kvalifikace §6 platí trvale
+- Absolvovat jen opakované školení BOZP
+- Složit jen zkrácené přezkoušení z novinek
+E: Přerušení činnosti nad 3 roky = nová zkouška v plném rozsahu.
 Z: 2 Vyhláška 50
+U: 3
 
-Q: Co se stane, když pracovník přeruší činnost na dobu delší než 3 roky?
-+ Musí znovu složit zkoušku v plném rozsahu
-- Nic, kvalifikace platí trvale
-- Musí absolvovat jen školení BOZP
-- Kvalifikace se mu sníží o jeden stupeň
-E: Přerušení déle než 3 roky = nová zkouška v plném rozsahu.
+Q: Pracovník získal 4 roky praxe, pak 6 let nepracoval v oboru. Kolik let praxe se mu započítá?
++ 2 roky – počítá se polovinou
+- 4 roky – praxe se nepromlčuje
+- 0 let – po přerušení se ruší
+- 3 roky – započítá se 75 %
+E: Praxe získaná před více než pětiletým přerušením se započítává jen polovinou: 4 / 2 = 2 roky.
 Z: 2 Vyhláška 50
+U: 3
 
-Q: Jak se započítává praxe získaná před více než pětiletým přerušením?
-+ Jen polovinou
-- Celá
-- Vůbec ne
-- Jednou třetinou
-E: Praxe před více než 5letým přerušením se počítá jen polovinou.
+Q: Kdo musí být ve zkušební komisi pro pracovníka §8?
++ Tři členové, z nich nejméně dva s §8 nebo §9
+- Tři členové, z nich nejméně jeden s §6
+- Dva členové, oba s kvalifikací §7 nebo vyšší
+- Jeden zkoušející s kvalifikací §9 a zapisovatel
+E: Pro §8 musí mít nejméně dva ze tří členů §8 nebo §9; u ostatních paragrafů stačí jeden člen s vyšší kvalifikací.
 Z: 2 Vyhláška 50
+U: 3
 
-Q: Jak se hodnotí výsledek zkoušky podle vyhlášky 50?
-+ Vyhověl / nevyhověl
-- Známkou 1–5
-- Body 0–100
-- Výborně / dobře / dostatečně
-E: Hodnocení je jen vyhověl / nevyhověl.
+Q: Co patří mezi předměty zkoušky podle vyhlášky 50?
++ Předpisy BOZP, místní pokyny a první pomoc
+- Elektrotechnické normy a výpočty obvodů
+- Jen první pomoc a evakuace pracoviště
+- Ceníky a obchodní podmínky distributora
+E: a) předpisy BOZP, b) místní postupy a návody, c) teorie a praxe první pomoci.
 Z: 2 Vyhláška 50
+U: 2
 
-Q: Kolik členů má zkušební komise podle vyhlášky 50?
-+ Tři
-- Dva
-- Pět
-- Jeden zkoušející
-E: Zkoušky provádí tříčlenná zkušební komise.
-Z: 2 Vyhláška 50
-
-Q: Předpis, který od 2022 nahradil vyhlášku 50/1978, je:
-+ Nařízení vlády 194/2022 Sb. (s ním zákon 250/2021 Sb.)
-- Vyhláška 268/2009 Sb.
-- ČSN 33 2000-4-41
-- Zákoník práce
-E: Od 2022 platí zákon 250/2021 Sb. a nařízení vlády 194/2022 Sb. o odborné způsobilosti. Škola ale často stále učí paragrafy vyhl. 50, tak znej obojí. Pozn.: doplněno nad rámec školních materiálů.
+Q: Jaký předpis od roku 2022 nahradil vyhlášku 50/1978?
++ Nařízení vlády 194/2022 Sb. spolu se zákonem 250/2021 Sb.
+- Vyhláška 268/2009 Sb. o technických požadavcích na stavby
+- ČSN EN 50110-1 ed. 3
+- Zákon 262/2006 Sb. (zákoník práce)
+E: Od 2022 platí zákon 250/2021 Sb. a NV 194/2022 Sb. Škola často učí paragrafy vyhl. 50, znej obojí. Pozn.: doplněno nad rámec podkladů.
 Z: doplněno
+U: 2
+
+Q: Které rozdělení objektů se používá u tabulky nejkratší praxe?
++ A bez nebezpečí výbuchu, B s výbuchem, C hornictví
+- A byty, B kancelářské budovy, C průmyslové haly
+- A do 1 kV, B do 52 kV, C zařízení nad 52 kV
+- A suché, B vlhké, C mokré a zvlášť nebezpečné
+E: Nejkratší požadovaná praxe se liší podle typu objektu A, B, C.
+Z: 2 Vyhláška 50
+U: 3
 
 # tema: obsluha | Obsluha a práce na el. zařízení
 
-Q: Kterou normou se řídí obsluha a práce na elektrickém zařízení?
-+ ČSN EN 50110-1
-- ČSN 33 2130
-- ČSN 33 1600
-- ČSN EN 62305
-E: ČSN EN 50110-1 ed. 3 (34 3100) – obsluha a práce na el. zařízeních.
-Z: 3 Obsluha a práce
-
-Q: Co z toho je OBSLUHA (ne práce) na el. zařízení?
+Q: Které z těchto činností jsou OBSLUHA, ne práce na el. zařízení?
 + Zapínání, vypínání a výměna pojistek
-- Montáž nového zařízení
-- Oprava a výměna součástek
-- Rekonstrukce rozvodu
-E: Obsluha = úkony normálního provozu: zapínání, vypínání, regulace, výměna pojistek, čtení měřidel. Práce = měření, úpravy, opravy, montáž, rekonstrukce.
+- Měření izolačního odporu a zkoušení funkce
+- Výměna vadného stykače za stejný typ
+- Doplnění nového jističe do rozvaděče
+E: Obsluha = normální provoz. Měření, zkoušení, výměna součástek a rozšiřování jsou práce.
 Z: 3 Obsluha a práce
+U: 2
 
-Q: Kdo jediný může dát vedoucímu práce souhlas k zahájení práce?
+Q: Kdo dává vedoucímu práce souhlas k zahájení, přerušení a ukončení práce?
 + Osoba odpovědná za elektrické zařízení
-- Kterýkoli pracovník s §6
+- Osoba pověřená kontrolou el. zařízení během prací
 - Revizní technik
-- Vedoucí práce si souhlas dává sám
-E: Souhlas k zahájení, přerušení i ukončení práce dává jen osoba odpovědná za el. zařízení.
+- Pracovník s nejvyšší kvalifikací ve skupině
+E: Pro každé el. zařízení musí být určena osoba odpovědná za el. zařízení; jen ona dává souhlas.
 Z: 3 Obsluha a práce
+U: 2
 
-Q: Při které formě práce musí být dozorující pracovník přítomen trvale?
-+ Práce pod dozorem
-- Práce s dohledem
-- Práce podle pokynů
-- Samostatná práce
-E: Pod dozorem: dozor je trvale přítomen a plně odpovídá. S dohledem: kontrola průběžná, odpovídá pracovník. Podle pokynů: jen nejnutnější pokyny.
+Q: Práce S DOHLEDEM vs. POD DOZOREM – co platí?
++ Dozor je trvale přítomen a odpovídá; dohled kontroluje průběžně
+- Dohled je trvale přítomen a odpovídá; dozor kontroluje jen občas
+- Obojí je totéž, liší se jen tím, zda je vydán písemný příkaz
+- Pod dozorem odpovídá pracovník, s dohledem odpovídá dohlížející
+E: Pod dozorem: trvalá přítomnost, plná odpovědnost dozoru, při odchodu se práce přeruší nebo se dozor nahradí. S dohledem: průběžná kontrola, odpovídá pracovník.
 Z: 3 Obsluha a práce
+U: 2
 
-Q: Co se musí stát, když pracovník konající dozor odejde z pracoviště?
-+ Práce se přeruší, nebo ho nahradí jiný se stejnou kvalifikací
-- Práce pokračuje bez omezení
-- Odpovědnost přechází na nejmladšího pracovníka
-- Musí se vypsat nový příkaz B
-E: Bez dozoru se práce pod dozorem nesmí konat.
+Q: Dozor musí na 20 minut odejít z pracoviště. Co se stane s prací pod dozorem?
++ Práce se přeruší, nebo dozor převezme stejně kvalifikovaný
+- Pokračuje, pokud mají všichni pracovníci aspoň §5
+- Pokračuje, za bezpečnost odpovídá nejstarší pracovník
+- Pokračuje, stačí telefonní spojení s pracovníkem dozoru
+E: Bez trvalé přítomnosti dozoru se práce pod dozorem konat nesmí.
 Z: 3 Obsluha a práce
+U: 2
 
-Q: Kdo zodpovídá za bezpečnost a kvalitu při práci S DOHLEDEM?
-+ Pracovník, který práci provádí
-- Pracovník provádějící dohled
-- Osoba odpovědná za el. zařízení
-- Revizní technik
-E: Při práci s dohledem odpovídá pracovník; dohled kontroluje jen průběžně a po skončení.
+Q: Ochranný prostor vs. zóna přiblížení – co platí?
++ Ochranný prostor je těsně u živých částí, zóna přiblížení vně
+- Zóna přiblížení je těsně u živých částí, ochranný prostor vně
+- Ochranný prostor je celá rozvodna, zóna přiblížení rozvaděč
+- Oba pojmy znamenají totéž, rozlišují se jen u vedení VN
+E: Zásah do ochranného prostoru = práce pod napětím. Zásah do zóny přiblížení bez zásahu do ochranného prostoru = práce v blízkosti.
 Z: 3 Obsluha a práce
+U: 2
 
-Q: Co je „zóna přiblížení"?
-+ Vymezený prostor vně ochranného prostoru kolem živých částí
-- Prostor uvnitř rozvaděče
-- Prostor, kde je zakázán vstup všem
-- Vzdálenost 10 m od vedení VN
-E: Ochranný prostor = kolem živých částí, kde není zajištěna izolační hladina. Zóna přiblížení = prostor vně ochranného prostoru.
-Z: 3 Obsluha a práce
-
-Q: Práce, kdy osoba zasahuje do zóny přiblížení, ale ne do ochranného prostoru, je:
-+ Práce v blízkosti živých částí
-- Práce pod napětím
+Q: Elektrikář utahuje svorku v rozvaděči a nářadím zasahuje do ochranného prostoru živé přípojnice. O jakou práci jde?
++ Práce pod napětím
+- Práce v blízkosti živých částí
 - Práce bez napětí
 - Obsluha
-E: Práce v blízkosti = zásah do zóny přiblížení bez zásahu do ochranného prostoru.
+E: Vědomý styk s živými částmi nebo zásah do ochranného prostoru = práce pod napětím (smí jen osoby znalé s příslušnými pomůckami).
 Z: 3 Obsluha a práce
+U: 3
 
-Q: Kdo smí měnit světelný zdroj v zařízení NN s krytím alespoň IP 2X (ve vypnutém stavu)?
-+ I osoba seznámená
-- Jen osoba znalá §5
-- Jen revizní technik
-- Jen pracovník §6
-E: Pokud zařízení poskytuje ochranu před dotykem min. IP 2X, výměnu ve vypnutém stavu smí provést i osoba seznámená. Jinak jde o opravu.
+Q: Kdy smí světelný zdroj ve svítidle NN vyměnit osoba seznámená?
++ Ve vypnutém stavu, má-li svítidlo krytí aspoň IP 2X
+- Kdykoli, i za provozu, protože jde jen o obsluhu
+- Jen pod dozorem pracovníka s kvalifikací §5
+- Nikdy, výměna zdroje je vždy oprava zařízení
+E: Jinak jde o opravu el. zařízení.
 Z: 3 Obsluha a práce
+U: 2
 
-Q: Co je živá část elektrického zařízení?
-+ Vodivá část určená k tomu, aby byla při obvyklém užívání pod napětím
-- Kovový kryt spotřebiče
-- Ochranný vodič PE
-- Jakákoli část zařízení
-E: Živá část je pod napětím normálně (fáze, N). Neživá část (kryt) je pod napětím jen při poruše.
+Q: Kdy smí osoba seznámená vyměnit pojistku v zařízení NN?
++ Bez napětí, je-li pojistka v krytém pojistkovém spodku
+- Kdykoli, protože výměna pojistky je vždy obsluha
+- Jen nožovou pojistku v otevřeném rozvaděči NN
+- Nikdy, pojistky smí měnit jen osoba znalá §5
+E: Pojistka v krytém pojistkovém spodku (např. závitová) – osoba seznámená. Nožové pojistky v otevřeném rozvaděči ne.
 Z: 3 Obsluha a práce
+U: 2
 
-Q: Jak dlouho platí příkaz B?
-+ Až 24 hodin, prodloužit lze maximálně na 1 týden
-- 8 hodin, nelze prodloužit
-- 1 měsíc
-- Neomezeně do skončení práce
-E: Příkaz B platí až 24 h, pro 1 skupinu a 1 pracoviště, prodloužit lze max. na 1 týden.
+Q: Příkaz B – co platí?
++ Platí max. 24 h, pro 1 skupinu a 1 pracoviště, prodloužení max. na týden
+- Platí max. 1 týden, pro více skupin, prodloužení max. na 1 měsíc
+- Platí 8 hodin pro všechny skupiny na pracovišti, prodloužit nelze
+- Platí do skončení práce, vydává ho revizní technik pro celou firmu
+E: Příkaz B je písemný doklad o technických a organizačních opatřeních.
 Z: 4 Příkaz B
+U: 2
 
-Q: Na jaké práce se vydává příkaz B?
-+ Na práce na VN, VVN a v jejich blízkosti (i na NN v blízkosti VN/VVN)
-- Na každou výměnu žárovky
-- Jen na práce na NN v bytech
-- Na revize spotřebičů
-E: Příkaz B je písemný doklad o bezpečnostních opatřeních pro práce na vn, vvn a v jejich blízkosti.
+Q: Pro kterou z těchto prací se vydává příkaz B?
++ Výměna svítidla NN na sloupu s vedením 22 kV
+- Výměna zásuvky v bytě ve vypnutém stavu
+- Revize ručního elektrického nářadí v dílně
+- Výměna jističe v domovní rozvodnici bytu
+E: Příkaz B: práce na VN, VVN a v jejich blízkosti, i práce na NN v blízkosti VN/VVN.
 Z: 4 Příkaz B
+U: 3
 
-Q: Pro kolik pracovních skupin a pracovišť se vydává jeden příkaz B?
-+ Pro 1 skupinu a 1 pracoviště
-- Pro všechny skupiny v objektu
-- Pro 1 skupinu a libovolný počet pracovišť
-- Pro 3 skupiny
-E: Jeden příkaz B = jedna pracovní skupina, jedno pracoviště.
-Z: 4 Příkaz B
+Q: Živá a neživá část – co je pravda?
++ Vodič N je živá část; kovový kryt spotřebiče třídy I je neživá část
+- Vodič N je neživá část, protože je spojen se zemí
+- Kryt spotřebiče je živá část, protože je spojen s PE
+- Vodič PE je živá část
+E: Živá část je pod napětím při obvyklém užívání (L i N). Neživá část jen při poruše. PE není živá část.
+Z: 3 Obsluha a práce
+U: 3
 
 # tema: ochrana | Ochrana před úrazem el. proudem
 
-Q: Které normy řeší principy ochrany před úrazem el. proudem?
-+ ČSN EN 61140 a ČSN 33 2000-4-41
-- ČSN EN 62305
-- ČSN 33 1600
-- ČSN EN 50110-1
-E: Ochrana před úrazem: ČSN EN 61140 a ČSN 33 2000-4-41 ed. 2.
+Q: Ochranné opatření se skládá z:
++ ochrany základní a ochrany při poruše (nebo zvýšené ochrany)
+- jen ochrany základní, pokud je izolace dostatečně silná
+- jen doplňkové ochrany proudovým chráničem 30 mA
+- ochrany při poruše a doplňkové ochrany chráničem
+E: Základní (přímý dotyk) + při poruše (nepřímý dotyk), nebo zvýšená ochrana (zesílená izolace, ochranné oddělení). Doplňková ochrana sama nestačí.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Která z těchto je prostředkem ZÁKLADNÍ ochrany (před přímým dotykem)?
-+ Základní izolace, kryty, zábrany, ochrana polohou
-- Automatické odpojení od zdroje
-- Ochranné pospojování
-- Nevodivé okolí
-E: Základní ochrana: izolace, přepážky a kryty, zábrany, poloha, omezení napětí a proudu. Ochrana při poruše: přídavná izolace, uzemnění a pospojování, automatické odpojení, jednoduché oddělení, nevodivé okolí.
+Q: Který prostředek je ochranou PŘI PORUŠE (ne základní)?
++ Automatické odpojení od zdroje
+- Přepážky a kryty živých částí
+- Ochrana polohou mimo dosah ruky
+- Zábrany proti nahodilému dotyku
+E: Při poruše: přídavná izolace, uzemnění a pospojování, automatické odpojení, jednoduché oddělení, nevodivé okolí.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Jaké minimální krytí musí mít kryty a přepážky chránící živé části?
-+ IP 2X (horní přístupný povrch IP 4X)
-- IP 00
-- IP 67
-- IP X4
-E: Kryty min. IP 2X, vodorovný horní povrch min. IP 4X.
+Q: Jaké krytí musí mít kryty živých částí a jaké jejich snadno přístupný horní povrch?
++ Minimálně IP 2X, horní povrch IP 4X
+- Minimálně IP 4X, horní povrch IP 2X
+- Minimálně IP 1X, horní povrch IP 3X
+- Minimálně IP X4, horní povrch IP X7
+E: Kryty IP 2X (prst), vodorovný horní povrch IP 4X (drát 1 mm).
 Z: 14 Principy ochrany
+U: 2
 
-Q: Považuje se lak nebo nátěr za izolaci chránící před úrazem?
-+ Ne
-- Ano, pokud je silný alespoň 1 mm
-- Ano, vždy
-- Jen u stejnosměrného proudu
-E: Nátěry, barvy, laky, smalty ani vláknité materiály se za přiměřenou izolaci nepovažují.
+Q: Zábrany vs. kryty – co platí?
++ Zábrany brání jen nahodilému dotyku, jdou sundat bez nástroje
+- Zábrany jsou součástí zařízení, odstraní se jen nástrojem
+- Zábrany zajišťují krytí IP 4X a smí se použít i v bytech
+- Mezi zábranou a krytem není rozdíl, jde jen o jiný název
+E: Kryt je součástí zařízení a odstraní se jen nástrojem nebo po odpojení napájení.
 Z: 14 Principy ochrany
+U: 3
 
-Q: Ochrana polohou: do jaké výšky nahoru musí být živé části mimo dosah?
-+ 2,5 m
-- 1,25 m
-- 1,8 m
-- 3,5 m
-E: Mimo dosah: nahoru 2,5 m, vodorovně 1,25 m, pod úrovní terénu 0,75 m.
+Q: Ochrana polohou – jaké jsou vzdálenosti dosahu ruky?
++ Nahoru 2,5 m, vodorovně 1,25 m, dolů 0,75 m
+- Nahoru 2,25 m, vodorovně 0,6 m, dolů 0,5 m
+- Nahoru 1,8 m, vodorovně 1,25 m, dolů 0,75 m
+- Nahoru 2,5 m, vodorovně 2,5 m, dolů 1,25 m
+E: 2,5 / 1,25 / 0,75 m. Při manipulaci s dlouhými předměty se vzdálenosti zvětšují.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Ochrana polohou: jaká je vodorovná vzdálenost dosahu ruky?
-+ 1,25 m
-- 2,5 m
-- 0,75 m
-- 0,5 m
-E: Vodorovně 1,25 m.
+Q: Maximální bezpečná napětí v NORMÁLNÍCH a NEBEZPEČNÝCH prostorech:
++ Přímý dotyk 25 V AC / 60 V DC, nepřímý dotyk 50 V AC / 120 V DC
+- Přímý dotyk 50 V AC / 120 V DC, nepřímý dotyk 25 V AC / 60 V DC
+- Přímý dotyk 12 V AC / 25 V DC, nepřímý 50 V AC / 120 V DC
+- Přímý i nepřímý dotyk 50 V AC / 120 V DC
+E: Ve zvlášť nebezpečných prostorech: nepřímý dotyk 12 V AC / 25 V DC, přímý dotyk není dovolen.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Jaká je mez malého napětí ELV (střídavé)?
-+ 50 V
-- 12 V
-- 230 V
-- 120 V
-E: ELV: AC do 50 V, DC do 120 V.
+Q: Jaké napětí je dovolené při nepřímém dotyku ve ZVLÁŠŤ NEBEZPEČNÝCH prostorech?
++ 12 V AC / 25 V DC
+- 25 V AC / 60 V DC
+- 50 V AC / 120 V DC
+- 6 V AC / 12 V DC
+E: Zvlášť nebezpečné prostory (kotle, nádrže, mokré prostředí) – 12 V AC.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Jaké je maximální bezpečné napětí v PROSTORÁCH ZVLÁŠŤ NEBEZPEČNÝCH při nepřímém dotyku (AC)?
-+ 12 V
-- 25 V
-- 50 V
-- 60 V
-E: Normální a nebezpečné prostory: přímý dotyk 25 V AC / 60 V DC, nepřímý 50 V AC / 120 V DC. Zvlášť nebezpečné: nepřímý 12 V AC / 25 V DC.
+Q: Hodnoty izolačních odporů podle druhu izolace:
++ Základní 1 MΩ (nářadí 2 MΩ), přídavná 5 MΩ, zesílená 7 MΩ
+- Základní 2 MΩ (nářadí 5 MΩ), přídavná 7 MΩ, zesílená 5 MΩ
+- Základní 0,5 MΩ (nářadí 1 MΩ), přídavná 1 MΩ, zesílená 2 MΩ
+- Základní 1 MΩ (nářadí 1 MΩ), přídavná 2 MΩ, zesílená 10 MΩ
+E: Dvojitá = základní + přídavná (2 + 5 = 7 MΩ), zesílená má stejnou hodnotu 7 MΩ.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Jaké je maximální bezpečné napětí AC v normálních a nebezpečných prostorech při PŘÍMÉM dotyku?
-+ 25 V
-- 12 V
-- 50 V
-- 120 V
-E: Přímý dotyk: 25 V AC, 60 V DC.
+Q: Mezní proud tělem při odporu těla 2000 Ω (práh bolesti) je:
++ 3,5 mA AC a 10 mA DC
+- 0,5 mA AC a 2 mA DC
+- 10 mA AC a 3,5 mA DC
+- 30 mA AC a 100 mA DC
+E: Doporučená hodnota (práh vnímání) 0,5 mA AC / 2 mA DC, mezní hodnota (práh bolesti) 3,5 mA AC / 10 mA DC.
 Z: 14 Principy ochrany
+U: 3
 
-Q: Jaký minimální izolační odpor má mít PŘÍDAVNÁ izolace?
-+ 5 MΩ
-- 1 MΩ
-- 2 MΩ
-- 7 MΩ
-E: Základní izolace strojů 1 MΩ, nářadí 2 MΩ, přídavná 5 MΩ, dvojitá 2+5 MΩ, zesílená 7 MΩ.
+Q: Podmínka automatického odpojení v síti TN je Zs · Ia ≤ U0. Co je Zs?
++ Impedance celé poruchové smyčky (zdroj, fáze, PE)
+- Odpor zemniče instalace a uzemňovacího přívodu
+- Impedance připojeného spotřebiče za provozu
+- Odpor ochranného vodiče mezi kostrou a svorkou PE
+E: Čím menší Zs, tím větší poruchový proud a rychlejší vypnutí jističe.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Co je zesílená izolace?
-+ Jedna izolace se stejnými vlastnostmi jako izolace dvojitá
-- Dvě vrstvy laku
-- Základní izolace s kovovým stíněním
-- Izolace pro vysoké napětí
-E: Zesílená izolace = jedna izolace, která má vlastnosti dvojité (základní + přídavné).
+Q: Do jaké doby musí ochrana vypnout poruchu v koncovém obvodu sítě TN 230 V AC a v síti TT 230 V AC?
++ TN 0,4 s, TT 0,2 s
+- TN 0,2 s, TT 0,4 s
+- TN 5 s, TT 1 s
+- TN 0,4 s, TT 0,4 s
+E: Pro 120 V < U0 ≤ 230 V: TN 0,4 s AC, TT 0,2 s AC.
 Z: 14 Principy ochrany
+U: 3
 
-Q: Jaká je podmínka automatického odpojení v síti TN?
-+ Zs × Ia ≤ U0
-- Ra × IΔn ≤ 50 V
-- Ra × Id ≤ 50 V
-- R ≤ 10 Ω
-E: TN: impedance poruchové smyčky × vypínací proud ≤ fázové napětí. TT s chráničem: Ra × IΔn ≤ 50 V. IT: Ra × Id ≤ 50 V.
+Q: Proč nelze použít proudový chránič v síti TN-C?
++ PEN prochází chráničem, takže únik proudu nezaznamená
+- Chránič by v síti TN-C vypínal při každém zapnutí
+- V síti TN-C chybí nulový vodič pro jednofázové obvody
+- Síť TN-C se používá jen u VN, kde chrániče nejsou
+E: Chránič lze použít až za rozdělením PEN na PE a N (TN-C-S, tedy TN-S část).
 Z: 14 Principy ochrany
+U: 3
 
-Q: Za jakou dobu musí ochrana odpojit poruchu v síti TN 230 V AC?
-+ 0,4 s
-- 5 s
-- 0,2 s
-- 1 s
-E: TN, 120 V < U0 ≤ 230 V: AC 0,4 s. (TT: 0,2 s.)
+Q: Na vesnické samotě se při vichřici přetrhl vodič PEN venkovního vedení (síť TN-C). Co hrozí?
++ Na kostrách spotřebičů může být nebezpečné napětí
+- Nic, jen přestanou fungovat jednofázové spotřebiče
+- Vypne hlavní jistič, takže dům je bez napětí
+- Napětí ve všech zásuvkách klesne na nulu
+E: Hlavní nevýhoda TN-C: přerušený PEN. Proto se PEN opakovaně uzemňuje a na samotách se síť TN-C nedoporučuje.
 Z: 14 Principy ochrany
+U: 3
 
-Q: V síti TN-C se proudový chránič:
-+ Nesmí použít – chránič lze použít jen v síti TN-S
-- Musí použít vždy
-- Smí použít jen na vodič PEN
-- Použije jen pro motory
-E: PEN prochází chráničem i jako ochranný vodič, chránič by nefungoval. Chránič jen v TN-S.
+Q: Jak se uzemňuje vodič PEN v síti TN?
++ Celkem max. 2 Ω, na začátku a konci vedení max. 5 Ω
+- Celkem max. 10 Ω, uzemňuje se jen u transformátoru
+- Neuzemňuje se, uzemnění se dělá jen u vodiče PE
+- Celkem max. 50 Ω, uprostřed vedení max. 5 Ω
+E: Uprostřed vedení max. 15 Ω, odbočky delší než 200 m na konci max. 5 Ω.
 Z: 14 Principy ochrany
+U: 3
 
-Q: Smí se vodič PE nebo PEN jistit nebo vypínat?
-+ Ne, nikdy
-- Ano, jističem
-- Ano, pojistkou
-- Jen v síti TT
-E: PE ani PEN se nesmí vypínat ani jistit.
+Q: Síť TT s chráničem 30 mA. Jak velký smí být nejvýše odpor uzemnění pro dotykové napětí 50 V?
++ 1666 Ω
+- 166 Ω
+- 833 Ω
+- 30 Ω
+E: Ra ≤ 50 V / 0,03 A ≈ 1666 Ω. Pro 25 V by to bylo 833 Ω.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Od jakého průřezu Cu se smí používat síť TN-C?
-+ Od 10 mm²
-- Od 1,5 mm²
-- Od 2,5 mm²
-- Od 25 mm²
-E: TN-C se smí použít od 10 mm² Cu (16 mm² Al).
+N: Síť TT, chránič IΔn = 300 mA, dovolené dotykové napětí 25 V. Jaký je největší dovolený odpor uzemnění (Ω)?
+= 83 | 1 | Ω
+E: Ra ≤ 25 / 0,3 ≈ 83 Ω.
 Z: 14 Principy ochrany
+U: 3
 
-Q: Jaká je největší nevýhoda sítě TN-C?
-+ Při přerušení vodiče PEN se na kostrách spotřebičů objeví napětí
-- Je příliš drahá
-- Nelze v ní použít jističe
-- Neumožňuje třífázový odběr
-E: Přerušený PEN = nebezpečné napětí na kostrách. Proto je nevýhodná pro samoty, kde vítr může vedení přerušit.
-Z: 14 Principy ochrany
+N: Síť TN 230 V, jistič B16. Vypínací proud elektromagnetické spouště je 5 × In. Jaká smí být nejvýše impedance poruchové smyčky (Ω, 2 desetinná místa)?
+= 2.88 | 0.02 | Ω
+E: Ia = 5 · 16 = 80 A; Zs ≤ U0 / Ia = 230 / 80 = 2,875 ≈ 2,88 Ω.
+Z: 14 Principy ochrany; EZ2 Elektrické přístroje
+U: 3
 
-Q: Jaký má být celkový zemní odpor sítě TN?
-+ Max. 2 Ω
-- Max. 10 Ω
-- Max. 50 Ω
-- Max. 100 Ω
-E: Celkový zemní odpor soustavy max. 2 Ω, na začátku a konci vedení max. 5 Ω, uprostřed max. 15 Ω.
+N: Síť TN 230 V, jistič C16 (vypíná při 10 × In). Jaká smí být nejvýše impedance smyčky (Ω, 2 desetinná místa)?
+= 1.44 | 0.02 | Ω
+E: Ia = 160 A; Zs ≤ 230 / 160 ≈ 1,44 Ω. Charakteristika C potřebuje menší impedanci smyčky než B.
 Z: 14 Principy ochrany
-
-Q: Jak se v síti TT odvádějí poruchové proudy?
-+ Zemí do uzlu zdroje – neživé části jsou spojeny se zemničem
-- Vodičem PEN do uzlu zdroje
-- Neodvádějí se, síť je izolovaná
-- Nulovým vodičem
-E: V TT jdou poruchové proudy přes zemnič instalace zemí do uzemněného uzlu zdroje. Používají se chrániče.
-Z: 14 Principy ochrany
-
-N: Síť TT, chránič IΔn = 30 mA, dovolené dotykové napětí 50 V. Jaký je největší dovolený odpor uzemnění Ra (Ω)?
-= 1666 | 10 | Ω
-E: Ra ≤ 50 V / 0,03 A ≈ 1666 Ω.
-Z: 14 Principy ochrany
+U: 3
 
 Q: Co je typické pro síť IT?
-+ Živé části jsou izolované od země; první porucha nemusí vést k odpojení
-- Uzel zdroje je pevně uzemněn a PEN je společný
-- Používá se v každém bytě
-- Nemá žádné vodiče
-E: V IT je první poruchový proud malý, odpojení není nutné, ale porucha se musí rychle odstranit (hlídač izolačního stavu). Při druhé poruše platí podmínky TN nebo TT.
++ Izolovaná od země, první porucha nevypíná, hlídá se izolace
+- Uzel pevně uzemněn, kostry spojeny s vodičem PEN
+- Kostry nejsou uzemněny ani vzájemně pospojovány
+- Nejlevnější síť, proto se používá v bytové výstavbě
+E: Použití: operační sály, doly – kde výpadek vadí víc. Při druhé poruše platí podmínky TN nebo TT.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Čím se hlídá první porucha v síti IT?
-+ Hlídačem izolačního stavu
-- Hromosvodem
-- Elektroměrem
-- Svodičem přepětí
-E: Monitorování: hlídače izolačního stavu, přístroje pro reziduální proud, vyhledávání izolačních poruch.
+Q: SELV vs. PELV vs. FELV – co platí?
++ SELV neuzemněné, PELV uzemněné, FELV bez bezpečného oddělení
+- SELV uzemněné, PELV neuzemněné, FELV jen pro koupelny
+- SELV do 12 V, PELV do 25 V, FELV do 50 V střídavých
+- SELV pro DC, PELV pro AC, FELV pro trojfázové obvody
+E: FELV se napájí např. transformátorem s jednoduchým oddělením; ochrana se řeší jako u obvodu vyššího napětí.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Co je SELV?
-+ Bezpečné malé napětí, neuzemněné, spolehlivě oddělené od jiných obvodů
-- Uzemněná varianta malého napětí
-- Malé napětí bez bezpečného oddělení
-- Napětí nad 1000 V
-E: SELV = neuzemněné, nejbezpečnější. PELV = uzemněná varianta. FELV = malé napětí bez splnění podmínek SELV/PELV.
+Q: Do jakého napětí nemusí mít obvod SELV základní ochranu (izolaci živých částí)?
++ AC 12 V / DC 25 V
+- AC 25 V / DC 60 V
+- AC 50 V / DC 120 V
+- AC 6 V / DC 15 V
+E: Základní ochrana u SELV nemusí být provedena, pokud napětí nepřesáhne AC 12 V a DC 25 V (v normálních prostorech).
 Z: 14 Principy ochrany
+U: 3
 
-Q: Smí mít zásuvky SELV kontakt pro ochranný vodič?
-+ Ne
-- Ano, vždy
-- Jen v koupelně
-- Jen u 24 V
-E: Zásuvky a vidlice SELV nesmí mít ochranný kontakt a musí být nezáměnné.
+Q: Který zdroj NELZE použít pro SELV?
++ Autotransformátor
+- Bezpečnostní ochranný transformátor
+- Akumulátor
+- Motorgenerátor s odpovídající izolací
+E: Autotransformátor nemá galvanické oddělení vinutí.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Jakým zdrojem se napájí obvod ochrany elektrickým oddělením?
-+ Oddělovacím transformátorem
-- Autotransformátorem
-- Přímo ze sítě přes jistič
-- Dělič napětí s rezistory
-E: Elektrické oddělení = oddělovací transformátor, napětí max. 500 V, živé části nesmí být spojeny se zemí ani s PE.
+Q: Ochrana elektrickým oddělením – co platí?
++ Napájí se z oddělovacího transformátoru, napětí max. 500 V, živé části nesmí být spojeny se zemí ani s PE
+- Napájí se z autotransformátoru, napětí max. 50 V
+- Kostra spotřebiče se musí uzemnit
+- Z jednoho transformátoru lze napájet libovolně mnoho spotřebičů bez dalších opatření
+E: Smyslem je, aby při jedné poruše nemohl téct proud přes tělo do země.
 Z: 14 Principy ochrany
+U: 2
 
-Q: Smí se neživé části spotřebiče s dvojitou izolací (třída II) připojit na ochranný vodič?
-+ Ne
-- Ano, musí
-- Jen v koupelně
-- Jen když má kovový kryt
-E: Ochrana dvojitou izolací: neživé části se nesmí připojit na PE.
+Q: Hlavní ochranné pospojování – co se NEpřipojuje na hlavní ochrannou přípojnici?
++ Nulový vodič N jednotlivých obvodů
+- Kovové potrubí vody a plynu
+- Uzemňovací přívod
+- Kovové konstrukce ústředního topení
+E: Na HOP: hlavní ochranný vodič, uzemnění, kovová potrubí, konstrukce, pláště kabelů (se souhlasem provozovatele).
 Z: 14 Principy ochrany
+U: 2
 
-Q: Jaký nejvyšší reziduální proud smí mít chránič jako DOPLŇKOVÁ ochrana?
-+ 30 mA
-- 100 mA
-- 300 mA
-- 500 mA
-E: Doplňková ochrana proudovým chráničem: IΔn ≤ 30 mA.
-Z: 14 Principy ochrany
-
-Q: Může být doplňková ochrana jediným ochranným opatřením?
-+ Ne, jen zlepšuje funkci jiných ochran
-- Ano
-- Ano, v suchých prostorech
-- Jen u spotřebičů třídy II
-E: Doplňková ochrana se nesmí použít jako jediné ochranné opatření.
-Z: 14 Principy ochrany
-
-Q: Co se připojuje na hlavní ochrannou přípojnici (hlavní pospojování)?
-+ Hlavní ochranný vodič, uzemnění, kovová potrubí (voda, plyn), kovové konstrukce
-- Fázové vodiče
-- Nulové vodiče všech obvodů
-- Svítidla
-E: Hlavní pospojování: hlavní ochranný vodič, uzemňovací přívod, kovová potrubí, ústřední topení, kovové konstrukce, pláště kabelů.
-Z: 14 Principy ochrany
-
-Q: Jaký musí být průřez ochranného vodiče, když má fázový vodič S < 16 mm²?
-+ Stejný jako fázový (S)
-- Polovina S
-- Vždy 16 mm²
-- Vždy 1,5 mm²
+Q: Fázový vodič má průřez 25 mm² Cu. Jaký minimální průřez má ochranný vodič?
++ 16 mm²
+- 25 mm²
+- 12,5 mm²
+- 10 mm²
 E: S ≤ 16 → SPE = S; 16 < S ≤ 35 → 16 mm²; S > 35 → S/2.
 Z: 14 Principy ochrany
+U: 3
 
-Q: Jaké barvy je vodič PEN?
-+ Zelenožlutý (na koncích případně se světle modrým označením)
-- Světle modrý
-- Hnědý
-- Černý
-E: PEN je zelenožlutý. PE také. N je světle modrý.
-Z: 14 Principy ochrany; 7 E.ON
-
-Q: Jaké tři druhy prostorů se rozlišují z hlediska nebezpečí úrazu?
-+ Normální, nebezpečné, zvlášť nebezpečné
-- Suché, vlhké, mokré
-- Vnitřní, venkovní, podzemní
-- Obytné, kancelářské, průmyslové
-E: Prostory normální, nebezpečné a zvlášť nebezpečné.
+Q: Fázový vodič má průřez 70 mm² Cu. Jaký minimální průřez má ochranný vodič?
++ 35 mm²
+- 16 mm²
+- 70 mm²
+- 25 mm²
+E: Nad 35 mm² → S/2 = 35 mm².
 Z: 14 Principy ochrany
+U: 3
+
+Q: Kdy se musí provést DOPLŇUJÍCÍ ochranné pospojování?
++ Když nelze splnit podmínky automatického odpojení
+- Vždy u každé nové zásuvky v obytné místnosti
+- Jen v síti IT, kde se nepoužívá odpojení
+- Jen když je na přívodu chránič 300 mA
+E: Spojí se současně přístupné neživé a cizí vodivé části, aby mezi nimi nebyl nebezpečný rozdíl napětí.
+Z: 14 Principy ochrany
+U: 3
+
+Q: Ochrana doplňkovou izolací (izolační rukavice, koberec) – kdo ji smí používat?
++ Nejméně pracovníci znalí
+- I pracovníci poučení
+- Kdokoli po proškolení
+- Jen revizní technici
+E: Ochranné pomůcky a izolační stanoviště – alespoň pracovníci znalí.
+Z: 14 Principy ochrany
+U: 3
+
+Q: V síti TN se smí jako ochranné prvky automatického odpojení použít:
++ Pojistky a jističe; chrániče jen v části TN-S
+- Jen proudové chrániče, jističe nestačí
+- Jen pojistky, jističe se v TN nepoužívají
+- Hlídače izolačního stavu a pojistky
+E: Hlídač izolace patří do sítě IT.
+Z: 14 Principy ochrany
+U: 2
 
 # tema: chranic | Proudový chránič
 
-Q: Co porovnává proudový chránič?
-+ Proudy v pracovních vodičích (L a N) procházející součtovým transformátorem
-- Napětí mezi fází a zemí
-- Proud ve vodiči PE s jmenovitým proudem
-- Teplotu vodičů
-E: Za normálního stavu je součet proudů nulový. Když část proudu uniká mimo (zemí), vznikne rozdíl a chránič vypne.
+Q: Na jakém principu pracuje proudový chránič?
++ Porovnává proudy L a N v součtovém transformátoru
+- Bimetal se ohřeje unikajícím proudem a vypne
+- Měří napětí mezi PE a N, nad 50 V vypne
+- Měří izolační odpor, pod 1 MΩ vypne
+E: Za normálního stavu je součet okamžitých proudů L a N nulový, magnetický tok v jádru také.
 Z: 10 Proudový chránič
+U: 2
 
-Q: Ze kterých tří hlavních částí se skládá proudový chránič?
-+ Součtový transformátor, vybavovací relé, spínací mechanismus
-- Bimetal, elektromagnet, zhášecí komora
-- Tavný vodič, písek, keramické pouzdro
-- Cívka, kondenzátor, rezistor
-E: Součtový proudový transformátor, vybavovací relé, spínací mechanismus.
+Q: Které vodiče procházejí součtovým transformátorem jednofázového chrániče?
++ L a N, vodič PE ne
+- L, N a také PE
+- Jen fázový vodič L
+- L a ochranný vodič PE
+E: Kdyby chráničem procházel i PE, poruchový proud by se vyrovnal a chránič by nevypnul.
 Z: 10 Proudový chránič
+U: 2
 
-Q: Chrání proudový chránič před přetížením a zkratem?
-+ Ne, musí se předřadit jistič nebo pojistka
-- Ano, před obojím
-- Jen před zkratem
-- Jen před přetížením
-E: FI nejistí před nadproudy. Výjimkou je kombinace chrániče s jističem (RCBO).
+Q: Člověk stojící na izolované podlaze se dotkne současně L a N za chráničem 30 mA. Co se stane?
++ Chránič nevypne – nic neuniká mimo L a N
+- Chránič vypne do 40 ms, proud je přes 30 mA
+- Vypne jistič, protože jde o zkrat přes tělo
+- Chránič vypne, ale až po asi jedné sekundě
+E: Chránič hlídá rozdíl proudů L a N, ne velikost proudu. Proto chránič nenahrazuje základní ochranu.
 Z: 10 Proudový chránič
+U: 3
 
-Q: Co je IΔn u chrániče?
-+ Jmenovitý reziduální (rozdílový) proud, při kterém chránič musí vypnout
-- Jmenovitý proud kontaktů
-- Zkratový proud
-- Proud vinutím relé
-E: IΔn – jmenovitý reziduální proud. Řada 10, 30, 100, 300, 500 mA, 1 A.
+Q: Jaký vztah má platit mezi jmenovitým proudem chrániče a předřazeného jističe?
++ Jistič o stupeň nižší než chránič (32 A / 40 A)
+- Jistič o stupeň vyšší než chránič (40 A / 32 A)
+- Jistič a chránič musí mít stejný proud (40 A / 40 A)
+- Na vztahu nezáleží, chránič se jistí sám (63 A / 25 A)
+E: Chránič nemá nadproudovou ochranu, jistič chrání jeho kontakty.
 Z: 10 Proudový chránič
+U: 2
 
-Q: Jaký vztah má platit mezi jmenovitým proudem jističe a chrániče?
-+ In jističe by měl být o stupeň nižší než In chrániče
-- In jističe má být vyšší než In chrániče
-- Musí být stejné
-- Nezáleží na tom
-E: Jistič (pojistka) o stupeň nižší, aby chránil kontakty chrániče před přetížením.
+Q: Co je INC u chrániče?
++ Zkratový proud, který vydrží s předjištěním
+- Reziduální proud, při kterém chránič vypne
+- Trvalý proud, který snesou kontakty chrániče
+- Doba, za kterou chránič vypne při IΔn
+E: IΔn – reziduální proud vybavení, In – trvalý proud kontaktů, INC – zkratová odolnost s předjištěním.
 Z: 10 Proudový chránič
+U: 3
 
-Q: Chrání chránič při přímém dotyku živé části?
-+ Ano (při IΔn ≤ 30 mA jako doplňková ochrana)
-- Ne, jen při nepřímém dotyku
-- Jen u třífázových obvodů
-- Jen při dotyku dvou fází
-E: Chrání při přímém i nepřímém dotyku a chrání majetek při zhoršení izolace. Pozor: dotyk L a N současně (bez úniku do země) chránič nezaznamená.
+Q: Jaký chránič zvolíš pro obvody, kde mohou vznikat hladké stejnosměrné reziduální proudy (frekvenční měnič, nabíječka elektromobilu)?
++ Typ B
+- Typ AC
+- Typ A
+- Selektivní typ S 300 mA
+E: AC – jen střídavé, A – střídavé a pulzující, B – i hladké stejnosměrné reziduální proudy.
 Z: 10 Proudový chránič
+U: 3
 
-Q: Kterou poruchu proudový chránič NEROZPOZNÁ?
-+ Dotyk fáze a nuly současně, kdy proud neodtéká do země
-- Dotyk fáze a uzemněného potrubí
-- Únik proudu přes vlhkou izolaci na kryt
-- Průraz na kostru spotřebiče
-E: Když proud tělem jde z L do N, součet proudů je stále nulový, chránič nevypne.
+Q: Proč se na začátek instalace dává chránič typu S (selektivní, zpožděný)?
++ Aby při poruše vypnul jen koncový chránič 30 mA
+- Aby vypínal rychleji než chrániče na vývodech
+- Protože chrání vedení před zkratem a přetížením
+- Protože má menší reziduální proud než ostatní
+E: Selektivita: časově zpožděný chránič na přívodu (např. 300 mA S) a citlivé chrániče na vývodech.
 Z: 10 Proudový chránič
+U: 3
 
-Q: Proč se chránič s jističem (RCBO) někdy nedoporučuje?
-+ Při vypnutí nelze poznat, zda šlo o nadproud nebo únik proudu
-- Je pomalejší než samostatný chránič
-- Nelze ho použít v síti TN-S
-- Nevejde se do rozvaděče
-E: Šetří místo, ale při poruše nepoznáš typ poruchy.
+Q: Chránič v bytě vypíná vždy, když se zapne stará pračka. Nejpravděpodobnější příčina?
++ Zhoršená izolace pračky – proud uniká do PE
+- Pračka je příliš výkonná a chránič je přetížen
+- Chránič 30 mA je slabý, správně má být 100 mA
+- Pračka má komutátorový motor, chránič ho neunese
+E: Unikající proud do PE vytvoří rozdíl proudů. Správně je pračku opravit, ne zvětšit chránič.
 Z: 10 Proudový chránič
+U: 3
 
-Q: Jaký chránič musí mít přívod rodinného domu s hořlavou konstrukcí?
-+ Chránič 300 mA
-- Chránič 30 mA
-- Chránič 10 mA
-- Žádný
-E: Hořlavá konstrukce → doplňková protipožární ochrana chráničem 300 mA na přívodu.
+Q: Při zkoušce tlačítkem TEST chránič nevypne. Co to znamená?
++ Chránič je vadný a musí se vyměnit
+- Instalace je v pořádku, nikde neuniká proud
+- Je třeba stisknout tlačítko déle
+- Chránič je přetížený, stačí vypnout spotřebiče
+E: Tlačítko TEST vytvoří umělý rozdíl proudů; když chránič nevypne, nechrání.
+Z: 10 Proudový chránič
+U: 2
+
+Q: Jaký chránič musí být na přívodu rodinného domu s hořlavou (dřevěnou) konstrukcí?
++ 300 mA – protipožární ochrana
+- 30 mA – ochrana osob
+- 10 mA
+- Chránič není potřeba, stačí jistič
+E: Hořlavá konstrukce → doplňkový chránič 300 mA na přívodu.
 Z: 6 Vnitřní rozvody
-
-Q: Jak často se má zkoušet chránič tlačítkem TEST?
-+ Pravidelně, obvykle podle výrobce asi 1× za měsíc až půl roku
-- Nikdy, tlačítko ho poškodí
-- Jen při revizi jednou za 10 let
-- Denně
-E: Zkušební tlačítko ověřuje mechanickou funkci; výrobci doporučují pravidelné testování (často měsíčně až pololetně). Pozn.: doplněno.
-Z: doplněno
+U: 2
 
 # tema: koupelna | Koupelny a prostory se sprchou
 
-Q: Kterou normou se řídí instalace v koupelnách?
-+ ČSN 33 2000-7-701
-- ČSN 33 2130
-- ČSN EN 62305
-- ČSN 33 1600
-E: Prostory s vanou nebo sprchou: ČSN 33 2000-7-701 ed. 2.
+Q: Krytí zařízení v zónách koupelny:
++ Zóna 0 IP X7, zóna 1 IP X4, zóna 2 IP X4
+- Zóna 0 IP X4, zóna 1 IP X7, zóna 2 IP X1
+- Zóna 0 IP X8, zóna 1 IP X5, zóna 2 IP X2
+- Zóna 0 IP X7, zóna 1 IP X5, zóna 2 IP X1
+E: Podle podkladů ČSN 33 2000-7-701: X7 / X4 / X4. (Kde se čistí tryskající vodou, je třeba IP X5.)
 Z: 11 Koupelny
+U: 2
 
-Q: Jaký chránič musí mít všechny obvody v koupelně?
-+ 30 mA
-- 100 mA
-- 300 mA
-- Žádný není nutný
-E: Všechny obvody v místnosti s vanou nebo sprchou musí mít doplňkovou ochranu chráničem 30 mA.
+Q: Rozměry zón koupelny:
++ Zóna 1 do výšky 2,25 m nad vanou, zóna 2 do 60 cm od okraje vany
+- Zóna 1 do výšky 2,5 m, zóna 2 do 120 cm od okraje vany
+- Zóna 1 do výšky 1,8 m, zóna 2 do 30 cm od okraje vany
+- Zóna 1 do výšky 2,25 m, zóna 2 do 120 cm od okraje vany
+E: 120 cm platí pro zónu 1 u sprchy bez vaničky (od hlavice upevněné na zdi).
 Z: 11 Koupelny
+U: 2
 
-Q: Jaké minimální krytí musí mít zařízení v zóně 0?
-+ IP X7
-- IP X4
-- IP X1
-- IP 20
-E: Zóna 0: IP X7, zóna 1 a 2: IP X4.
+Q: Sprchový kout bez vaničky – co platí?
++ Zóna 0 do 10 cm výšky, zóna 1 do 120 cm, zóna 2 není
+- Zóna 0 není, zóna 1 do 60 cm, zóna 2 do 120 cm
+- Zóna 0 do 30 cm výšky, zóna 1 do 60 cm, zóna 2 do 120 cm
+- Platí stejné zóny 0, 1 a 2 jako u koupací vany
+E: Sprcha bez vaničky nemá zónu 2.
 Z: 11 Koupelny
+U: 3
 
-Q: Jaké minimální krytí platí pro zónu 1 a 2?
-+ IP X4
-- IP X7
-- IP X2
-- IP 44 jen v zóně 2
-E: Zóny 1 a 2: IP X4.
+Q: Zákazník chce zásuvku 230 V 40 cm od okraje vany. Co mu řekneš?
++ Nelze, je to zóna 2 – smí tam být jen zásuvka SELV/PELV
+- Lze, pokud bude zásuvka mít krytí aspoň IP 44
+- Lze, pokud bude zásuvka ve výšce nad 1,2 m
+- Lze, pokud bude obvod jištěný chráničem 30 mA
+E: Zóna 2: žádné spínací zařízení ani zásuvky 230 V, kromě obvodů SELV a PELV. Chránič 30 mA tuto podmínku nenahrazuje.
 Z: 11 Koupelny
+U: 3
 
-Q: Co je zóna 0?
-+ Vnitřní prostor vany nebo sprchové vaničky
-- Prostor 60 cm od okraje vany
-- Prostor nad vanou do 2,25 m
-- Celá koupelna
-E: Zóna 0 = vnitřek vany. U sprchy bez vaničky do výšky 10 cm nad podlahou.
+Q: Jaké napětí smí mít spínače v zóně 1?
++ SELV/PELV do AC 25 V, zdroj mimo zóny 0 a 1
+- SELV do AC 12 V, zdroj smí být i v zóně 1
+- 230 V, pokud má spínač krytí aspoň IP X4
+- Do AC 50 V, zdroj smí být kdekoli v koupelně
+E: Zóna 0: zařízení SELV AC 12 V / DC 30 V. Zóna 1: spínače SELV/PELV AC 25 V / DC 60 V.
 Z: 11 Koupelny
+U: 3
 
-Q: Do jaké výšky sahá zóna 1?
-+ 2,25 m nad podlahou
-- 1,8 m
-- 2,5 m
-- 3 m
-E: Zóna 1 je ohraničena zónou 0 a rovinou 2,25 m nad podlahou.
+Q: Které pevně připojené spotřebiče smí být v zóně 1?
++ Pevně připojený ohřívač vody určený pro zónu 1
+- Pračka připojená vidlicí do zásuvky na zdi
+- Malá rozvodnice s jističi a chráničem
+- Elektrický radiátor zapojený do zásuvky
+E: V zóně 1 smí být jen pevně připojené spotřebiče určené pro zónu 1.
 Z: 11 Koupelny
+U: 3
 
-Q: Jak široká je zóna 2 od okraje vany?
-+ 60 cm
-- 120 cm
-- 30 cm
-- 100 cm
-E: Zóna 2: 60 cm od okraje zóny 1, do výšky 2,25 m. Sprcha bez vaničky zónu 2 nemá.
+Q: Co se v koupelně spojuje doplňujícím ochranným pospojováním?
++ Kovová potrubí, PE zásuvek a konstrukce – Cu 4 mm²
+- Jen kovovou vanu s rozvodnicí – Cu 1,5 mm²
+- Nulové vodiče všech obvodů v koupelně – Cu 2,5 mm²
+- Jen kovovou vanu a sprchovou hlavici – Cu 2,5 mm²
+E: Pospojují se neživé a cizí vodivé části v zónách 1 a 2; vodič min. 4 mm² Cu na svorku PE.
 Z: 11 Koupelny
+U: 2
 
-Q: Jaký je poloměr zóny 1 u sprchy bez vaničky od pevné sprchové hlavice?
-+ 120 cm
-- 60 cm
-- 30 cm
-- 225 cm
-E: U sprchy bez vaničky sahá zóna 1 do vzdálenosti 120 cm od hlavice upevněné na zdi.
+Q: Topná rohož podlahového topení v koupelně musí mít:
++ Kovový oplet nebo pásek spojený s PE
+- Napájení jen bezpečným napětím 12 V
+- Dvojitou izolaci bez připojení na PE
+- Samostatný chránič 300 mA na přívodu
+E: Kovový oplet spojený s PE + chránič 30 mA pro všechny obvody koupelny.
 Z: 11 Koupelny
+U: 2
 
-Q: Smí být v zóně 2 běžná zásuvka 230 V?
-+ Ne, jen spínače a zásuvky obvodů SELV nebo PELV
-- Ano, s krytím IP 44
-- Ano, pokud je ve výšce nad 1 m
-- Ano, vždy
-E: Zóna 2: žádné spínací zařízení kromě obvodů SELV/PELV.
+Q: Umývací prostor (umyvadlo) – které umístění svítidla je správně?
++ Spodní okraj 1,8 m, zdroj krytý sklem, dole izolant
+- Spodní okraj 1,2 m, bez krytu, části z kovu
+- Spodní okraj 0,2 m nad umyvadlem, krytí IP 20
+- Jakákoli výška, pokud má svítidlo krytí IP 20
+E: Níže než 1,8 m jen s mechanickou ochranou a IP X1; nikdy níž než 0,4 m nad horním okrajem umyvadla.
 Z: 11 Koupelny
+U: 3
 
-Q: Jaké napětí smí mít zařízení v zóně 0 (napájené SELV)?
-+ AC 12 V / DC 30 V
-- AC 25 V / DC 60 V
-- AC 50 V / DC 120 V
-- 230 V
-E: Zóna 0: SELV AC 12 V, DC 30 V. Zóna 1 (spínače): SELV/PELV AC 25 V, DC 60 V.
+Q: Které obvody v koupelně musí mít doplňkovou ochranu chráničem 30 mA?
++ Všechny obvody v místnosti s vanou nebo sprchou
+- Jen zásuvkové obvody, světla a ohřívač ne
+- Jen obvody zařízení umístěných v zóně 1
+- Jen obvody jištěné na víc než 16 A
+E: Všechny obvody (i světla a pevně připojený ohřívač).
 Z: 11 Koupelny
-
-Q: Jaký minimální průřez má Cu vodič doplňujícího pospojování v koupelně?
-+ 4 mm²
-- 1,5 mm²
-- 2,5 mm²
-- 10 mm²
-E: Měděný vodič pospojování min. 4 mm², vyvede se na svorku PE v rozvaděči.
-Z: 11 Koupelny
-
-Q: Co musí mít topný kabel podlahového topení v koupelně?
-+ Kovový oplet nebo pásek připojený na ochranný vodič
-- Dvojitou izolaci bez uzemnění
-- Napájení jen 12 V
-- Termostat v zóně 0
-E: Topný kabel nebo rohož musí mít kovový oplet nebo pásek spojený s PE.
-Z: 11 Koupelny
-
-Q: V jaké minimální výšce má být spodní okraj svítidla v umývacím prostoru?
-+ 1,8 m nad podlahou
-- 1,2 m
-- 2,25 m
-- 0,4 m
-E: Svítidlo spodním okrajem aspoň 1,8 m. Části níž než 2,5 m z izolantu. Nikdy níž než 0,4 m nad horním okrajem umyvadla.
-Z: 11 Koupelny
+U: 2

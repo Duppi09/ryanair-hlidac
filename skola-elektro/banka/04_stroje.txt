@@ -1,991 +1,968 @@
 # tema: pristroje | Elektrické přístroje (jističe, pojistky, stykače)
 
-Q: Jaké dvě spouště má jistič?
-+ Tepelnou (bimetal – přetížení) a elektromagnetickou (zkrat)
-- Proudovou a napěťovou
-- Diferenční a tepelnou
-- Mechanickou a optickou
-E: Bimetal vypíná při přetížení se zpožděním, elektromagnet okamžitě při zkratu.
+Q: Jistič má dvě spouště. Která reaguje na co?
++ Tepelná na přetížení, elektromagnetická na zkrat
+- Tepelná na zkrat, elektromagnetická na přetížení
+- Tepelná na únik do země, elektromagnetická na přepětí
+- Obě reagují jen na zkrat, každá v jiné fázi
+E: Únik do země hlídá chránič, přepětí svodič.
 Z: EZ2 Elektrické přístroje
+U: 2
 
-Q: Která část jističe reaguje na ZKRAT?
-+ Elektromagnetická spoušť
-- Bimetal
-- Zhášecí komora
-- Tlačítko TEST
-E: Zkrat → velký proud → elektromagnet okamžitě vypne.
+Q: Vypínací charakteristiky jističů (elektromagnetická spoušť):
++ B 3–5 × In, C 5–10 × In, D 10–20 × In
+- B 5–10 × In, C 3–5 × In, D 20–50 × In
+- B 1–2 × In, C 2–3 × In, D 3–5 × In
+- B, C, D se liší jen jmenovitým proudem
+E: B běžné obvody, C motory a zářivky, D velké rozběhové proudy (transformátory, svářečky).
 Z: EZ2 Elektrické přístroje
+U: 2
 
-Q: Při jakém násobku In vypíná elektromagnetická spoušť jističe s charakteristikou B?
-+ 3–5 × In
-- 5–10 × In
-- 10–20 × In
-- 1,13 × In
-E: B 3–5 In (běžné obvody), C 5–10 In (motory, zářivky), D 10–20 In (velké rozběhové proudy).
-Z: EZ2 Elektrické přístroje
+Q: Motor s rozběhovým proudem 7× In vybavuje jistič B při každém zapnutí. Co je správné řešení?
++ Jistič stejného In s charakteristikou C nebo D
+- Jistič B s dvojnásobným In na stejném vodiči
+- Vyřadit jistič a jistit jen tepelným relé
+- Jistič B s menším In, aby vypínal dřív
+E: Větší In by přestal chránit vodič; správně je změnit charakteristiku nebo omezit rozběhový proud.
+Z: EZ2 Elektrické přístroje; EZ4 Točivé stroje
+U: 3
 
-Q: Jakou charakteristiku jističe zvolíš pro motor s velkým rozběhovým proudem?
-+ C nebo D
-- B
-- A
-- Na charakteristice nezáleží
-E: C a D snesou větší rozběhové proudy bez vybavení.
+Q: Selektivita jištění znamená:
++ Vypne jen jistič nejblíž před poruchou
+- Při poruše vypnou všechny jističe naráz
+- Jistič vypíná jen vybrané fáze obvodu
+- Jistič pozná druh připojeného spotřebiče
+E: Předřazený jistič má větší In (nebo pomalejší charakteristiku) než jistič vývodu.
 Z: EZ2 Elektrické přístroje
-
-Q: K čemu slouží zhášecí komora ve spínacích přístrojích?
-+ Rozdělí a ochladí elektrický oblouk, aby rychle zhasl
-- Chladí bimetal
-- Měří proud
-- Ukazuje stav sepnutí
-E: Oblouk se ve zhášecí komoře (deionizační plechy) rozdělí na kratší oblouky a zhasne.
-Z: EZ2 Elektrické přístroje
-
-Q: Kdy vzniká elektrický oblouk ve spínači?
-+ Hlavně při rozpínání kontaktů pod proudem
-- Jen při zapnutém stavu
-- Jen u stejnosměrného proudu bez zátěže
-- Nikdy
-E: Při rozpojování kontaktů pod zatížením se vzduch ionizuje a vznikne oblouk. Stejnosměrný oblouk se zháší hůř (proud neprochází nulou).
-Z: EZ2 Elektrické přístroje
+U: 3
 
 Q: Proč se stejnosměrný oblouk zháší hůř než střídavý?
-+ Stejnosměrný proud neprochází nulou
-- Má vyšší frekvenci
-- Má menší napětí
-- Neobsahuje elektrony
-E: Střídavý oblouk zhasíná sám při průchodu proudu nulou (100× za sekundu).
++ DC neprochází nulou, AC oblouk sám zhasíná
+- DC má vyšší frekvenci než střídavý proud
+- DC napětí je v sítích vždy vyšší než AC
+- DC oblouk je studenější, a proto stabilnější
+E: Proto mají přístroje pro DC (např. fotovoltaika) jiné parametry.
 Z: EZ2 Elektrické přístroje
+U: 2
 
-Q: Co znamená pojistka s označením gG?
-+ Pojistka pro všeobecné použití (vedení) s plným vypínacím rozsahem
-- Pojistka pro motory s částečným rozsahem
-- Pojistka pro polovodiče
-- Pojistka pro VN
-E: gG – všeobecné použití, aM – jištění motorů (jen zkrat), gR/aR – polovodiče.
+Q: Jak pracuje zhášecí komora jističe?
++ Oblouk se rozdělí mezi deionizační plechy a zhasne
+- Komora je naplněná vodou, která oblouk uhasí
+- Komora oblouk prodlouží, aby se ohřál bimetal
+- Komora je jen kryt, oblouk zhasne sám v kontaktech
+E: Jiné způsoby zhášení: olej, SF6, vakuum, písek (pojistky).
 Z: EZ2 Elektrické přístroje
+U: 3
 
-Q: Čím je vyplněna nožová pojistka?
-+ Křemenným pískem (zhášení oblouku)
-- Olejem
-- Vodou
-- Vzduchem pod tlakem
-E: Písek ochladí a uhasí oblouk po přetavení tavného vodiče.
+Q: Pojistky – co znamená gG a aM?
++ gG všeobecná (vedení), aM jen zkrat u motorů
+- gG pro motory, aM všeobecná pro vedení
+- gG pro polovodiče, aM pro vysoké napětí
+- gG je rychlá, aM pomalá, jinak se neliší
+E: U aM se přetížení motoru jistí tepelným relé.
 Z: EZ2 Elektrické přístroje
+U: 3
 
-Q: Co je stykač?
-+ Elektromagneticky ovládaný spínač určený pro časté spínání (dálkové ovládání)
-- Ruční vypínač
-- Jistič s bimetalem
-- Měřicí přístroj
-E: Stykač spíná pomocí cívky, má hlavní (silové) a pomocné kontakty.
+Q: Proč je nožová pojistka vyplněna křemenným pískem?
++ Odvede teplo oblouku a uhasí ho
+- Zvyšuje mechanickou pevnost pouzdra
+- Izoluje kontakty od kovového krytu
+- Slouží jako indikátor přepálení
+E: Pojistky mají velkou vypínací schopnost.
 Z: EZ2 Elektrické přístroje
+U: 2
 
-Q: Co je samodržný kontakt u stykače?
-+ Pomocný kontakt, který po uvolnění tlačítka ZAP udrží cívku pod napětím
-- Kontakt, který vypíná motor
-- Kontakt v jističi
-- Kontakt tepelného relé
-E: Pomocný spínací kontakt je zapojen paralelně k tlačítku ZAP.
+Q: Ovládání stykače tlačítky – jak se zapojují?
++ VYP do série, ZAP paralelně se samodržným kontaktem
+- VYP i ZAP paralelně, samodržný kontakt do série
+- VYP paralelně, ZAP do série se samodržným kontaktem
+- Všechna tlačítka do série, bez samodržného kontaktu
+E: Stisk kteréhokoli VYP přeruší obvod cívky.
+Z: Schémata v praxi; EZ2 Elektrické přístroje
+U: 2
+
+Q: Motor po stisku ZAP běží jen tak dlouho, dokud tlačítko držíš. Co je špatně?
++ Chybí nebo je vadný samodržný kontakt
+- Je vadné tepelné nadproudové relé
+- Jsou prohozené dvě fáze přívodu
+- Je vadné rozpínací tlačítko VYP
+E: Samodržný kontakt je paralelně k tlačítku ZAP.
+Z: Schémata v praxi
+U: 3
+
+Q: Proč musí mít reverzační zapojení motoru vzájemné blokování stykačů?
++ Současné sepnutí by zkratovalo dvě fáze
+- Aby motor při reverzaci neběžel moc rychle
+- Aby se při reverzaci šetřila elektrická energie
+- Kvůli zhášení oblouku v ovládacích tlačítkách
+E: Rozpínací pomocný kontakt každého stykače je v obvodu cívky druhého (elektrické blokování), často i mechanické.
+Z: Schémata v praxi
+U: 3
+
+Q: Tepelné nadproudové relé u motoru – kam se zapojí jeho kontakt?
++ Do ovládacího obvodu cívky stykače
+- Do silového obvodu místo jističe
+- Paralelně ke svorkám motoru
+- Do nulového vodiče přívodu
+E: Bimetaly relé jsou v silovém obvodu, kontakt rozpojí cívku a stykač motor odpojí.
+Z: EZ2 Elektrické přístroje
+U: 3
+
+Q: Motor má jmenovitý proud 10 A. Na kolik nastavíš tepelné relé (přímé zapojení)?
++ Na 10 A (jmenovitý proud motoru)
+- Na 20 A (dvojnásobek kvůli rezervě)
+- Na 70 A (rozběhový proud motoru)
+- Na proud předřazeného jističe
+E: Při rozběhu Y/D s relé v obvodu vinutí se nastavuje na In/√3 ≈ 0,58 In.
+Z: EZ2 Elektrické přístroje; EZ4 Točivé stroje
+U: 3
+
+Q: Časové relé se zpožděným přítahem v rozběhu Y/D slouží k:
++ Přepnutí z hvězdy do trojúhelníku
+- Zpožděné vypnutí motoru po stisku VYP
+- Ochrana motoru proti přetížení
+- Měření otáček motoru při rozběhu
+E: Zpožděný odpad = kontakty se vrátí až po době od odpojení cívky.
 Z: EZ2 Elektrické přístroje; Schémata v praxi
+U: 3
 
-Q: Jak jsou v ovládacím obvodu stykače zapojena tlačítka VYP a ZAP?
-+ VYP (rozpínací) v sérii, ZAP (spínací) paralelně se samodržným kontaktem
-- Obě paralelně
-- Obě v sérii, bez samodržného kontaktu
-- VYP paralelně, ZAP v sérii
-E: Při více místech ovládání: všechna VYP v sérii, všechna ZAP paralelně.
-Z: Schémata v praxi
-
-Q: K čemu slouží tepelné nadproudové relé u motoru?
-+ Chrání motor před přetížením (vypne cívku stykače)
-- Chrání před zkratem
-- Měří otáčky
-- Spouští motor
-E: Tepelné relé s bimetalem rozpíná ovládací obvod stykače. Proti zkratu jistí jistič nebo pojistky.
+Q: Odpojovač, odpínač, výkonový vypínač:
++ Odpojovač bez zátěže, odpínač provoz, vypínač i zkrat
+- Odpojovač i zkrat, odpínač bez zátěže, vypínač provoz
+- Všechny tři se smí ovládat i pod zkratovým proudem
+- Odpojovač provoz, odpínač jen DC, vypínač bez zátěže
+E: Proto: vypínání – nejdřív vypínač, pak odpojovač; zapínání – nejdřív odpojovač, pak vypínač.
 Z: EZ2 Elektrické přístroje
+U: 3
 
-Q: Co je blokování (vzájemná blokace) u reverzace motoru?
-+ Rozpínací kontakty každého stykače v obvodu cívky druhého, aby nesepnuly oba současně
-- Ruční zámek na rozvaděči
-- Zpožďovací relé
-- Pojistka v nulovém vodiči
-E: Současné sepnutí obou stykačů by způsobilo zkrat mezi fázemi.
-Z: Schémata v praxi
-
-Q: Čím se liší odpojovač od vypínače (u VN)?
-+ Odpojovač se smí ovládat jen bez zatížení, vytváří viditelné odpojení; vypínač vypne i zkrat
-- Odpojovač vypíná zkratové proudy
-- Nijak se neliší
-- Odpojovač je jen pro NN
-E: Odpojovač – viditelná izolační mezera, bez zátěže. Odpínač – spíná provozní proudy. Výkonový vypínač – i zkratové proudy.
+Q: Jaký je rozdíl mezi relé a stykačem?
++ Relé pro malé proudy, stykač pro silové obvody
+- Relé pro motory, stykač pro signálky
+- Relé se ovládá ručně, stykač cívkou
+- Mezi relé a stykačem není žádný rozdíl
+E: Oba mají cívku a kontakty.
 Z: EZ2 Elektrické přístroje
+U: 2
 
-Q: Jaké je správné pořadí manipulace při vypínání vývodu VN (vypínač + odpojovač)?
-+ Nejdřív vypnout vypínač, pak rozpojit odpojovač
-- Nejdřív rozpojit odpojovač, pak vypínač
-- Obojí současně
-- Pořadí je jedno
-E: Odpojovač pod zatížením by vytvořil oblouk. Zapínání: nejdřív odpojovač, pak vypínač.
-Z: EZ2 Elektrické přístroje
-
-Q: K čemu slouží svodič přepětí?
-+ Svede přepětí (blesk, spínání) do země a omezí napětí na bezpečnou úroveň
-- Chrání před přetížením
-- Měří napětí
-- Odpojí obvod při úniku proudu
-E: SPD typ 1 (T1) – přímý úder blesku, T2 – rozvaděče, T3 – u spotřebičů.
+Q: Svodič přepětí T1 vs. T2:
++ T1 část bleskového proudu, T2 indukovaná přepětí
+- T1 pro zásuvky, T2 pro hromosvody na střeše
+- T1 a T2 jsou totéž, liší se jen výrobcem
+- T2 je silnější než T1 a dává se před elektroměr
+E: T3 jemná ochrana u spotřebičů.
 Z: EZ2 Elektrické přístroje; Technologie 2
+U: 3
 
-Q: Jaké stupně přepěťové ochrany se používají v instalaci?
-+ T1 (hlavní rozvaděč), T2 (podružné rozvaděče), T3 (u spotřebiče)
-- A, B, C, D
-- Jen jeden stupeň
-- T1 v zásuvce, T3 v hlavním rozvaděči
-E: Koordinovaná třístupňová ochrana.
-Z: Technologie 2
-
-Q: Co je relé?
-+ Elektromagnetický spínač pro malé proudy (ovládací a signalizační obvody)
-- Ruční vypínač
-- Druh pojistky
-- Měřicí transformátor
-E: Relé – malé proudy, stykač – silové obvody.
-Z: EZ2 Elektrické přístroje
-
-Q: Co je časové relé se zpožděným přítahem?
-+ Kontakty sepnou až po nastavené době od přivedení napětí na cívku
-- Kontakty sepnou okamžitě a rozepnou se zpožděně po odpojení
-- Relé reagující na teplotu
-- Relé bez cívky
-E: Zpožděný přítah – např. přepnutí hvězda/trojúhelník. Zpožděný odpad – zpoždění po odpojení.
-Z: EZ2 Elektrické přístroje
-
-Q: Jak se písmenně značí na schématech stykač, jistič a motor?
-+ Stykač K (KM), jistič F (FA), motor M
-- Stykač S, jistič J, motor M
-- Stykač Q, jistič K, motor G
-- Stykač R, jistič P, motor E
-E: Podle starší ČSN: K – stykač/relé, F – ochranné přístroje, M – motor, Q – vypínač, S – ovládač, H – signálka.
+Q: Písmenné značení ve schématech (starší ČSN):
++ K stykač, F jistič, M motor, S tlačítko
+- S stykač, J jistič, M motor, T tlačítko
+- K kondenzátor, F měnič, M měřidlo, S spoj
+- Q tlačítko, K motor, F svítidlo, H jistič
+E: Q výkonový spínač, P měřicí přístroj, T transformátor.
 Z: EZ2 Elektrické přístroje; Technická dokumentace
+U: 3
 
 # tema: transformatory | Transformátory a tlumivky
 
-Q: Na jakém principu pracuje transformátor?
-+ Elektromagnetická indukce (vzájemná indukčnost)
-- Elektrolýza
-- Fotoelektrický jev
-- Termoelektrický jev
-E: Střídavý proud v primáru vytváří proměnný magnetický tok, který indukuje napětí v sekundáru.
+Q: Proč transformátor nefunguje na stejnosměrný proud?
++ DC nevytváří proměnný tok, nic se neindukuje
+- Stejnosměrný proud by přepóloval jádro
+- Funguje, jen s menší účinností než na AC
+- Stejnosměrný proud neprochází měděným vinutím
+E: Transformátor pracuje na principu elektromagnetické indukce.
 Z: EZ3 Transformátory
+U: 2
 
-Q: Funguje transformátor na stejnosměrný proud?
-+ Ne – stejnosměrný proud nevytváří proměnný magnetický tok
-- Ano, stejně jako na střídavý
-- Ano, ale s menší účinností
-- Jen v zapojení do hvězdy
-E: Na DC by primár zkratoval přes malý odpor vinutí a shořel.
+N: Transformátor 230/24 V. Sekundár má 72 závitů. Kolik závitů má primár?
+= 690 | 0 | závitů
+E: N1 = N2·U1/U2 = 72·230/24 = 690.
 Z: EZ3 Transformátory
+U: 2
 
-Q: Jak se vypočítá převod transformátoru?
-+ p = U1/U2 = N1/N2 = I2/I1
-- p = U1·U2
-- p = N2/N1 = U1/U2
-- p = I1/I2 = N1/N2
-E: Napětí jsou v poměru závitů, proudy v obráceném poměru.
+N: Transformátor 230/12 V napájí halogeny 60 W. Jaký proud teče primárem (A, 2 desetinná místa, ideální transformátor)?
+= 0.26 | 0.01 | A
+E: Výkon je na obou stranách stejný: I1 = 60/230 ≈ 0,26 A (sekundár 5 A).
 Z: EZ3 Transformátory
+U: 3
 
-N: Transformátor 230/12 V má primár 1150 závitů. Kolik závitů má sekundár?
-= 60 | 0 | závitů
-E: N2 = N1 · U2/U1 = 1150 · 12/230 = 60.
+N: Transformátor má převod 10:1. Na sekundáru je zátěž 5 Ω. Jaký odpor „vidí" primár (Ω)?
+= 500 | 0 | Ω
+E: Impedance se přepočítává s druhou mocninou převodu: 5·10² = 500 Ω.
 Z: EZ3 Transformátory
+U: 3
 
-N: Transformátor 230 V/23 V, sekundárem teče 5 A. Jaký proud teče primárem (A, ideální transformátor)?
-= 0.5 | 0 | A
-E: I1 = I2 · U2/U1 = 5 · 23/230 = 0,5 A.
+Q: Zkoušky transformátoru:
++ Naprázdno ztráty v železe, nakrátko ve vinutí
+- Naprázdno ztráty ve vinutí, nakrátko v železe
+- Naprázdno izolační odpor, nakrátko sled fází
+- Obě zkoušky slouží jen k ověření převodu
+E: Ztráty v železe jsou stálé, ztráty ve vinutí rostou s kvadrátem proudu.
 Z: EZ3 Transformátory
+U: 3
 
-Q: Jaké ztráty má transformátor?
-+ Ztráty v železe (hystereze, vířivé proudy) a ztráty ve vinutí (Joulovy)
-- Jen mechanické ztráty třením
-- Žádné
-- Jen ztráty ventilací
-E: Ztráty v železe (naprázdno, konstantní) a ve vinutí (nakrátko, závisí na zatížení).
+Q: Co vyjadřuje napětí nakrátko uk (např. 6 %)?
++ Napětí, při kterém nakrátko teče jmenovitý proud
+- Úbytek napětí transformátoru při chodu naprázdno
+- Napětí, při kterém se prorazí izolace vinutí
+- Účinnost transformátoru v procentech
+E: Ik ≈ In/uk = In/0,06 ≈ 16,7 × In. Menší uk = větší zkratový proud.
 Z: EZ3 Transformátory
+U: 3
 
-Q: Co se měří zkouškou transformátoru naprázdno?
-+ Ztráty v železe a proud naprázdno
-- Ztráty ve vinutí
-- Napětí nakrátko
-- Izolační odpor
-E: Naprázdno → ztráty v železe. Nakrátko → ztráty ve vinutí a napětí nakrátko uk.
+Q: Podmínky paralelního chodu transformátorů:
++ Stejný převod, hodinové číslo a podobné uk
+- Stejný výrobce, barva a rok výroby
+- Stejná hmotnost a velikost nádoby
+- Různá uk, aby se zatížení rozdělilo
+E: Jinak tečou vyrovnávací proudy nebo se transformátory zatíží nerovnoměrně.
 Z: EZ3 Transformátory
+U: 3
 
-Q: Co je autotransformátor?
-+ Transformátor, jehož primár a sekundár mají společnou část vinutí (nejsou galvanicky oddělené)
-- Transformátor s automatickým vypínáním
-- Oddělovací transformátor
-- Transformátor do auta
-E: Autotransformátor je menší a levnější, ale neodděluje obvody – nelze ho použít jako bezpečnostní zdroj.
+Q: Proč se autotransformátor nesmí použít jako zdroj bezpečného napětí?
++ Sekundár není galvanicky oddělen od sítě
+- Má příliš malou účinnost pro malé napětí
+- Nemá dostatečný výkon pro spotřebiče
+- Funguje jen na sdružené napětí 400 V
+E: Pro SELV je nutný bezpečnostní transformátor.
 Z: EZ3 Transformátory
+U: 2
 
-Q: Které podmínky musí splnit transformátory pro paralelní chod?
-+ Stejný převod, stejné hodinové číslo (skupina zapojení), podobné napětí nakrátko
-- Stejná barva a výrobce
-- Stejná hmotnost
-- Různá napětí nakrátko
-E: Jinak by mezi nimi tekly vyrovnávací proudy.
+Q: Distribuční transformátor 22/0,4 kV má zapojení Dyn1. Co to znamená?
++ VN trojúhelník, NN hvězda s uzlem, posun 30°
+- VN hvězda, NN trojúhelník bez uzlu, posun 30°
+- VN i NN trojúhelník bez uzlu, posun 0°
+- VN i NN hvězda s uzlem, posun 180°
+E: Vyvedený uzel n slouží pro N/PEN sítě NN.
 Z: EZ3 Transformátory
+U: 3
 
-Q: Jak se značí zapojení vinutí trojfázového transformátoru Yd?
-+ Primár do hvězdy, sekundár do trojúhelníku
-- Primár do trojúhelníku, sekundár do hvězdy
-- Obě do hvězdy
-- Lomená hvězda
-E: Velké písmeno = vstupní (VN) vinutí, malé = výstupní: Y/y hvězda, D/d trojúhelník, z lomená hvězda. Distribuční transformátory bývají Dyn nebo Yzn.
+Q: Svařovací transformátor má strmě klesající charakteristiku. Proč?
++ Při zkratu elektrodou se proud omezí
+- Aby měl při zatížení co nejvyšší napětí
+- Aby šetřil energii při chodu naprázdno
+- Aby se vinutí při svařování nepřehřívalo
+E: Napětí naprázdno je asi 50–80 V, při svařování asi 20–30 V.
 Z: EZ3 Transformátory
+U: 3
 
-Q: Jakou vlastnost má svařovací transformátor?
-+ Strmě klesající charakteristiku – při zkratu (dotyku elektrody) omezuje proud
-- Konstantní napětí bez ohledu na zátěž
-- Vysoké výstupní napětí přes 1000 V
-- Galvanicky nespojené obvody s vysokou účinností
-E: Velký rozptyl magnetického toku omezí zkratový proud; napětí naprázdno je asi 50–80 V.
+Q: Měřicí transformátor napětí vs. proudu – co platí?
++ Napěťový nezkratovat, proudový nerozpojovat
+- Napěťový nerozpojovat, proudový nezkratovat
+- Oba se smí zkratovat i rozpojit kdykoli
+- Oba pracují naprázdno a nesmí se zkratovat
+E: Typické sekundární hodnoty: 100 V, 5 A nebo 1 A.
 Z: EZ3 Transformátory
+U: 3
 
-Q: K čemu slouží měřicí transformátor napětí?
-+ Převádí vysoké napětí na bezpečnou hodnotu pro měřicí přístroje (obvykle 100 V)
-- Zvyšuje napětí pro přenos
-- Napájí svářečky
-- Usměrňuje napětí
-E: Transformátor napětí pracuje téměř naprázdno, sekundár se nesmí zkratovat. Transformátor proudu (sekundár obvykle 5 A nebo 1 A) se nesmí rozpojit.
+N: Ztráty transformátoru jsou 40 W naprázdno a 120 W ve vinutí při plném zatížení 4 kW. Jaká je účinnost (%, 1 desetinné místo)?
+= 96.2 | 0.1 | %
+E: η = P2/(P2 + ztráty) = 4000/4160 ≈ 96,2 %.
 Z: EZ3 Transformátory
+U: 3
 
-Q: Proč se pro přenos energie na velké vzdálenosti používá vysoké napětí?
-+ Při stejném výkonu je menší proud, a tím menší ztráty ve vedení (ΔP = R·I²)
-- Je bezpečnější
-- Vodiče jsou pak těžší
-- Spotřebiče to vyžadují
-E: Ztráty rostou se čtvercem proudu.
-Z: Elektrotechnika 1; EZ8 Průmyslová zařízení
-
-Q: Co je oddělovací transformátor?
-+ Transformátor s galvanicky odděleným primárem a sekundárem pro ochranu elektrickým oddělením
-- Autotransformátor
-- Transformátor proudu
-- Svařovací transformátor
-E: Oddělovací transformátor – ochrana elektrickým oddělením. Bezpečnostní transformátor – zdroj SELV/PELV.
-Z: EZ3 Transformátory; 14 Principy ochrany
+Q: Transformátor při chodu naprázdno bzučí. Proč?
++ Magnetostrikcí plechů jádra
+- Protéká jím zkratový proud
+- Má vadnou izolaci vinutí
+- Jiskří mu kontakty přepínače
+E: Uvolněné plechy bzučení zesílí.
+Z: EZ3 Transformátory
+U: 2
 
 # tema: tocive | Točivé stroje (asynchronní a synchronní)
 
-Q: Jak vznikne točivé magnetické pole ve statoru třífázového motoru?
-+ Třemi vinutími posunutými o 120° napájenými třífázovým proudem
-- Jedním vinutím na stejnosměrný proud
-- Permanentním magnetem v rotoru
-- Komutátorem
-E: Tři cívky prostorově posunuté o 120° a proudy časově posunuté o 120° vytvoří točivé pole.
+N: Šestipólový asynchronní motor (3 pólové páry), 50 Hz. Jaké jsou synchronní otáčky (ot/min)?
+= 1000 | 0 | ot/min
+E: ns = 60·f/p = 3000/3 = 1000 ot/min.
 Z: EZ4 Točivé stroje
+U: 2
 
-N: Jaké jsou synchronní otáčky dvoupólového motoru (1 pólový pár) při 50 Hz (ot/min)?
-= 3000 | 0 | ot/min
-E: ns = 60·f/p = 60·50/1 = 3000 ot/min.
+N: Motor má na štítku 2850 ot/min při 50 Hz. Jaký je skluz (%)?
+= 5 | 0.1 | %
+E: Nejbližší synchronní otáčky 3000 → s = (3000 − 2850)/3000 = 5 %.
 Z: EZ4 Točivé stroje
+U: 3
 
-N: Jaké jsou synchronní otáčky čtyřpólového motoru (2 pólové páry) při 50 Hz (ot/min)?
-= 1500 | 0 | ot/min
-E: ns = 60·50/2 = 1500 ot/min.
+N: Čtyřpólový motor se skluzem 4 % napájíš z měniče 40 Hz. Jaké budou přibližně otáčky (ot/min)?
+= 1152 | 5 | ot/min
+E: ns = 60·40/2 = 1200; n = 1200·(1 − 0,04) = 1152 ot/min.
+Z: EZ4 Točivé stroje; EZ8 Průmyslová zařízení
+U: 3
+
+Q: Motor na štítku: 1440 ot/min, 50 Hz. Kolik má pólů?
++ 4 póly (2 páry)
+- 2 póly (1 pár)
+- 6 pólů (3 páry)
+- 8 pólů (4 páry)
+E: Nejbližší vyšší synchronní otáčky jsou 1500 → p = 2.
 Z: EZ4 Točivé stroje
+U: 2
 
-Q: Proč se rotor asynchronního motoru otáčí pomaleji než magnetické pole?
-+ Kdyby se točil synchronně, neindukoval by se v něm proud a nevznikal moment (skluz)
-- Kvůli tření v ložiskách
-- Kvůli špatnému zapojení
-- Točí se vždy synchronně
-E: Rozdíl otáček pole a rotoru = skluz. Bez skluzu není indukce a moment.
+Q: Proč se rotor asynchronního motoru nikdy netočí synchronními otáčkami (motorický chod)?
++ Neindukoval by se proud a nevznikal by moment
+- Brání tomu tření v ložiskách a ventilátoru
+- Je to dané jiným počtem pólů rotoru a statoru
+- Točí se synchronně, jen při přetížení zpomalí
+E: Skluz se zatížením roste (běžně 2–6 %).
 Z: EZ4 Točivé stroje
+U: 2
 
-N: Čtyřpólový motor (ns = 1500 ot/min) se točí 1440 ot/min. Jaký je skluz v %?
-= 4 | 0.1 | %
-E: s = (ns − n)/ns · 100 = (1500 − 1440)/1500 · 100 = 4 %.
+Q: Motor 400/690 V Δ/Y – jak ho zapojíš na síť 3 × 400 V a jde rozbíhat Y/D?
++ Do trojúhelníku; Y/D ano
+- Do hvězdy; Y/D ne
+- Do trojúhelníku; Y/D ne
+- Do hvězdy; Y/D ano
+E: Vinutí je na 400 V – v trojúhelníku dostane plných 400 V; při rozběhu ve hvězdě jen 230 V.
 Z: EZ4 Točivé stroje
+U: 3
 
-Q: Jaký je nejběžnější rotor asynchronního motoru?
-+ Klecový (kotva nakrátko)
-- Kroužkový s vinutím
-- Rotor s permanentními magnety
-- Rotor s komutátorem
-E: Klecová kotva – hliníkové nebo měděné tyče spojené kruhy nakrátko. Jednoduchá a spolehlivá.
+Q: Motor 230/400 V Δ/Y – jak ho zapojíš na síť 3 × 400 V?
++ Do hvězdy; Y/D rozběh nelze
+- Do trojúhelníku; Y/D rozběh lze
+- Do hvězdy; Y/D rozběh lze
+- Na síť 3 × 400 V ho nelze připojit
+E: Vinutí je na 230 V; v trojúhelníku by dostalo 400 V a shořelo.
 Z: EZ4 Točivé stroje
+U: 3
 
-Q: Jak se změní směr otáčení třífázového asynchronního motoru?
-+ Prohozením dvou libovolných fází
-- Prohozením všech tří fází cyklicky
-- Prohozením N a PE
-- Změnou napětí
-E: Prohození dvou fází obrátí směr točivého pole.
+Q: Rozběh hvězda–trojúhelník – co se stane se záběrovým proudem a momentem?
++ Proud i moment klesnou asi na 1/3
+- Proud klesne na 1/3, moment se ztrojnásobí
+- Proud i moment se ztrojnásobí
+- Proud klesne na 1/√3, moment se nezmění
+E: Proto se Y/D hodí pro rozběh bez velké zátěže (ventilátory, čerpadla).
 Z: EZ4 Točivé stroje
+U: 3
 
-Q: Proč se motory rozbíhají přepínáním hvězda–trojúhelník?
-+ Aby se omezil záběrový proud (asi na 1/3)
-- Aby se zvýšil záběrový moment
-- Aby motor běžel rychleji
-- Aby se změnil směr otáčení
-E: Ve hvězdě je na vinutí napětí √3× menší, proud ze sítě i moment klesnou na 1/3.
+Q: Ve svorkovnici motoru (horní řada U1 V1 W1, dolní W2 U2 V2) jsou tři svislé propojky. Jaké je zapojení?
++ Trojúhelník
+- Hvězda
+- Dahlander
+- Jedno vinutí odpojené
+E: Hvězda = jedna vodorovná propojka spojující W2, U2, V2.
 Z: EZ4 Točivé stroje
+U: 2
 
-Q: Jaké podmínky musí motor splnit pro rozběh Y/D na síti 400 V?
-+ Vinutí musí být dimenzováno na 400 V v trojúhelníku (štítek 400/690 V)
-- Štítek musí být 230/400 V
-- Motor musí mít kroužkový rotor
-- Stačí jakýkoli motor
-E: Motor 400/690 V běží na síti 400 V v D; při rozběhu se zapojí do Y.
+Q: Trojfázový motor se po zapojení točí opačně, než má. Jak to opravíš?
++ Prohodím dva fázové vodiče
+- Prohodím vodiče N a PE
+- Přepojím hvězdu na trojúhelník
+- Prohodím všechny tři fáze dokola
+E: Cyklické prohození směr nezmění.
 Z: EZ4 Točivé stroje
+U: 2
 
-Q: Motor má na štítku 230/400 V Δ/Y. Jak ho zapojíš na síť 3 × 400 V?
-+ Do hvězdy
-- Do trojúhelníku
-- Jedno vinutí
-- Nelze připojit
-E: Na vinutí může být 230 V; ve hvězdě je na vinutí 400/√3 = 230 V.
+Q: Trojfázový motor běží, pak přepálí jedna pojistka (výpadek fáze). Co se děje?
++ Běží dál na dvě fáze, bručí a přehřívá se
+- Okamžitě se zastaví a nic se nestane
+- Zrychlí, protože klesne zatížení
+- Otočí se a běží opačným směrem
+E: Proto se používá ochrana proti výpadku fáze (tepelné relé s diferenciálem, motorový spouštěč).
 Z: EZ4 Točivé stroje
+U: 3
 
-Q: Jak se ve svorkovnici zapojí trojúhelník (svorky U1 V1 W1 / W2 U2 V2)?
-+ Třemi svislými propojkami: U1–W2, V1–U2, W1–V2
-- Jednou vodorovnou propojkou W2–U2–V2
-- Bez propojek
-- Propojkou U1–V1–W1
-E: Hvězda = vodorovná propojka W2–U2–V2. Trojúhelník = tři svislé propojky.
+Q: Steinmetzovo zapojení – co platí?
++ Trojfázový motor na 1f síti s kondenzátorem
+- Jednofázový motor na trojfázové síti
+- Rozběh motoru přes rezistory v rotoru
+- Zapojení dynama s cizím buzením
+E: Kapacita asi 70 µF na 1 kW (při 230 V) – orientačně.
 Z: EZ4 Točivé stroje
+U: 3
 
-Q: Jak se rozbíhá jednofázový asynchronní motor?
-+ Pomocí pomocné fáze s kondenzátorem (posun proudu) – vytvoří točivé pole
-- Sám od sebe bez pomoci
-- Komutátorem
-- Pomocí permanentních magnetů v rotoru
-E: Jednofázové pole je jen pulsující; kondenzátor v pomocném vinutí vytvoří posun a rozběh.
+Q: Jednofázový asynchronní motor (čerpadlo) bručí a nerozběhne se, ale roztočíš-li ho rukou, běží. Nejpravděpodobnější závada?
++ Vadný rozběhový kondenzátor
+- Přepálené hlavní vinutí motoru
+- Vadný jistič v přívodu
+- Zadřené ložisko čerpadla
+E: Bez kondenzátoru chybí točivé pole pro rozběh.
 Z: EZ4 Točivé stroje
+U: 3
 
-Q: Co je Steinmetzovo zapojení?
-+ Připojení třífázového motoru na jednofázovou síť s kondenzátorem
-- Rozběh hvězda–trojúhelník
-- Zapojení dynama
-- Zapojení transformátoru
-E: Výkon motoru klesne asi na 2/3.
+Q: Kroužkový (vinutý) rotor – proč se používá?
++ Rezistory v rotoru – menší proud, větší moment
+- Je levnější a jednodušší než klecový rotor
+- Nepotřebuje žádnou údržbu ani kartáče
+- Umožňuje běh motoru na stejnosměrný proud
+E: Nevýhoda: kartáče a kroužky vyžadují údržbu.
 Z: EZ4 Točivé stroje
+U: 3
 
-Q: Jak se točí synchronní motor?
-+ Přesně synchronními otáčkami nezávisle na zatížení
-- Se skluzem 3–5 %
-- Otáčky rostou se zatížením
-- Otáčky klesají se zatížením
-E: Synchronní motor drží otáčky n = 60f/p; při přetížení „vypadne ze synchronismu“.
+Q: Synchronní motor – co platí?
++ Drží synchronní otáčky, buzením lze řídit účiník
+- Má skluz 3–5 % podobně jako asynchronní motor
+- Otáčky mu s rostoucím zatížením klesají
+- Nepotřebuje buzení a sám se snadno rozběhne
+E: Přebuzený synchronní stroj dodává jalový výkon (kompenzátor).
 Z: EZ4 Točivé stroje
+U: 3
 
-Q: Jak se nazývá synchronní generátor v elektrárnách?
-+ Alternátor (turboalternátor, hydroalternátor)
-- Dynamo
-- Transformátor
-- Usměrňovač
-E: Rotor je buzen stejnosměrným proudem, ve statoru se indukuje třífázové napětí.
+Q: Brzdění asynchronního motoru – které tvrzení je správné?
++ Dynamické = DC do statoru; protiproud = prohodit fáze
+- Dynamické = prohodit fáze; protiproud = DC do statoru
+- Protiproudem se motor zastaví a sám se odpojí
+- Asynchronní motor nelze elektricky brzdit
+E: Rekuperační brzdění vrací energii do sítě při nadsynchronních otáčkách.
 Z: EZ4 Točivé stroje
+U: 3
 
-Q: K čemu slouží synchronní kompenzátor?
-+ K vyrábění jalového výkonu a kompenzaci účiníku
-- K pohonu čerpadel
-- K usměrnění proudu
-- K měření frekvence
-E: Přebuzený synchronní stroj naprázdno dodává do sítě kapacitní jalový výkon.
-Z: EZ4 Točivé stroje
-
-Q: Jak se nejčastěji plynule řídí otáčky asynchronního motoru?
-+ Frekvenčním měničem (změna frekvence)
-- Změnou počtu fází
-- Rezistorem v nulovém vodiči
-- Nelze řídit
-E: n ≈ 60f/p – změnou frekvence měničem se mění otáčky plynule.
-Z: EZ8 Průmyslová zařízení; EZ4 Točivé stroje
-
-Q: Co je softstartér?
-+ Polovodičový spouštěč, který při rozběhu postupně zvyšuje napětí na motoru
-- Druh jističe
-- Frekvenční měnič pro regulaci otáček za chodu
-- Stykač hvězda–trojúhelník
-E: Softstartér omezuje záběrový proud a ráz, otáčky za chodu ale neřídí.
+Q: Proč se při řízení otáček frekvenčním měničem mění spolu s frekvencí i napětí (U/f = konst.)?
++ Aby magnetický tok zůstal stálý (U/f = konst.)
+- Aby motor při nízkých otáčkách běžel hlasitěji
+- Aby se ušetřil průřez kabelu k motoru
+- Napětí se nemění, měnič mění jen frekvenci
+E: Magnetický tok je úměrný U/f.
 Z: EZ8 Průmyslová zařízení
+U: 3
 
-Q: Jaký je záběrový proud asynchronního motoru při přímém zapnutí?
-+ Asi 4–8násobek jmenovitého proudu
-- Stejný jako jmenovitý
-- Polovina jmenovitého
-- Asi 100násobek
-E: Proto se větší motory rozbíhají Y/D, softstartérem nebo měničem.
-Z: EZ4 Točivé stroje
+Q: Softstartér vs. frekvenční měnič:
++ Softstartér jen zmírní rozběh, měnič řídí otáčky
+- Softstartér řídí otáčky, měnič jen rozběh
+- Softstartér i měnič jsou totéž zařízení
+- Softstartér mění frekvenci, měnič napětí
+E: Softstartér je levnější tam, kde stačí omezit rozběhový proud.
+Z: EZ8 Průmyslová zařízení
+U: 2
 
-Q: Jak se brzdí asynchronní motor protiproudem?
-+ Prohozením dvou fází za chodu – pole se točí opačně; při zastavení se musí motor odpojit
-- Odpojením jedné fáze
-- Zvýšením napětí
-- Zkratováním PE
-E: Brzdění protiproudem je účinné, ale s velkým proudem. Dále: dynamické (stejnosměrný proud do statoru), rekuperační, mechanickou brzdou.
+Q: Asynchronní generátor – kdy motor dodává energii do sítě?
++ Když ho vnější síla roztočí nad synchronní otáčky (záporný skluz)
+- Když se točí pod synchronními otáčkami
+- Když ho odpojíš od sítě
+- Nikdy, asynchronní stroj nemůže pracovat jako generátor
+E: Použití: malé vodní a větrné elektrárny.
 Z: EZ4 Točivé stroje
+U: 3
 
 # tema: komutatorove | Stejnosměrné a komutátorové stroje
 
-Q: K čemu slouží komutátor stejnosměrného stroje?
-+ Přepíná proud v cívkách kotvy (mechanický usměrňovač/střídač)
-- Měří otáčky
-- Chladí motor
-- Budí stator střídavým proudem
-E: U dynama usměrňuje indukované napětí, u motoru mění směr proudu v kotvě, aby se točila stále jedním směrem.
+Q: Komutátor ve stejnosměrném stroji:
++ Přepíná směr proudu v cívkách kotvy
+- Měří otáčky stejnosměrného stroje
+- Napájí buzení střídavým proudem
+- Chladí kotvu proudem vzduchu
+E: Komutátor = mechanický usměrňovač (střídač).
 Z: EZ5 Komutátorové stroje
+U: 2
 
-Q: Jak se nazývá stejnosměrný generátor?
-+ Dynamo
-- Alternátor
-- Transformátor
-- Synchronní kompenzátor
-E: Dynamo – stejnosměrný generátor s komutátorem.
+Q: Druhy buzení stejnosměrných motorů a jejich vlastnosti:
++ Derivační stálé otáčky, sériový velký záběrový moment
+- Derivační velký záběrový moment, sériový stálé otáčky
+- Sériový se smí spouštět naprázdno, derivační ne
+- Všechna buzení mají stejné vlastnosti a použití
+E: Sériový: trakce, startéry, jeřáby.
 Z: EZ5 Komutátorové stroje
+U: 3
 
-Q: Proč se nesmí sériový stejnosměrný motor spouštět naprázdno?
-+ Otáčky by neomezeně rostly – motor se „rozběhne do ztracena“ a zničí
-- Nezačne se otáčet
-- Spálí se komutátor okamžitě
-- Obrátí se směr otáčení
-E: U sériového motoru bez zatížení klesá budicí tok a otáčky prudce rostou.
+Q: Proč se sériový stejnosměrný motor nesmí spouštět bez zatížení (např. s prasklým řemenem)?
++ Otáčky by neomezeně rostly a motor se zničí
+- Motor by se bez zatížení vůbec neroztočil
+- Spálilo by se budicí vinutí stejnosměrným proudem
+- Motor by se otočil a běžel opačným směrem
+E: Proto se sériové motory spojují se zátěží napevno (převody, ne řemen).
 Z: EZ5 Komutátorové stroje
+U: 3
 
-Q: Jak je zapojeno budicí vinutí derivačního motoru?
-+ Paralelně s kotvou
-- Do série s kotvou
-- Vůbec, nemá budicí vinutí
-- Na střídavé napětí
-E: Derivační – paralelně (otáčky téměř stálé), sériový – v sérii (velký záběrový moment), kompaundní – obojí.
+Q: Jak změníš směr otáčení stejnosměrného motoru s cizím buzením?
++ Přepóluji buď kotvu, nebo buzení
+- Přepóluji kotvu i buzení současně
+- Prohodím dvě fáze na svorkovnici
+- Směr otáčení změnit nelze
+E: Změna obou polarit současně směr nezmění.
 Z: EZ5 Komutátorové stroje
+U: 3
 
-Q: Který stejnosměrný motor má největší záběrový moment (trakce, startéry aut)?
-+ Sériový
-- Derivační
-- S cizím buzením
-- Synchronní
-E: Sériový motor má velký záběrový moment – startéry, tramvaje, jeřáby.
+Q: Jak se řídí otáčky stejnosměrného motoru s cizím buzením?
++ Napětím kotvy a odbuzením
+- Změnou frekvence napájení
+- Přepínáním počtu pólů
+- Otáčky řídit nelze
+E: Dnes polovodičovým měničem (řízený usměrňovač, pulzní měnič), dříve Leonardovou skupinou.
 Z: EZ5 Komutátorové stroje
+U: 3
 
-Q: Jak se změní směr otáčení stejnosměrného motoru?
-+ Změnou polarity proudu v kotvě (nebo v buzení, ne v obou)
-- Změnou polarity v kotvě i v buzení současně
-- Nejde to
-- Prohozením dvou fází
-E: Obrátí-li se polarita kotvy i buzení zároveň, směr se nezmění.
+Q: Reakce kotvy – co způsobuje a jak se omezuje?
++ Posouvá neutrální osu; pomohou komutační póly
+- Zvyšuje otáčky; pomůže větší kartáč
+- Ohřívá ložiska; pomůže lepší mazání
+- Způsobuje zkrat; pomůže pojistka v kotvě
+E: Komutační póly jsou zapojeny do série s kotvou.
 Z: EZ5 Komutátorové stroje
+U: 3
 
-Q: Co je reakce kotvy?
-+ Zpětné působení magnetického pole proudu kotvy na hlavní pole (posun neutrální osy, jiskření)
-- Mechanická vibrace kotvy
-- Ohřev kotvy
-- Indukce napětí v buzení
-E: Omezuje se komutačními (pomocnými) póly a kompenzačním vinutím.
+Q: Univerzální (sériový komutátorový) motor – kde a proč?
++ Vrtačky a vysavače – vysoké otáčky, AC i DC
+- Lednice – tichý chod bez kartáčů
+- Hodiny – přesné synchronní otáčky
+- Elektrárny – velký výkon a účinnost
+E: Nevýhoda: opotřebení kartáčů, jiskření, rušení (odrušovací kondenzátor).
 Z: EZ5 Komutátorové stroje
+U: 2
 
-Q: K čemu slouží pomocné (komutační) póly?
-+ Zlepšují komutaci a omezují jiskření kartáčů
-- Zvyšují otáčky
-- Nahrazují kartáče
-- Budí stroj
-E: Komutační póly vyrovnají reakci kotvy v oblasti komutace.
-Z: EZ5 Komutátorové stroje
-
-Q: Kde se používá univerzální (jednofázový sériový komutátorový) motor?
-+ V ručním nářadí, vysavačích, mixérech
-- V elektrárnách
-- V lednicích jako kompresor
-- V hodinách
-E: Univerzální motor běží na AC i DC, má vysoké otáčky a velký moment.
-Z: EZ5 Komutátorové stroje
+Q: Vrtačka při chodu silně jiskří na komutátoru a smrdí. Co je nejpravděpodobnější?
++ Opotřebené kartáče nebo zkrat v kotvě
+- Vadný přívodní kabel vrtačky
+- Nízké napětí v zásuvce
+- Vadný spínač ve vrtačce
+E: Při kontrole a revizi nářadí se hodnotí jiskření komutátoru.
+Z: EZ5 Komutátorové stroje; 13 Revize
+U: 3
 
 Q: Co je Leonardova skupina?
-+ Soustrojí motor–dynamo–stejnosměrný motor pro plynulou regulaci otáček
-- Skupina tří transformátorů
-- Typ jističe
-- Zapojení zářivek
-E: Klasický regulovaný DC pohon, dnes nahrazen polovodičovými měniči.
++ Motor – dynamo – DC motor, řízení buzením dynama
+- Tři transformátory zapojené do skupiny Dyn
+- Spouštěcí rezistory pro kroužkový motor
+- Typ frekvenčního měniče s tranzistory IGBT
+E: Dnes nahrazena polovodičovými měniči.
 Z: EZ5 Komutátorové stroje
+U: 3
 
-Q: Proč se u motorů v nářadí kontroluje jiskření na komutátoru?
-+ Nadměrné jiskření ukazuje opotřebené kartáče nebo vadu kotvy
-- Jiskření je známka dobrého stavu
-- Kvůli měření otáček
-- Kvůli kontrole izolačního odporu
-E: Kontroluje se při zkoušce chodu i u revize nářadí.
-Z: 13 Revize nářadí
+Q: Dynamo s derivačním buzením se nenabudí. Možná příčina?
++ Chybí remanentní magnetismus nebo je buzení přepólované
+- Dynamo se točí příliš velkými otáčkami
+- Dynamo není zatížené žádným spotřebičem
+- Derivační dynamo buzení vůbec nepotřebuje
+E: Samobuzení potřebuje zbytkový magnetismus a správný směr budicího proudu.
+Z: EZ5 Komutátorové stroje
+U: 3
 
 # tema: teplo | Elektrické teplo, chlazení, tepelná čerpadla
 
-Q: Jakými třemi způsoby se šíří teplo?
-+ Vedením, prouděním, sáláním (zářením)
-- Odporem, indukcí, kapacitou
-- Elektrolýzou, ionizací, výbojem
-- Jen vedením
-E: Vedení (kondukce), proudění (konvekce), sálání (radiace).
+Q: Indukční varná deska – proč na ní nefunguje hliníkový nebo skleněný hrnec?
++ Hřeje jen feromagnetické dno, hliník a sklo nejsou
+- Hliníkový hrnec je příliš lehký pro snímač desky
+- Indukční deska ohřívá jen keramické nádobí
+- Sklo nevede teplo, a proto se jídlo neohřeje
+E: Nádobí musí mít feromagnetické dno (zkouška magnetem).
 Z: EZ6 Světlo a teplo
+U: 2
 
-Q: Na jakém principu pracuje indukční varná deska?
-+ Vířivé proudy indukované ve dně feromagnetického nádobí
-- Odporový ohřev spirály
-- Infračervené sálání
-- Mikrovlny
-E: Střídavé pole o vysoké frekvenci indukuje vířivé proudy přímo v nádobí.
+Q: Způsoby elektrického ohřevu – které spojení je správně?
++ Odporový bojler, indukční kalení, dielektrický mikrovlnka
+- Odporový mikrovlnka, indukční bojler, dielektrický kalení
+- Indukční sušení dřeva, obloukový topinkovač, odporový pec
+- Dielektrický tavení oceli, odporový kalení, indukční bojler
+E: Dielektrický ohřev – nevodivé materiály s vodou (potraviny, dřevo).
 Z: EZ6 Světlo a teplo
+U: 3
 
-Q: Jak ohřívá mikrovlnná trouba?
-+ Mikrovlny rozkmitají molekuly vody (dielektrický ohřev)
-- Odporovou spirálou
-- Indukcí ve stěnách trouby
-- Elektrickým obloukem
-E: Dielektrický ohřev, magnetron, frekvence asi 2,45 GHz.
+N: Bojler ohřívá 80 l vody z 10 °C na 60 °C. Kolik je to kWh (c = 4,18 kJ/kg·K, 1 desetinné místo)?
+= 4.6 | 0.1 | kWh
+E: Q = m·c·Δt = 80·4,18·50 = 16 720 kJ; ÷3600 = 4,64 kWh.
 Z: EZ6 Světlo a teplo
+U: 3
 
-Q: Co je akumulační kamna?
-+ Kamna, která se nabíjejí v levném tarifu (HDO) a teplo vydávají později
-- Kamna na baterie
-- Přímotop bez termostatu
-- Tepelné čerpadlo
-E: Akumulace do keramických cihel v nízkém tarifu.
+N: Ohřev z předchozí úlohy (4,64 kWh) dělá topné těleso 2 kW. Jak dlouho to trvá (h, 1 desetinné místo, bez ztrát)?
+= 2.3 | 0.1 | h
+E: t = W/P = 4,64/2 ≈ 2,3 h.
 Z: EZ6 Světlo a teplo
+U: 3
 
-Q: Na jakém principu pracuje kompresorová lednice?
-+ Odpařování chladiva odebírá teplo uvnitř, kompresor ho stlačí a kondenzátor vydá teplo ven
-- Peltierův článek
-- Odporový ohřev
-- Indukční ohřev
-E: Výparník – kompresor – kondenzátor – expanzní ventil (kapilára).
+Q: Tepelné čerpadlo má COP 4. Co to znamená?
++ Z 1 kWh elektřiny dodá asi 4 kWh tepla
+- Má účinnost jen 4 % proti přímotopu
+- Pracuje jen do venkovní teploty 4 °C
+- Na 1 kWh tepla spotřebuje 4 kWh elektřiny
+E: COP klesá s nižší teplotou zdroje a vyšší teplotou topné vody.
 Z: EZ6 Světlo a teplo
+U: 2
 
-Q: Co je topný faktor (COP) tepelného čerpadla?
-+ Poměr dodaného tepla k spotřebované elektrické energii (např. 3–5)
-- Účinnost motoru kompresoru
-- Teplota výstupní vody
-- Počet hodin provozu
-E: COP 4 znamená, že z 1 kWh elektřiny získáš 4 kWh tepla.
+Q: Proč COP tepelného čerpadla vzduch–voda v mrazu klesá?
++ Roste rozdíl teplot, kompresor musí víc pracovat
+- V mrazu klesá napětí v síti pro kompresor
+- V mrazu zamrzá voda v radiátorech v domě
+- COP se s venkovní teplotou vůbec nemění
+E: Proto se kombinuje s nízkoteplotním topením (podlahovka) a bivalentním zdrojem.
 Z: EZ6 Světlo a teplo
+U: 3
 
-Q: Která tepelná čerpadla odebírají teplo z venkovního vzduchu?
-+ Vzduch–voda (vzduch–vzduch)
-- Země–voda
-- Voda–voda
-- Solární
-E: Typy: vzduch–voda, země–voda (vrty, plošné kolektory), voda–voda (studny).
+Q: Chladicí okruh kompresorové lednice – pořadí:
++ Výparník → kompresor → kondenzátor → kapilára
+- Kondenzátor → kompresor → výparník → kapilára
+- Kompresor → výparník → kompresor, bez kondenzátoru
+- Výparník → kondenzátor, chladivo se nevrací
+E: Tepelné čerpadlo je totéž „obráceně“ – teplo z okolí jde do domu.
 Z: EZ6 Světlo a teplo
+U: 3
 
-Q: Jaký jev využívá Peltierův článek?
-+ Průchodem proudu přes spoj dvou materiálů se jedna strana ochlazuje a druhá ohřívá
-- Elektromagnetickou indukci
-- Fotoelektrický jev
-- Elektrolýzu
-E: Termoelektrické chlazení – malé chladničky, chlazení elektroniky.
-Z: EZ6 Světlo a teplo
+Q: Akumulační kamna vs. přímotop:
++ Akumulační se nabíjí v nízkém tarifu, přímotop hřeje hned
+- Akumulační hřejí jen v denním tarifu, přímotop v noci
+- Přímotop ukládá teplo do cihel, akumulační hřejí hned
+- Mezi akumulačními kamny a přímotopem není rozdíl
+E: Nabíjení řídí HDO přes stykač AKU.
+Z: EZ6 Světlo a teplo; 7 E.ON
+U: 2
 
-N: Kolik tepla (kWh) vyrobí přímotop 2 kW za 5 hodin (účinnost 100 %)?
-= 10 | 0 | kWh
-E: Q = P·t = 2 kW · 5 h = 10 kWh.
+Q: Šíření tepla – které spojení je správně?
++ Vedení tyč, proudění radiátor, sálání infrazářič
+- Vedení infrazářič, proudění tyč, sálání radiátor
+- Vedení slunce, proudění infrazářič, sálání tyč
+- Vedení radiátor, proudění slunce, sálání tyč
+E: Sálání nepotřebuje prostředí (slunce přes vakuum).
 Z: EZ6 Světlo a teplo
-
-Q: Proč se odporový ohřev považuje za účinný téměř 100 %?
-+ Veškerá elektrická energie se v topném tělese mění na teplo
-- Protože čerpá teplo z okolí
-- Protože nemá žádný odpor
-- Není účinný, má asi 30 %
-E: Odporový ohřev má účinnost téměř 100 %, tepelné čerpadlo „přes 100 %“ díky teplu z okolí.
-Z: EZ6 Světlo a teplo
+U: 2
 
 # tema: prumysl | Průmyslová zařízení, pohony a rozvodná soustava
 
-Q: Proč se kompenzuje jalový výkon?
-+ Snižuje se proud ve vedení, ztráty a platby za jalovou energii; zlepší se účiník
-- Aby motory běžely rychleji
-- Aby se zvýšilo napětí na 400 V
-- Kvůli bezpečnosti osob
-E: Indukční zátěž (motory, tlumivky) se kompenzuje kondenzátorovými bateriemi.
+Q: Proč podniky kompenzují účiník?
++ Menší proud a ztráty, žádné penále za jalovou energii
+- Aby motory v podniku běžely rychleji
+- Aby se napětí v síti zvýšilo nad 400 V
+- Kvůli ochraně osob před úrazem proudem
+E: Induktivní zátěž (motory, tlumivky) se kompenzuje kondenzátorovými bateriemi.
 Z: EZ8 Průmyslová zařízení
+U: 2
 
-Q: Čím se nejčastěji kompenzuje induktivní účiník v podnicích?
-+ Kondenzátorovými bateriemi
-- Tlumivkami
-- Rezistory
-- Diodami
-E: Kondenzátory dodávají kapacitní jalový výkon. Pozor na překompenzování.
+Q: Co hrozí při překompenzování (příliš mnoho kondenzátorů)?
++ Kapacitní účiník, zvýšení napětí a penále
+- Nic, víc kondenzátorů je vždy lepší
+- Motory se zastaví kvůli nízkému napětí
+- Sníží se činný výkon všech spotřebičů
+E: Proto se používají automatické regulátory jalového výkonu, které připínají stupně podle potřeby.
 Z: EZ8 Průmyslová zařízení
+U: 3
 
-Q: Jaká jsou napětí přenosové soustavy ČR (ČEPS)?
-+ 400 kV a 220 kV (110 kV distribuce)
-- 230 V a 400 V
-- 22 kV a 35 kV
-- 1 kV
-E: Přenosová soustava 400 a 220 kV; distribuční 110 kV, 35 kV, 22 kV a NN 400/230 V.
+Q: Přenosová a distribuční soustava ČR:
++ Přenos 400 a 220 kV, distribuce 110 kV až 0,4 kV
+- Přenos 22 kV, distribuce 400 kV až 110 kV
+- Přenos 110 kV, distribuce jen 230 V
+- Celá soustava pracuje na 400 V
+E: Vysoké napětí = menší proud a ztráty.
 Z: EZ8 Průmyslová zařízení
+U: 2
 
-Q: Co znamená 1. stupeň zajištění dodávky elektřiny?
-+ Dodávka musí být zajištěna i při poruše – dva nezávislé zdroje (nemocnice, operační sály)
-- Dodávka může být přerušena kdykoli
-- Jeden zdroj bez zálohy
-- Jen nouzové osvětlení
-E: 1. stupeň – nezávislé napájení ze dvou zdrojů, 2. stupeň – záloha s krátkým přerušením, 3. stupeň – bez zvláštních požadavků.
+N: Vedení s odporem 2 Ω přenáší 100 kW. Jaké jsou ztráty ve vedení při 10 kV a při 1 kV (rozdíl v násobcích)? Zadej poměr ztrát 1 kV / 10 kV.
+= 100 | 0 | ×
+E: I = P/U: 10 A vs 100 A. Ztráty R·I²: 200 W vs 20 kW → 100×. Desetinásobné napětí = stokrát menší ztráty.
 Z: EZ8 Průmyslová zařízení
+U: 3
 
-Q: Které elektrárny v ČR vyrábějí nejvíce elektřiny?
-+ Tepelné (uhelné) a jaderné
-- Větrné
-- Fotovoltaické
-- Přečerpávací
-E: Základ tvoří uhelné a jaderné (Temelín, Dukovany), doplňují je vodní, plynové a obnovitelné zdroje.
+Q: Stupně zajištění dodávky elektřiny:
++ 1. stupeň dva nezávislé zdroje, 3. bez požadavků
+- 1. stupeň bez požadavků, 3. dva nezávislé zdroje
+- Všechny objekty mají stejný stupeň dodávky
+- Stupeň udává velikost hlavního jističe
+E: Byty mají obvykle 3. stupeň.
 Z: EZ8 Průmyslová zařízení
+U: 3
 
-Q: K čemu slouží přečerpávací vodní elektrárna (Dlouhé Stráně)?
-+ Ukládá energii – v noci čerpá vodu nahoru, ve špičce vyrábí elektřinu
-- Vyrábí jen v noci
-- Chladí jadernou elektrárnu
-- Zavlažuje pole
-E: Přečerpávací elektrárna vyrovnává spotřebu sítě.
+Q: Proč je přečerpávací elektrárna (Dlouhé Stráně) důležitá pro síť?
++ Ukládá přebytky a ve špičce rychle vyrábí
+- Vyrábí nejvíc elektřiny ze všech v ČR
+- Je to jaderná elektrárna s chladicí věží
+- Slouží jen k zavlažování a pitné vodě
+E: Najede na plný výkon za několik minut.
 Z: EZ8 Průmyslová zařízení
+U: 2
 
-Q: Jaké napájecí soustavy používá česká železnice?
-+ 3 kV DC (sever) a 25 kV 50 Hz AC (jih)
-- 230 V AC
-- 600 V DC všude
-- 110 kV AC
-E: ČR má historicky dvě soustavy; tramvaje a metro používají asi 600–750 V DC.
+Q: Frekvenční měnič – blokové schéma:
++ Usměrňovač → meziobvod → střídač → motor
+- Transformátor → dioda → kondenzátor → motor
+- Stykač → tepelné relé → softstartér → motor
+- Střídač → meziobvod → usměrňovač → síť
+E: Měnič vytvoří napětí s nastavitelnou frekvencí i velikostí.
 Z: EZ8 Průmyslová zařízení
+U: 3
 
-Q: Jakým napětím je napájena běžná palubní síť osobního auta?
-+ 12 V DC
-- 24 V AC
-- 230 V AC
-- 48 V AC
-E: Osobní auta 12 V, nákladní 24 V. Zdroj: alternátor s usměrňovačem a akumulátor.
+Q: Proč může frekvenční měnič vybavovat běžný chránič typu AC?
++ Vytváří DC a vf unikající proudy – nutný typ B
+- Má tak velký příkon, že chránič přetíží
+- Je zapojen v síti TN-C, kde chránič nefunguje
+- Nemá ochranný vodič, takže chránič vypíná
+E: Typ AC stejnosměrné reziduální proudy nezaznamená spolehlivě (může „oslepnout“).
+Z: EZ8 Průmyslová zařízení; 10 Proudový chránič
+U: 3
+
+Q: Napájecí soustavy elektrické trakce v ČR:
++ Železnice 3 kV DC a 25 kV AC, tramvaje 600 V DC
+- Železnice 230 V AC, tramvaje a metro 25 kV AC
+- Celá železnice 15 kV 16,7 Hz, tramvaje 3 kV DC
+- Železnice 600 V DC, tramvaje 3 kV, metro 25 kV AC
+E: 15 kV 16,7 Hz používá Německo a Rakousko.
 Z: EZ8 Průmyslová zařízení
+U: 3
 
-Q: Co je v autě alternátor?
-+ Synchronní generátor s usměrňovačem a regulátorem napětí, který dobíjí akumulátor
-- Startér
-- Zapalovací cívka
-- Akumulátor
-E: Alternátor dává třífázové napětí, diody ho usměrní.
-Z: EZ8 Průmyslová zařízení
+Q: Krytí IP 54 vs. IP 65:
++ IP 54 omezeně prach a stříkající voda, IP 65 prachotěsné
+- IP 54 prachotěsné, IP 65 bez ochrany proti vodě
+- IP 54 i do vody, IP 65 jen do suchých prostor
+- IP 54 a IP 65 znamenají stejnou úroveň ochrany
+E: 1. číslice cizí tělesa 0–6, 2. číslice voda 0–8 (7 krátké ponoření, 8 trvalé).
+Z: 14 Principy ochrany; EZ7 Elektrické zařízení budov
+U: 2
 
-Q: Jak funguje frekvenční měnič (zjednodušeně)?
-+ Usměrní síťové napětí a střídačem vytvoří napětí s nastavitelnou frekvencí
-- Mění počet pólů motoru
-- Přidá do obvodu rezistor
-- Mění jen napětí, ne frekvenci
-E: Usměrňovač – meziobvod – střídač (PWM, IGBT tranzistory).
-Z: EZ8 Průmyslová zařízení
-
-Q: Co znamená krytí IP 54?
-+ Ochrana proti prachu (omezeně) a proti stříkající vodě
-- Úplná prachotěsnost a ponoření
-- Bez ochrany
-- Ochrana proti prstu a kapající vodě
-E: 1. číslice – cizí tělesa (5 prach omezeně, 6 prachotěsné), 2. číslice – voda (4 stříkající, 5 tryskající, 7 ponoření).
-Z: EZ7 Elektrické zařízení budov; 14 Principy ochrany
-
-Q: Co vyjadřuje první číslice IP kódu?
-+ Ochranu proti vniknutí cizích těles a dotyku nebezpečných částí
-- Ochranu proti vodě
-- Ochranu proti nárazu
-- Ochranu proti výbuchu
-E: 1. číslice 0–6 (cizí tělesa), 2. číslice 0–8 (voda). Odolnost proti nárazu = IK kód.
-Z: 14 Principy ochrany
-
-Q: Co znamená krytí IP 20?
-+ Ochrana proti dotyku prstem (tělesa nad 12,5 mm), bez ochrany proti vodě
-- Prachotěsné a vodotěsné
-- Ochrana proti tryskající vodě
-- Bez jakékoli ochrany
-E: 2 = tělesa nad 12,5 mm (prst), 0 = bez ochrany proti vodě.
-Z: 14 Principy ochrany
-
-Q: Co jsou vyhrazená technická zařízení (elektrická)?
-+ Zařízení se zvýšenou mírou ohrožení, na která dohlíží státní dozor a platí pro ně zvláštní předpisy
-- Spotřebiče do 1 kW
-- Všechny spotřebiče v domácnosti
-- Zařízení s baterií
-E: Vyhrazená el. technická zařízení vyžadují zvláštní kvalifikaci a revize.
+Q: Co je IK kód?
++ Odolnost proti nárazu
+- Krytí proti vodě
+- Kategorie přepětí
+- Třída ochrany
+E: IP kód nárazovou odolnost nevyjadřuje.
 Z: EZ7 Elektrické zařízení budov
+U: 3
 
-Q: Jak se dělí prostory podle vnějších vlivů (např. teplota, voda, prach)?
-+ Kódem dvou písmen a číslice (např. AD4 – stříkající voda)
-- Jen na suché a mokré
-- Podle barvy stěn
-- Podle velikosti místnosti
-E: Vnější vlivy: A – prostředí (AA teplota, AD voda, AE cizí tělesa…), B – využití, C – konstrukce budov.
+Q: Vnější vlivy – co znamená kód AD4?
++ Prostředí se stříkající vodou
+- Teplota okolí do 40 °C
+- Prostor s výbušným prachem
+- Prostor se zvýšenou korozí
+E: AA teplota, AD voda, AE cizí tělesa, AF koroze; B – využití (osoby), C – konstrukce budov.
 Z: EZ7 Elektrické zařízení budov
+U: 3
 
-Q: K čemu slouží CENTRAL STOP / TOTAL STOP?
-+ K rychlému odpojení celé budovy od elektřiny (zásah hasičů)
-- K vypnutí jen osvětlení
-- K zastavení výtahu
-- K měření spotřeby
-E: Zařízení pro vypnutí celého objektu při požáru, lze ho umístit i v neměřené části.
+Q: CENTRAL STOP / TOTAL STOP:
++ Rychlé vypnutí celého objektu (hasiči)
+- Tlačítko pro vypnutí jen výtahu
+- Druh stykače pro velké motory
+- Časový spínač osvětlení chodeb
+E: Neměřená část: hlavní vypínač, CENTRAL/TOTAL STOP, přepěťová ochrana.
 Z: 7 E.ON; EZ7 Elektrické zařízení budov
+U: 3
 
-Q: Co je nouzové osvětlení?
-+ Osvětlení napájené ze zdroje nezávislého na síti, které se zapne automaticky při výpadku
-- Osvětlení na chodbě se schodišťovým automatem
-- Venkovní osvětlení
-- Osvětlení pro kontrolu měřidel
-E: Nouzové osvětlení – únikové cesty, baterie nebo centrální zdroj.
-Z: 6 Vnitřní rozvody; EZ7 Elektrické zařízení budov
-
-Q: Co je EZS a EPS?
-+ Elektronická zabezpečovací signalizace (proti vloupání) a elektrická požární signalizace
-- Elektrický zdroj a pojistka
-- Elektroměr a spínač
-- Typy kabelů
-E: EZS – detektory pohybu, magnetické kontakty, ústředna. EPS – hlásiče kouře a teploty.
+Q: EZS a EPS:
++ EZS proti vloupání, EPS požární signalizace
+- EZS požární signalizace, EPS proti vloupání
+- Obě zkratky označují elektrický záložní zdroj
+- EZS je druh chrániče, EPS je typ jističe
+E: Obojí má ústřednu a záložní napájení.
 Z: EZ7 Elektrické zařízení budov
+U: 2
 
-Q: Co je PLC?
-+ Programovatelný logický automat pro řízení strojů a budov
-- Druh proudového chrániče
-- Typ kabelu
-- Měřicí přístroj
-E: PLC – vstupy (snímače), program, výstupy (stykače, ventily). Používá se i v inteligentních instalacích.
+Q: Jak funguje inteligentní (sběrnicová) elektroinstalace oproti klasické?
++ Povely jdou sběrnicí k akčním členům, funkce se programují
+- Každý vypínač je zapojen přímo do fáze svítidla jako dřív
+- Nepotřebuje žádné silové vedení, vše jde rádiem i výkon
+- Funguje jen na baterie bez připojení k distribuční síti
+E: Příklady: KNX, Ego-n, PLC řízení.
 Z: EZ7 Elektrické zařízení budov
+U: 3
+
+Q: PLC (programovatelný automat):
++ Čte vstupy, zpracuje program, ovládá výstupy
+- Je to druh proudového chrániče pro motory
+- Měří a zaznamenává spotřebu elektřiny
+- Je to přepěťová ochrana pro řídicí obvody
+E: Nahrazuje složité reléové zapojení.
+Z: EZ7 Elektrické zařízení budov
+U: 2
+
+Q: Alternátor v autě:
++ Třífázový generátor s usměrňovačem a regulátorem
+- Stejnosměrné dynamo s komutátorem a kartáči
+- Akumulátor, který se dobíjí z domácí sítě
+- Elektromotor, který roztáčí motor při startu
+E: Osobní auta 12 V, nákladní 24 V.
+Z: EZ8 Průmyslová zařízení
+U: 3
 
 # tema: dokumentace | Technická dokumentace a schémata
 
-Q: Jaký rozměr má výkres formátu A4?
-+ 210 × 297 mm
-- 297 × 420 mm
-- 148 × 210 mm
-- 200 × 300 mm
-E: A4 210 × 297, A3 297 × 420, A0 = 1 m². Každý menší formát je polovinou většího.
+Q: Formáty výkresů:
++ A4 210 × 297, A3 297 × 420, A0 = 1 m²
+- A4 200 × 300, A3 300 × 400, A0 = 1 m²
+- A4 210 × 297, A3 420 × 594, A0 = 2 m²
+- A4 210 × 297, A3 297 × 420, A0 = 0,5 m²
+E: Každý menší formát je polovinou většího.
 Z: Technická dokumentace
+U: 2
 
-Q: Jakou plochu má formát A0?
-+ 1 m²
-- 0,5 m²
-- 2 m²
-- 0,25 m²
-E: A0 má plochu 1 m² (841 × 1189 mm).
+Q: Druhy čar na výkrese:
++ Tlustá souvislá hrany, tenká kóty, čárkovaná zakryté, čerchovaná osy
+- Tenká souvislá hrany, tlustá kóty, čerchovaná zakryté, čárkovaná osy
+- Tlustá souvislá osy, tenká hrany, čárkovaná kóty, čerchovaná zakryté
+- Čárkovaná hrany, tlustá zakryté, tenká osy, čerchovaná kóty a šrafy
+E: Vlnovka – přerušení obrazu.
 Z: Technická dokumentace
+U: 2
 
-Q: Jakou čarou se kreslí viditelné hrany na výkresu?
-+ Souvislou tlustou
-- Souvislou tenkou
-- Čárkovanou
-- Čerchovanou tenkou
-E: Viditelné hrany – souvislá tlustá; kóty a šrafy – souvislá tenká; neviditelné hrany – čárkovaná; osy – čerchovaná tenká.
+Q: Součást je na výkrese v měřítku 1:5 nakreslená délkou 40 mm. Jakou kótu napíšeš?
++ 200
+- 40
+- 8
+- 20
+E: Kóty v mm bez jednotky, vždy skutečná velikost bez ohledu na měřítko.
 Z: Technická dokumentace
+U: 3
 
-Q: Jakou čarou se kreslí osy a roviny souměrnosti?
-+ Tenkou čerchovanou
-- Tlustou souvislou
-- Čárkovanou
-- Tenkou souvislou
-E: Osa – tenká čerchovaná.
+Q: Co znamená měřítko 2:1?
++ Zvětšení, 2 mm výkresu = 1 mm
+- Zmenšení, 1 mm výkresu = 2 mm
+- Skutečná velikost součásti
+- 1 mm výkresu = 2 m skutečnosti
+E: Zvětšení se používá u drobných součástí.
 Z: Technická dokumentace
+U: 2
 
-Q: Jakou čarou se kreslí neviditelné (zakryté) hrany?
-+ Čárkovanou
-- Čerchovanou
-- Souvislou tlustou
-- Vlnovkou
-E: Zakryté hrany – čárkovaná čára.
-Z: Technická dokumentace
-
-Q: Co znamená měřítko 1:2?
-+ Zmenšení – 1 mm na výkrese odpovídá 2 mm ve skutečnosti
-- Zvětšení dvakrát
-- Skutečná velikost
-- 2 mm výkresu = 1 mm skutečnosti
-E: 1:2 zmenšení, 2:1 zvětšení, 1:1 skutečná velikost. Kóty se vždy píší ve skutečných rozměrech.
-Z: Technická dokumentace
-
-Q: V jakých jednotkách se píší kóty na strojních výkresech?
-+ V milimetrech (jednotka se nepíše)
-- V centimetrech
-- V metrech
-- V palcích
-E: Kóty v mm bez uvedení jednotky.
-Z: Technická dokumentace
-
-Q: Kde je na výkresu rohové razítko (popisové pole)?
-+ V pravém dolním rohu
-- V levém horním rohu
-- Uprostřed
-- Na zadní straně
-E: Popisové pole je v pravém dolním rohu.
-Z: Technická dokumentace
-
-Q: Jaký je rozdíl mezi schématem obvodovým (zapojovacím) a instalačním (situačním)?
-+ Obvodové ukazuje elektrické spojení součástek; instalační ukazuje rozmístění prvků v půdorysu budovy
-- Žádný
-- Obvodové se kreslí jen pro VN
-- Instalační ukazuje vnitřek přístrojů
-E: Instalační výkres – půdorys se zásuvkami, vypínači, svítidly a trasami vedení.
+Q: Rozdíl mezi schématem obvodovým (zapojovacím) a instalačním výkresem:
++ Obvodové ukazuje funkci, instalační rozmístění v půdorysu
+- Obvodové ukazuje půdorys, instalační vnitřek přístrojů
+- Instalační ukazuje funkci, obvodové rozmístění prvků
+- Obvodové a instalační jsou dva názvy pro totéž
+E: V jednopólovém schématu se více vodičů kreslí jednou čarou s čárkami.
 Z: Technická dokumentace; Schémata v praxi
+U: 2
 
-Q: Co znamená ve schématu číslice u vypínače (např. 6)?
-+ Řazení spínače – č. 6 = střídavý (schodišťový) přepínač
-- Počet svítidel
-- Proud v ampérech
-- Číslo místnosti
-E: Řazení: 1 jednopólový, 5 sériový, 6 střídavý, 7 křížový.
-Z: Technická dokumentace; 5 Domovní spínače
-
-Q: Kolik vodičů (čárek) bude mezi dvěma přepínači č. 6 v jednopólovém schématu?
-+ Dva propojovací vodiče (+ PE podle kabelu)
-- Jeden
-- Čtyři
-- Pět
-E: Mezi dvěma č. 6 vedou dva „korespondenční“ vodiče, typicky kabel CYKY 3×1,5 (s PE).
-Z: Schémata v praxi
-
-Q: Co znamenají v jednopólovém schématu šikmé čárky přes vedení?
-+ Počet vodičů ve vedení
-- Průřez vodiče
-- Napětí
-- Délku vedení
-E: Každá šikmá čárka = jeden vodič (nebo číslo u jedné čárky).
+Q: V jednopólovém instalačním výkrese vede k vypínači čára se třemi šikmými čárkami. Co to znamená?
++ Vedení obsahuje 3 vodiče
+- Průřez 3 mm²
+- Vypínač č. 3
+- Vedení je dlouhé 3 m
+E: Často s doplněným označením kabelu, např. CYKY-J 3×1,5.
 Z: Technická dokumentace
+U: 2
+
+Q: Kde je na výkresu popisové pole a co obsahuje?
++ Vpravo dole; název, číslo, měřítko, autor
+- Vlevo nahoře; jen podpis a datum
+- Na zadní straně; jen číslo výkresu
+- Uprostřed nahoře; název a měřítko
+E: Rohové razítko podle normy.
+Z: Technická dokumentace
+U: 2
+
+Q: Ve schématu kreslíš kontakty stykače. V jakém stavu?
++ V klidu – cívka bez napětí
+- V sepnutém stavu za provozu
+- Libovolně, jak se to hodí
+- V poloze, kterou mají při poruše
+E: Spínací kontakt je pak nakreslen rozepnutý, rozpínací sepnutý.
+Z: Technická dokumentace; Schémata v praxi
+U: 3
 
 Q: Co obsahuje revizní zpráva elektroinstalace?
-+ Údaje o objektu, rozsah revize, prohlídku, měření, zjištěné závady a celkový posudek
-- Jen podpis elektrikáře
-- Jen fakturu za materiál
-- Jen schéma
-E: Revizní zpráva končí posudkem, zda je zařízení schopné bezpečného provozu.
++ Údaje o objektu, měření, závady a posudek
+- Jen fakturu za materiál a práci
+- Jen schéma zapojení rozvaděče
+- Jen seznam připojených spotřebičů
+E: Posudek: zařízení je / není schopné bezpečného provozu.
 Z: Technologie 2
+U: 2
 
 # tema: kovy | Ruční zpracování kovů
 
-Q: S jakou přesností měří posuvné měřítko s noniem 1/20?
-+ 0,05 mm
-- 0,1 mm
-- 0,01 mm
-- 0,5 mm
-E: Nonius 1/10 → 0,1 mm, 1/20 → 0,05 mm, 1/50 → 0,02 mm.
+Q: Přesnost měřidel:
++ Měřítko 0,5 mm, posuvka 0,05 mm, mikrometr 0,01 mm
+- Měřítko 0,01 mm, posuvka 0,5 mm, mikrometr 0,1 mm
+- Měřítko 1 mm, posuvka 1 mm, mikrometr 0,1 mm
+- Všechna měřidla měří s přesností 0,1 mm
+E: Posuvné měřítko podle nonia 1/10, 1/20, 1/50.
 Z: 02 Ruční zpracování kovů
+U: 2
 
-Q: S jakou přesností měří mikrometr?
-+ 0,01 mm
-- 0,1 mm
-- 0,5 mm
-- 1 mm
-E: Mikrometr měří s přesností 0,01 mm. Řehtačka zajišťuje stálý měřicí tlak.
+Q: Posuvné měřítko s noniem 1/20: nula nonia je za 23 mm hlavní stupnice a s rýskou hlavní stupnice se kryje 7. rýska nonia. Jaký je rozměr?
++ 23,35 mm
+- 23,7 mm
+- 23,07 mm
+- 23,14 mm
+E: 7 × 0,05 = 0,35 mm → 23,35 mm.
 Z: 02 Ruční zpracování kovů
+U: 3
 
-Q: K čemu slouží důlčík?
-+ K vyznačení důlku (středu otvoru) před vrtáním
-- K řezání plechu
-- K měření úhlů
-- K pilování
-E: Důlek zabrání sklouznutí vrtáku.
+Q: K čemu slouží řehtačka na mikrometru?
++ Zajistí stálý měřicí tlak
+- Slouží k rychlému posunu vřetena
+- Zajistí naměřený rozměr proti posunu
+- Slouží k nastavení nuly stupnice
+E: Brzda slouží k aretaci naměřené hodnoty.
 Z: 02 Ruční zpracování kovů
+U: 3
 
-Q: Kolik dvojzdvihů za minutu se doporučuje při pilování?
-+ 40–60
-- 5–10
-- 100–150
-- 200
-E: Rovnoměrně 40–60 dvojzdvihů za minutu, při zpětném pohybu pilník odlehčit.
+Q: Měření skutečných hodnot vs. měření porovnáváním:
++ Posuvka ukáže hodnotu, kalibr jen dobrý/zmetek
+- Kalibr ukáže hodnotu, posuvka jen dobrý/zmetek
+- Porovnáváním se měří jen mikrometrem
+- Oba způsoby dávají stejný výsledek i postup
+E: Kalibr „dobrý/zmetek“ rychle ověří toleranci v sériové výrobě.
 Z: 02 Ruční zpracování kovů
+U: 3
 
-Q: Proč se pilník při zpětném pohybu odlehčuje?
-+ Aby se zuby rychle neotupily
-- Aby se obrobek ochladil
-- Aby byla plocha lesklejší
-- Kvůli bezpečnosti
-E: Pilník řeže jen při pohybu vpřed.
+Q: Správná technika pilování:
++ Celá délka pilníku, 40–60 tahů/min, tlak jen vpřed
+- Krátké tahy 150×/min, tlak oběma směry
+- Celá délka pilníku, tlak jen při pohybu zpět
+- Pilník držet za špičku, tahy co nejrychlejší
+E: Zpětný tlak otupí zuby.
 Z: 02 Ruční zpracování kovů
+U: 2
 
-Q: Jak se upíná obrobek při pilování?
-+ Do svěráku tak, aby obráběná plocha byla nahoře
-- Drží se v ruce
-- Volně se položí na stůl
-- Do vrtačky
-E: Obráběná plocha nahoru, svěrák ve správné výšce (asi v úrovni lokte).
+Q: Jaký pilník zvolíš na zaoblení vnitřního otvoru (rádiusu)?
++ Kruhový nebo půlkruhový
+- Plochý obdélníkový
+- Trojúhelníkový
+- Nožovitý
+E: Tvar pilníku odpovídá tvaru obráběné plochy.
 Z: 02 Ruční zpracování kovů
+U: 2
 
-Q: Jakým směrem mají směřovat zuby pilového listu na rámové pilce?
-+ Dopředu (od rukojeti) – pila řeže při pohybu vpřed
-- Dozadu k rukojeti
-- Na směru nezáleží
-- Nahoru
-E: Ruční pilka na kov řeže při tlaku vpřed.
+Q: Proč se před vrtáním dělá důlek důlčíkem?
++ Aby vrták nesklouzl
+- Aby se kov zpevnil
+- Aby se vrták chladil
+- Aby šel díl poznat
+E: Proti záměně se díly značí razidly nebo elektrickou jehlou.
 Z: 02 Ruční zpracování kovů
+U: 2
 
-Q: Co je zaškrabávání?
-+ Velmi přesné ruční obrábění, kdy se plochy přizpůsobí tak, aby se dotýkaly na co nejvíce místech
-- Hrubé řezání plechu
-- Natírání kovu
-- Vrtání otvorů
-E: Nejnamáhavější a nejpřesnější ruční obrábění (vedení obráběcích strojů).
+Q: Ruční pilka na kov – jak upneš list a jak řežeš?
++ Zuby dopředu, řez při tlaku vpřed
+- Zuby k rukojeti, řez při tahu zpět
+- List volně, aby při řezu nepraskl
+- Na směru zubů ani tlaku nezáleží
+E: Na tenký materiál se volí jemnější zuby (aspoň 3 zuby v záběru).
 Z: 02 Ruční zpracování kovů
-
-Q: Čím se značí díly proti záměně?
-+ Razidly (čísla a písmena) nebo elektrickou jehlou
-- Fixou
-- Lepicí páskou
-- Barevným lakem
-E: Razidla nebo popis elektrickou jehlou u tvrdších materiálů.
-Z: 02 Ruční zpracování kovů
+U: 2
 
 # tema: materialy | Materiály a technologie
 
-Q: Který materiál se používá na vlákna žárovek kvůli vysoké teplotě tání?
-+ Wolfram
-- Měď
-- Hliník
-- Cín
-E: Wolfram taje asi při 3400 °C.
+Q: Měrný odpor vodičů – pořadí od nejlepšího vodiče:
++ Stříbro – měď – zlato – hliník
+- Měď – stříbro – hliník – zlato
+- Hliník – měď – stříbro – zlato
+- Zlato – stříbro – měď – hliník
+E: Měď ~0,0178, hliník ~0,028 Ω·mm²/m.
+Z: Technologie 2
+U: 2
+
+Q: Proč se na vlákna žárovek používá wolfram?
++ Má nejvyšší teplotu tání z kovů
+- Je to nejlepší vodič ze všech kovů
+- Je to nejlevnější kov na vlákna
+- Nemění odpor s teplotou
+E: Vlákno pracuje kolem 2500–2900 °C.
 Z: Technologie 2; 04 Světelné zdroje
+U: 2
 
-Q: Z čeho je pájka pro elektroniku (bezolovnatá)?
-+ Slitina cínu (např. cín–stříbro–měď)
-- Čistý hliník
-- Ocel
-- Wolfram
-E: Bezolovnaté pájky SnAgCu, dříve Sn60Pb40. Tavidlo (kalafuna) odstraňuje oxidy.
+Q: Pájení – k čemu je tavidlo a proč je spoj „studený“?
++ Tavidlo odstraní oxidy; studený spoj je nesmočený a nespolehlivý
+- Tavidlo ochladí spoj; studený spoj je nejpevnější a nejlepší
+- Tavidlo izoluje spoj; studený spoj vznikne bez tavidla záměrně
+- Tavidlo barví spoj; studený spoj vznikne při příliš velké teplotě
+E: Dobrý spoj je lesklý a kuželovitý.
 Z: Technologie 2
+U: 3
 
-Q: K čemu slouží tavidlo při pájení?
-+ Odstraňuje oxidy a zlepšuje smáčení pájkou
-- Ochlazuje spoj
-- Izoluje spoj
-- Barví spoj
-E: Kalafuna nebo jiné tavidlo.
-Z: Technologie 2
-
-Q: Které materiály jsou magneticky měkké a používají se na jádra transformátorů?
-+ Křemíková (transformátorová) ocel, ferity
-- Měď a hliník
-- Tvrdé magnety AlNiCo
-- Plasty
-E: Magneticky měkké materiály – úzká hysterezní smyčka, malé ztráty.
+Q: Magneticky měkké vs. tvrdé materiály:
++ Měkké na jádra transformátorů, tvrdé na magnety
+- Měkké na magnety, tvrdé na jádra transformátorů
+- Měkké materiály jsou nemagnetické, tvrdé magnetické
+- Tvrdost materiálu s magnetismem nesouvisí
+E: Malé ztráty přemagnetováním u měkkých materiálů.
 Z: Technologie 2; Elektrotechnika 2
+U: 2
 
-Q: Jaký materiál se používá na desky plošných spojů?
-+ Sklotextit (FR4) s měděnou fólií
-- Dřevo
-- Hliníkový plech
-- Papír bez úprav
-E: Nejčastěji FR4 – skelná tkanina s epoxidem a měděná fólie (typicky 35 µm).
+Q: Desky plošných spojů:
++ Sklotextit FR4 s měděnou fólií
+- Hliníkový plech s cínovou fólií
+- Papír s nalepenými měděnými dráty
+- Keramika bez jakékoli vrstvy mědi
+E: SMD umožňuje menší rozměry a automatickou montáž.
 Z: Technologie 2
+U: 2
 
-Q: Co je technologie SMD (SMT)?
-+ Povrchová montáž součástek přímo na plošky desky bez otvorů
-- Montáž součástek s drátovými vývody do otvorů
-- Výroba kabelů
-- Svařování plechů
-E: SMD – Surface Mounted Device. THT – součástky s vývody do otvorů.
+Q: Proč se hliníkové a měděné vodiče nesmí spojovat přímo ve svorce bez úpravy?
++ Vzniká galvanický článek a koroze, spoj se hřeje
+- Hliník je nemagnetický a ve svorce nedrží
+- Měď by se při průchodu proudu roztavila
+- Spoj by byl příliš pevný a nešel by rozebrat
+E: Hliník navíc „teče“ pod tlakem.
 Z: Technologie 2
-
-Q: Proč je hliník horší vodič pro instalace v bytech než měď?
-+ Má větší měrný odpor, oxiduje, „teče“ pod tlakem a spoje se uvolňují
-- Je těžší než měď
-- Je dražší
-- Nevede proud
-E: Hliník má asi 1,6× větší měrný odpor a horší spoje; v bytech se dnes používá měď.
-Z: Technologie 2
+U: 3

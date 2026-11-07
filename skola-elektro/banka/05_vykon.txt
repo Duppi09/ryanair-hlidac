@@ -4,7 +4,7 @@ Q: Jaký je vzorec pro činný výkon v jednofázové soustavě?
 + P = U · I · cos φ [W]
 - P = U · I [VA]
 - P = U · I · sin φ [var]
-- P = U² · I
+- P = U · I · tg φ [W]
 E: Činný výkon P = U·I·cos φ ve wattech. Je to výkon, který se mění na práci a teplo.
 Z: výuka – měření výkonu (tabule)
 
@@ -52,47 +52,54 @@ N: Spotřebič má činný výkon 3 kW a jalový výkon 4 kvar. Jaký je zdánli
 = 5 | 0 | kVA
 E: S = √(P² + Q²) = √(9 + 16) = √25 = 5 kVA.
 Z: výuka – trojúhelník výkonů (tabule)
+U: 3
 
 N: Zdánlivý výkon je 5 kVA a činný 4 kW. Jaký je účiník cos φ?
 = 0.8 | 0.001 |
 E: cos φ = P / S = 4 / 5 = 0,8.
 Z: výuka – trojúhelník výkonů (tabule)
+U: 3
 
 N: Zdánlivý výkon je 10 kVA, činný 6 kW. Jaký je jalový výkon (kvar)?
 = 8 | 0 | kvar
 E: Q = √(S² − P²) = √(100 − 36) = √64 = 8 kvar.
 Z: výuka – trojúhelník výkonů (tabule)
+U: 3
 
 N: Motor na 230 V odebírá 5 A při cos φ = 0,8. Jaký je jeho činný výkon (W)?
 = 920 | 0 | W
 E: P = U·I·cos φ = 230 · 5 · 0,8 = 920 W.
 Z: výuka – měření výkonu (tabule)
+U: 3
 
 N: Motor na 230 V odebírá 5 A při cos φ = 0,8. Jaký je jeho zdánlivý výkon (VA)?
 = 1150 | 0 | VA
 E: S = U·I = 230 · 5 = 1150 VA.
 Z: výuka – měření výkonu (tabule)
+U: 3
 
 N: Motor na 230 V odebírá 5 A při cos φ = 0,8 (sin φ = 0,6). Jaký je jalový výkon (var)?
 = 690 | 0 | var
 E: Q = U·I·sin φ = 230 · 5 · 0,6 = 690 var. Kontrola: √(920² + 690²) = 1150 VA.
 Z: výuka – měření výkonu (tabule)
+U: 3
 
 N: Wattmetr ukazuje 1200 W, voltmetr 240 V, ampérmetr 6,25 A. Jaký je účiník?
 = 0.8 | 0.001 |
 E: S = 240 · 6,25 = 1500 VA; cos φ = P/S = 1200/1500 = 0,8.
 Z: výuka – měření výkonu (tabule)
+U: 3
 
 Q: Jaký účiník má čistě odporová zátěž (topné těleso, žárovka)?
-+ cos φ = 1 (proud a napětí ve fázi)
++ cos φ = 1
 - cos φ = 0
 - cos φ = 0,5
-- cos φ = −1
+- cos φ = 0,8
 E: U odporu je φ = 0°, takže P = S a jalový výkon je nulový.
 Z: výuka – měření výkonu
 
 Q: Jaký účiník by měla ideální cívka nebo kondenzátor?
-+ cos φ = 0 – jen jalový výkon, žádný činný
++ cos φ = 0
 - cos φ = 1
 - cos φ = 0,8
 - cos φ = 0,5
@@ -108,9 +115,9 @@ E: Na rezistoru je napětí ve fázi s proudem, na cívce předbíhá o 90°, na
 Z: výuka – fázorový diagram (tabule)
 
 Q: Jak se v sériovém obvodu R–L sčítají napětí UR a UL?
-+ Fázorově (vektorově): U = √(UR² + UL²)
-- Aritmeticky: U = UR + UL
-- Odečtou se: U = UR − UL
++ U = √(UR² + UL²)
+- U = UR + UL
+- U = UR − UL
 - U = UR · UL
 E: UL je posunuto o 90° proti UR, proto se sčítají jako odvěsny trojúhelníku.
 Z: výuka – fázorový diagram (tabule)
@@ -119,54 +126,59 @@ N: V sériovém obvodu R–L je UR = 30 V a UL = 40 V. Jaké je napětí zdroje 
 = 50 | 0 | V
 E: U = √(30² + 40²) = √2500 = 50 V.
 Z: výuka – fázorový diagram (tabule)
+U: 3
 
 Q: Proč se ve fázorovém diagramu R–L–C kreslí UL a UC opačným směrem?
-+ UL předbíhá proud o 90°, UC se za proudem zpožďuje o 90° – jsou proti sobě (posun 180°)
-- Protože se napětí na cívce nedá změřit
-- Protože kondenzátor není v obvodu
-- Jsou kresleny stejným směrem
++ UL předbíhá proud o 90°, UC se zpožďuje o 90°
+- UL se zpožďuje o 90°, UC předbíhá proud o 90°
+- Napětí na cívce nelze změřit, tak se kreslí opačně
+- UL a UC jsou ve fázi, kreslí se stejným směrem
 E: Výsledná jalová složka je rozdíl UL − UC.
 Z: výuka – fázorový diagram (tabule)
+U: 3
 
 Q: Jak se zapojuje wattmetr?
-+ Proudová cívka do série se zátěží, napěťová cívka paralelně k zátěži
-- Obě cívky do série
-- Obě cívky paralelně
++ Proudová do série, napěťová paralelně
 - Proudová paralelně, napěťová do série
+- Proudová i napěťová cívka do série
+- Proudová i napěťová cívka paralelně
 E: Wattmetr (elektrodynamický) násobí proud a napětí – proudová cívka jako ampérmetr, napěťová jako voltmetr.
 Z: výuka – měření výkonu v jednofázové soustavě (tabule); Elektrická měření
 
 Q: Co znamená tečka (hvězdička) u svorek wattmetru?
-+ Začátky proudové a napěťové cívky – spojují se na stranu zdroje, jinak se výchylka obrátí
-- Svorku pro uzemnění
-- Kladný pól baterie přístroje
-- Pojistku přístroje
++ Začátky cívek – spojují se na stranu zdroje
+- Svorka pro připojení ochranného vodiče
+- Kladný pól vnitřní baterie přístroje
+- Místo, kde je uvnitř pojistka přístroje
 E: Označené začátky cívek se propojují, aby wattmetr ukazoval kladnou výchylku.
 Z: výuka – měření výkonu v jednofázové soustavě (tabule)
 
 Q: Co měří ampérmetr, když jsou voltmetr a napěťová cívka wattmetru zapojeny až ZA ním přímo na zátěži?
-+ Proud zátěže plus proud voltmetru a napěťové cívky wattmetru (I = Iz + Iw + Iv)
-- Jen proud zátěže
-- Jen proud voltmetru
-- Úbytek napětí na zátěži
++ Proud zátěže + voltmetru + napěťové cívky
+- Jen proud zátěže, bez jakékoli chyby
+- Jen proud voltmetru a napěťové cívky
+- Úbytek napětí na zátěži a ampérmetru
 E: Voltmetr je připojen přímo na zátěž (napětí měří správně), ale ampérmetr měří i proudy odebírané voltmetrem a napěťovou cívkou → chyba metody.
 Z: výuka – měření výkonu v jednofázové soustavě (tabule)
+U: 3
 
 Q: Pro jakou zátěž je vhodné zapojení „správně měřené napětí" (voltmetr přímo na zátěži)?
-+ Pro zátěž s malou impedancí (velký proud) – proud voltmetru je proti proudu zátěže zanedbatelný
-- Pro zátěž s velkou impedancí (malý proud)
++ Pro malou impedanci (velký proud)
+- Pro velkou impedanci (malý proud)
 - Pro jakoukoli, chyba je vždy nulová
-- Jen pro stejnosměrný proud
+- Jen pro stejnosměrný proud a napětí
 E: Chyba je proud voltmetru; vadí jen tehdy, když je proud zátěže malý.
 Z: výuka – měření výkonu (tabule); Elektrická měření
+U: 3
 
 Q: Co měří voltmetr v zapojení „správně měřený proud" (voltmetr před ampérmetrem)?
-+ Napětí zátěže plus úbytek napětí na ampérmetru a proudové cívce wattmetru
-- Jen napětí zátěže
-- Jen úbytek na ampérmetru
-- Proud zátěže
++ Napětí zátěže + úbytek na ampérmetru
+- Jen napětí zátěže, bez jakékoli chyby
+- Jen úbytek napětí na ampérmetru
+- Proud zátěže a voltmetru dohromady
 E: Ampérmetr měří přesně proud zátěže, ale voltmetr měří i úbytek na ampérmetru a proudové cívce. Vhodné pro zátěž s velkou impedancí.
 Z: výuka – měření výkonu (tabule)
+U: 3
 
 Q: Pro jakou zátěž je vhodné zapojení „správně měřený proud" (ampérmetr přímo v sérii se zátěží, voltmetr před ním)?
 + Pro zátěž s velkou impedancí (malý proud)
@@ -175,59 +187,61 @@ Q: Pro jakou zátěž je vhodné zapojení „správně měřený proud" (ampér
 - Jen pro třífázové obvody
 E: Úbytek na ampérmetru je proti velkému napětí na velké impedanci zanedbatelný.
 Z: výuka – měření výkonu (tabule); Elektrická měření
+U: 3
 
 Q: Jakou měřicí soustavu má klasický wattmetr?
-+ Elektrodynamickou (pevná proudová cívka, otočná napěťová cívka)
++ Elektrodynamickou
 - Magnetoelektrickou
-- Elektromagnetickou s otočným železem
+- Elektromagnetickou
 - Tepelnou
 E: Výchylka elektrodynamického přístroje je úměrná U·I·cos φ, takže měří přímo činný výkon.
 Z: Elektrická měření; EZ1 Měřicí přístroje
 
 Q: Jak lze určit účiník z měření?
-+ cos φ = P / (U · I) – z údaje wattmetru, voltmetru a ampérmetru
++ cos φ = P / (U · I)
 - cos φ = U / I
 - cos φ = P · U · I
-- Účiník se nedá změřit
+- cos φ = (U · I) / P
 E: Wattmetr dá P, voltmetr a ampérmetr S = U·I; podíl je účiník. Lze ho měřit i přímo fázoměrem (cosfimetrem).
 Z: výuka – měření výkonu (tabule)
 
 Q: Jak se měří činný výkon trojfázové soustavy se souměrnou zátěží?
-+ Jedním wattmetrem v jedné fázi a výsledek se vynásobí třemi
++ Jedním wattmetrem a výsledek × 3
 - Jedním wattmetrem bez násobení
-- Nedá se změřit
-- Jen elektroměrem
+- Jedním wattmetrem a výsledek × √3
+- Třemi ampérmetry a výpočtem z U·I
 E: Souměrná zátěž: P = 3 · P1. Nesouměrná čtyřvodičová: tři wattmetry. Třívodičová: Aronovo zapojení se dvěma wattmetry.
 Z: Elektrická měření
 
 Q: Co je Aronovo zapojení?
-+ Měření výkonu třívodičové trojfázové soustavy dvěma wattmetry (P = P1 + P2)
++ Měření 3f výkonu dvěma wattmetry
 - Rozběh motoru hvězda–trojúhelník
-- Zapojení tří voltmetrů
+- Zapojení tří voltmetrů do hvězdy
 - Zapojení elektroměru na jednu fázi
 E: Dva wattmetry stačí i pro nesouměrnou zátěž bez nulového vodiče.
 Z: Elektrická měření
+U: 3
 
 Q: Čím se měří jalový výkon?
-+ Varmetrem (wattmetr s napětím posunutým o 90°)
++ Varmetrem
 - Wattmetrem v běžném zapojení
-- Ohmmetrem
+- Ohmmetrem a výpočtem
 - Elektroměrem činné energie
 E: Varmetr ukazuje Q v var; posun napětí o 90° se dělá zapojením na sdružené napětí jiných fází nebo tlumivkou.
 Z: Elektrická měření
 
 Q: Co měří elektroměr v domácnosti?
-+ Činnou elektrickou energii (práci) v kWh
-- Okamžitý činný výkon ve W
++ Činnou energii v kWh
+- Okamžitý výkon ve W
 - Zdánlivý výkon ve VA
-- Napětí sítě
+- Jalovou energii v kvarh
 E: Elektroměr integruje výkon v čase: W = P · t [kWh].
 Z: Elektrická měření; 7 E.ON
 
 Q: Proč je špatný (nízký) účiník nevýhodný?
-+ Pro stejný činný výkon teče větší proud – větší ztráty a nutné větší dimenzování vodičů a transformátorů
-- Spotřebič pak nefunguje
-- Snižuje se napětí sítě na nulu
-- Nijak, účiník je jen informativní
++ Teče větší proud – větší ztráty a dimenzování
+- Spotřebič při nízkém účiníku nefunguje
+- Napětí sítě klesne až na nulu
+- Nijak, účiník je jen informativní údaj
 E: I = P / (U · cos φ). Proto se v podnicích kompenzuje kondenzátory.
 Z: výuka – měření výkonu; EZ8 Průmyslová zařízení

@@ -48,6 +48,7 @@ header.top h1 span { color: var(--brown) }
 .meta { display: flex; gap: 8px; flex-wrap: wrap }
 .tag { font: 500 .78rem/1 var(--f-mono); background: var(--chip); padding: 6px 8px; border-radius: 4px; white-space: nowrap }
 .tag b { color: var(--brown); font-weight: 500 }
+.lvl { font-size: .7rem; padding: 4px 6px } .lvl3 { color: var(--bad) } .lvl1 { color: var(--muted) }
 
 nav.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line) }
 nav.tabs button { background: none; border: 0; padding: 8px 12px; font: 600 1rem var(--f-display); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); border-bottom: 3px solid transparent; margin-bottom: -1px }
@@ -145,7 +146,9 @@ const GROUPS = [
   ["Stroje a přístroje", ["pristroje", "transformatory", "tocive", "komutatorove", "prumysl"]],
   ["Světlo a teplo", ["svetlo", "teplo"]],
   ["Dokumentace a dílna", ["dokumentace", "kovy", "materialy"]],
+  ["Praxe a výpočty", ["praxe"]],
 ];
+const LEVEL_NAME = { 1: "základ", 2: "zkouška", 3: "těžká" };
 const $ = (s) => document.querySelector(s);
 const el = (tag, attrs = {}, ...kids) => {
   const e = document.createElement(tag);
@@ -235,9 +238,23 @@ function topicErrorRates() {
   for (const [t, a] of Object.entries(agg)) out[t] = a.n ? a.bad / a.n : 0;
   return out;
 }
+// celková úspěšnost za posledních 14 dní → podle ní přidávat těžší otázky
+function recentAccuracy() {
+  let n = 0, ok = 0;
+  for (let i = 0; i < 14; i++) { const d = state.dny[addDays(TODAY, -i)]; if (d) { n += d.hotovo || 0; ok += d.spravne || 0; } }
+  return n >= 10 ? ok / n : null;
+}
+let ACC = null;
+function levelFactor(q) {
+  const u = q.uroven || 2;
+  if (ACC == null) return u === 3 ? 0.8 : 1;            // začátek: mírně ubrat těžké
+  if (ACC >= 0.8) return { 1: 0.4, 2: 0.9, 3: 1.7 }[u];  // daří se → víc těžkých
+  if (ACC >= 0.6) return { 1: 0.8, 2: 1, 3: 1.2 }[u];
+  return { 1: 1.3, 2: 1.1, 3: 0.6 }[u];                  // nedaří se → víc základů
+}
 function weightOf(q, terr) {
   const s = state.q[q.id];
-  const topicF = 1 + 1.5 * (terr[q.tema] || 0);
+  const topicF = (1 + 1.5 * (terr[q.tema] || 0)) * levelFactor(q);
   if (!s || !s.n) return 1.4 * topicF;                       // nová otázka
   const due = !s.dalsi || s.dalsi <= TODAY;
   let w;
@@ -248,6 +265,7 @@ function weightOf(q, terr) {
 }
 function pickSet(n, seed, exclude = new Set(), onlyIds = null) {
   const r = rng(seed);
+  ACC = recentAccuracy();
   const terr = topicErrorRates();
   const active = activeTopics();
   let pool = bank.otazky.filter((q) => !exclude.has(q.id) && (onlyIds ? onlyIds.has(q.id) : active.has(q.tema)));
@@ -306,8 +324,15 @@ function setSelection(vyber, fokus) {
 
 function ensureToday() {
   if (today && today.datum === TODAY && Array.isArray(today.otazky)) {
+    const before = today.otazky.length;
     today.otazky = today.otazky.filter((id) => byId[id]);
     today.odpovedi = today.odpovedi || {};
+    // po aktualizaci banky mohly některé dnešní otázky zmizet → doplnit
+    if (today.otazky.length < Math.min(before, N_DAILY)) {
+      const need = Math.min(before, N_DAILY) - today.otazky.length;
+      today.otazky = today.otazky.concat(pickSet(need, TODAY + "-doplneni", new Set(today.otazky)));
+      save();
+    }
     return;
   }
   today = { datum: TODAY, otazky: pickSet(N_DAILY, TODAY), odpovedi: {}, kola: 1 };
@@ -360,7 +385,8 @@ function renderQuestion(id, idx, total, onNext) {
     el("div", { class: "row" }, el("span", { class: "eyebrow grow" }, `Otázka ${idx + 1} z ${total}`),
       state.q[id]?.chyb ? el("span", { class: "pill" }, `minule špatně ${state.q[id].chyb}×`) : null),
     dots,
-    el("div", { class: "q-topic" }, topicName[q.tema] || q.tema),
+    el("div", { class: "row", style: "gap:8px" }, el("span", { class: "q-topic grow" }, topicName[q.tema] || q.tema),
+      el("span", { class: "tag lvl lvl" + (q.uroven || 2) }, "úroveň " + (q.uroven || 2) + " · " + LEVEL_NAME[q.uroven || 2])),
     el("div", { class: "q-text" }, q.otazka)
   );
   const fb = (ok, extra) => el("div", { class: "fb " + (ok ? "ok" : "bad") },
@@ -488,7 +514,7 @@ function renderChyby() {
     el("div", { class: "stats3" },
       el("div", {}, el("span", { class: "eyebrow" }, "Teď špatně"), el("span", { class: "v" }, active.length)),
       el("div", {}, el("span", { class: "eyebrow" }, "Někdy chybné"), el("span", { class: "v" }, items.length)),
-      el("div", {}, el("span", { class: "eyebrow" }, "Prošlo otázek"), el("span", { class: "v" }, Object.values(state.q).filter((s) => s.n).length + " / " + bank.otazky.length))));
+      el("div", {}, el("span", { class: "eyebrow" }, "Prošlo otázek"), el("span", { class: "v" }, Object.entries(state.q).filter(([id, s]) => s.n && byId[id]).length + " / " + bank.otazky.length))));
   if (!items.length) { card.append(el("div", { class: "note" }, "Zatím žádné chyby. Každá špatná odpověď se sem zapíše a bude chodit častěji, dokud ji nebudeš umět.")); return [card]; }
   card.append(el("button", { class: "btn", disabled: !active.length, onclick: () => extraRound(new Set(active.map(([id]) => id)), "chyby") }, `Procvičit chyby (${Math.min(active.length, N_DAILY)})`));
   const list = el("section", { class: "card" }, el("div", { class: "eyebrow" }, "Seznam chyb"),

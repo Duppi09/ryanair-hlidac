@@ -1,0 +1,193 @@
+# tema: praxe | Praxe: výpočty a situace na víc kroků
+
+N: Průtokový ohřívač 3 × 400 V má výkon 18 kW (cos φ = 1). Jaký proud teče jedním vodičem (A, 1 desetinné místo)?
+= 26 | 0.1 | A
+E: I = P/(√3·U) = 18 000/(1,732·400) ≈ 26,0 A → jistič 32 A, kabel min. 6 mm² Cu (podle uložení).
+Z: Elektrotechnika 1; 9 Kabely a vodiče
+U: 3
+
+Q: Ohřívač 18 kW / 3 × 400 V bere asi 26 A. Které jištění a kabel (Cu, uložení na zdi) jsou správné?
++ Jistič 32 A a kabel 5 × 6 mm²
+- Jistič 25 A a kabel 5 × 2,5 mm²
+- Jistič 32 A a kabel 5 × 2,5 mm²
+- Jistič 40 A a kabel 5 × 4 mm²
+E: Jistič musí být ≥ proud zátěže (26 A → 32 A) a zároveň ≤ dovolený proud vodiče: 6 mm² → 32 A. 2,5 i 4 mm² by 32–40 A nesnesly.
+Z: 9 Kabely a vodiče
+U: 3
+
+N: Jednofázová indukční deska 7,2 kW na 230 V. Jaký by byl proud (A, celé číslo)?
+= 31 | 1 | A
+E: I = 7200/230 ≈ 31,3 A. Proto se desky připojují dvou- nebo třífázově (rozdělí se na 2–3 jističe 16 A).
+Z: 6 Vnitřní rozvody
+U: 3
+
+Q: Zákazník chce připojit indukční desku 7,2 kW do běžné zásuvky 16 A. Co mu řekneš?
++ Nelze – potřebuje samostatný (vícefázový) obvod
+- Lze, jistič 16 A to krátkodobě vydrží
+- Lze, stačí použít silnější prodlužovačku
+- Lze, pokud se nevaří na všech plotýnkách
+E: 31 A přesáhne jistič i zásuvkový obvod; spotřebič nad 2000 VA patří na samostatný obvod.
+Z: 6 Vnitřní rozvody
+U: 3
+
+N: Motor 3 × 400 V: výkon na hřídeli 5,5 kW, účinnost 0,87, cos φ = 0,84. Jaký proud odebírá (A, 1 desetinné místo)?
+= 10.9 | 0.15 | A
+E: P1 = 5500/0,87 ≈ 6322 W; I = P1/(√3·U·cos φ) = 6322/(1,732·400·0,84) ≈ 10,9 A.
+Z: EZ4 Točivé stroje; Elektrotechnika 1
+U: 3
+
+Q: Štítek motoru uvádí 5,5 kW. Co to číslo znamená?
++ Mechanický výkon na hřídeli
+- Příkon odebíraný ze sítě
+- Zdánlivý výkon v kVA
+- Jalový výkon motoru
+E: Proto se proud počítá z P/η.
+Z: EZ4 Točivé stroje
+U: 3
+
+N: Prodlužovací kabel 2,5 mm² Cu (ρ = 0,0178), délka 50 m, zátěž 16 A. Jaký je úbytek napětí (V, 1 desetinné místo)?
+= 11.4 | 0.1 | V
+E: R = 0,0178·100/2,5 = 0,712 Ω (tam i zpět 100 m); ΔU = 0,712·16 ≈ 11,4 V (asi 5 %).
+Z: Elektrotechnika 2
+U: 3
+
+Q: Na staveništi je zásuvka 60 m od rozvaděče na kabelu 1,5 mm². Míchačka se špatně rozbíhá. Proč?
++ Velký úbytek napětí na dlouhém tenkém kabelu
+- Míchačka má na stavbu příliš malý výkon
+- Proudový chránič omezuje rozběhový proud
+- Dlouhý kabel má velkou kapacitu a ruší
+E: Řešení: větší průřez nebo kratší vedení.
+Z: Elektrotechnika 2; EZ4 Točivé stroje
+U: 3
+
+N: Síť TN 230 V, naměřená impedance smyčky na konci obvodu je 1,2 Ω. Jaký poruchový proud poteče při zkratu na kostru (A, celé číslo)?
+= 192 | 1 | A
+E: Ik = U0/Zs = 230/1,2 ≈ 192 A.
+Z: 14 Principy ochrany
+U: 3
+
+Q: Na konci obvodu s jističem B16 je impedance smyčky 1,2 Ω (Ik ≈ 192 A). Vypne jistič včas?
++ Ano – B16 vypíná nejpozději při 80 A
+- Ne – potřeboval by proud aspoň 320 A
+- Ne – jistič B vypíná až při 20 × In
+- Nelze určit bez měření izolace
+E: Podmínka Zs·Ia ≤ U0: 1,2·80 = 96 V ≤ 230 V. Vyhovuje.
+Z: 14 Principy ochrany; EZ2 Elektrické přístroje
+U: 3
+
+Q: Na konci obvodu s jističem C16 je impedance smyčky 2,0 Ω. Vypne jistič včas?
++ Ne – 115 A je méně než 160 A pro C16
+- Ano – 115 A je víc než jmenovitých 16 A
+- Ano – charakteristika C vypíná dřív než B
+- Nelze to určit bez měření izolace
+E: Zs·Ia = 2,0·160 = 320 V > 230 V → nevyhovuje.
+Z: 14 Principy ochrany
+U: 3
+
+Q: Po výměně svítidla v koupelně vypíná chránič hned po zapnutí světla. Na co se podíváš jako první?
++ Zda se nespojil vodič N s PE
+- Zda není přepálená žárovka
+- Zda je jistič 10 A nebo 16 A
+- Zda je spínač č. 1 nebo č. 6
+E: Spojení N s PE za chráničem → část proudu jde zpět přes PE → chránič vypne.
+Z: 10 Proudový chránič
+U: 3
+
+Q: Ve staré instalaci (TN-C, dvoužilové vedení) chce zákazník novou zásuvku s ochranným kolíkem. Co je správně?
++ Kolík nespojím s N – dotáhnu nový vodič PE
+- Kolík propojím v zásuvce s nulovým vodičem
+- Kolík nechám nezapojený, bezpečné je to stejně
+- Kolík připojím vodičem na vodovodní trubku
+E: Při přerušení N by se kryt spotřebiče dostal pod napětí. Navíc TN-C pod 10 mm² Cu není dovoleno.
+Z: 14 Principy ochrany
+U: 3
+
+Q: Před výměnou jističe v rozvodnici bytu. Které pořadí je správně?
++ Vypnout hlavní vypínač, zajistit, ověřit, vyměnit
+- Vypnout jen vyměňovaný jistič a hned vyměnit
+- Vyměnit pod napětím izolovaným nářadím
+- Vypnout hlavní vypínač, vyměnit, pak ověřit
+E: Vypnutý jistič neodpojí jeho přívodní svorku – ta je pod napětím z přípojnice.
+Z: 1 Úraz elektrickým proudem; 3 Obsluha a práce
+U: 3
+
+N: Schodiště: 6 LED svítidel po 15 W se spíná přes schodišťový automat 10 A. Jaký je proud svítidel (A, 2 desetinná místa, cos φ = 1)?
+= 0.39 | 0.01 | A
+E: 90 W / 230 V ≈ 0,39 A. Pozor: LED zdroje mají velký zapínací proud, výrobci uvádějí max. počet svítidel na spínač.
+Z: 6 Vnitřní rozvody
+U: 2
+
+N: Rodinný dům: odhadovaný soudobý příkon 13,8 kW, třífázově, cos φ = 1. Jaký proud teče jednou fází při souměrném zatížení (A, celé číslo)?
+= 20 | 0.5 | A
+E: I = 13 800/(1,732·400) ≈ 19,9 A → hlavní jistič 3 × 25 A (B).
+Z: 7 E.ON; Elektrotechnika 1
+U: 3
+
+Q: Rodinný dům, soudobý příkon asi 14 kW, třífázově. Jaký hlavní jistič zvolíš a s jakou charakteristikou?
++ 3 × 25 A, charakteristika B
+- 3 × 16 A, charakteristika B
+- 3 × 63 A, charakteristika D
+- 1 × 25 A, charakteristika C
+E: Proud asi 20 A na fázi → 25 A. Charakteristika B je standard podle distributora.
+Z: 7 E.ON
+U: 3
+
+N: Kondenzátorová baterie má kompenzovat jalový výkon 4,8 kvar při 230 V, 50 Hz (jednofázově). Jakou kapacitu potřebuje (µF, celé číslo)?
+= 289 | 3 | µF
+E: Q = U²·2πf·C → C = Q/(U²·2πf) = 4800/(52 900·314,16) ≈ 289 µF.
+Z: EZ8 Průmyslová zařízení
+U: 3
+
+N: Spotřebič odebírá 10 A při cos φ = 0,6 na 230 V. Po kompenzaci na cos φ = 1 (činný výkon stejný) jaký poteče proud (A)?
+= 6 | 0 | A
+E: P = 230·10·0,6 = 1380 W; po kompenzaci I = 1380/230 = 6 A. Proud klesne o 40 %.
+Z: EZ8 Průmyslová zařízení
+U: 3
+
+Q: Motor se při rozběhu Y/D v trojúhelníku zastaví a jistič vypne. Při zapojení do hvězdy běží, ale slabě. Nejpravděpodobnější příčina?
++ Motor je 230/400 V – v trojúhelníku má 400 V na vinutí
+- Je vadné tepelné relé, které vypíná při přepnutí
+- Motor má malou kapacitu rozběhového kondenzátoru
+- Jsou prohozené dvě fáze, motor se točí opačně
+E: Y/D jen u motorů 400/690 V.
+Z: EZ4 Točivé stroje
+U: 3
+
+N: Bojler 2 kW byl změřen na 207 V místo 230 V. Jaký má skutečný výkon (W, celé číslo)?
+= 1620 | 5 | W
+E: P ~ U²: 2000·(207/230)² = 2000·0,81 = 1620 W.
+Z: Elektrotechnika 2
+U: 3
+
+Q: Revize: izolační odpor obvodu zásuvek je 0,3 MΩ. Co uděláš?
++ Nevyhovuje (min. 1 MΩ), hledám vadný úsek
+- Vyhovuje, minimum je 0,25 MΩ
+- Vyhovuje, pokud je obvod za chráničem
+- U instalace se izolační odpor neměří
+E: Hledání závady: odpojit spotřebiče, měřit úseky, typicky vlhkost v krabici nebo poškozený vodič. (Hodnota 1 MΩ pro instalaci do 500 V – doplněno podle ČSN 33 2000-6.)
+Z: Technologie 2; doplněno
+U: 3
+
+Q: Schodiště ovládané z přízemí, 1. a 2. patra. Jaké přepínače kam?
++ Přízemí č. 6, 1. patro č. 7, 2. patro č. 6
+- Všude č. 6
+- Přízemí č. 7, 1. patro č. 6, 2. patro č. 7
+- Všude č. 1 zapojené paralelně
+E: Na koncích vždy č. 6, uprostřed č. 7.
+Z: 5 Domovní spínače
+U: 2
+
+N: Svítidlo 12 V / 50 W napájené z transformátoru 230/12 V. Jaký proud teče sekundárním vedením (A, 2 desetinná místa)?
+= 4.17 | 0.01 | A
+E: I = 50/12 ≈ 4,17 A – na malém napětí tečou velké proudy, vodiče musí mít dostatečný průřez.
+Z: EZ3 Transformátory
+U: 2
+
+Q: Proč halogenová světla 12 V potřebují tlustší vodiče než stejně výkonná 230 V?
++ Na 12 V teče asi 19× větší proud
+- Napětí 12 V je nebezpečnější než 230 V
+- Transformátor dává stejnosměrný proud
+- Nepotřebují, průřez je u obou stejný
+E: I = P/U: 230/12 ≈ 19×.
+Z: EZ3 Transformátory
+U: 3
