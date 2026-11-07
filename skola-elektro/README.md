@@ -7,7 +7,7 @@ Aplikace: https://claude.ai/artifact/NPwzLqGKGSqP9iURTsihsy
 - Špatná odpověď → otázka přijde znovu hned zítra a pak častěji (Leitnerovy krabičky: 1, 2, 4, 8, 16, 32 dní).
 - Správně zodpovězené otázky občas přijdou i předčasně, takže se nezapomenou.
 - Témata, kde se chybuje víc, dostávají ve výběru větší váhu (max. 3 otázky z jednoho tématu za den).
-- Záložky: **Dnes** (cvičení + nejslabší témata), **Chyby** (seznam a procvičení chyb), **Témata** (úspěšnost a 10 otázek z vybraného tématu).
+- Záložky: **Dnes** (cvičení + nejslabší témata), **Chyby** (seznam a procvičení chyb), **Témata** (výběr okruhů, ★ = téma, které se teď probírá – aspoň 3 otázky denně, úspěšnost a 10 otázek z tématu).
 - Postup se ukládá do úložiště artefaktu (`stav/statistiky`, `dny/<datum>`), takže ho Claude může přečíst a doplnit otázky tam, kde se chybuje.
 
 ## Banka otázek
